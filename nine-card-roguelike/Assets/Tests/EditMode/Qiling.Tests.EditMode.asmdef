@@ -1,0 +1,7 @@
+{
+  "name": "Qiling.Tests.EditMode",
+  "references": ["Qiling.Runtime"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

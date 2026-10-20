@@ -1,0 +1,6 @@
+{
+  "name": "Qiling.Tests.PlayMode",
+  "references": ["Qiling.Runtime", "Unity.ugui"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

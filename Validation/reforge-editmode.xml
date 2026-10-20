@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="48" result="Passed" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.2303511">
+  <test-suite type="TestSuite" id="1000" name="nine-card-roguelike" fullname="nine-card-roguelike" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.230351" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1052" name="Qiling.Tests.EditMode.dll" fullname="C:/YY/Card/nine-card-roguelike/nine-card-roguelike/Library/ScriptAssemblies/Qiling.Tests.EditMode.dll" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.221362" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="33724" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1053" name="Qiling" fullname="Qiling" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.220116" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1054" name="Tests" fullname="Qiling.Tests" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.219148" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="BattleEngineTests" fullname="Qiling.Tests.BattleEngineTests" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" testcasecount="33" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.181911" total="33" passed="33" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1024" name="AmplificationIsRelativeAndDoesNotIncreaseShieldCoefficientsOrNegativeCosts" fullname="Qiling.Tests.BattleEngineTests.AmplificationIsRelativeAndDoesNotIncreaseShieldCoefficientsOrNegativeCosts" methodname="AmplificationIsRelativeAndDoesNotIncreaseShieldCoefficientsOrNegativeCosts" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="877722552" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.038772" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1021" name="BlockIsPerSegmentRangedOnlyAndPreventsPoisonOnHit" fullname="Qiling.Tests.BattleEngineTests.BlockIsPerSegmentRangedOnlyAndPreventsPoisonOnHit" methodname="BlockIsPerSegmentRangedOnlyAndPreventsPoisonOnHit" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1056902471" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.007889" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="BonusIsSingleShareAcrossNativeSegmentsAndNotCoefficientPoints" fullname="Qiling.Tests.BattleEngineTests.BonusIsSingleShareAcrossNativeSegmentsAndNotCoefficientPoints" methodname="BonusIsSingleShareAcrossNativeSegmentsAndNotCoefficientPoints" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="829137922" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.005041" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1028" name="BossCyclesDefensesAndIntentsAfterCompleteActions" fullname="Qiling.Tests.BattleEngineTests.BossCyclesDefensesAndIntentsAfterCompleteActions" methodname="BossCyclesDefensesAndIntentsAfterCompleteActions" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="334120338" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001519" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1019" name="BurnTicksOnTargetAndExpiresAfterTwoTargetActions" fullname="Qiling.Tests.BattleEngineTests.BurnTicksOnTargetAndExpiresAfterTwoTargetActions" methodname="BurnTicksOnTargetAndExpiresAfterTwoTargetActions" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="371436058" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000894" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1026" name="CounterOnlyOncePerCastAndRespectsFrontRow" fullname="Qiling.Tests.BattleEngineTests.CounterOnlyOncePerCastAndRespectsFrontRow" methodname="CounterOnlyOncePerCastAndRespectsFrontRow" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="984718321" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.002148" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="DataHasFiveCorrectPanelsAndNineDistinctEntitiesEach" fullname="Qiling.Tests.BattleEngineTests.DataHasFiveCorrectPanelsAndNineDistinctEntitiesEach" methodname="DataHasFiveCorrectPanelsAndNineDistinctEntitiesEach" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="266246822" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.002313" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="DeadTargetTransfersMeleeSegmentsToBackAndReadsNewDefense" fullname="Qiling.Tests.BattleEngineTests.DeadTargetTransfersMeleeSegmentsToBackAndReadsNewDefense" methodname="DeadTargetTransfersMeleeSegmentsToBackAndReadsNewDefense" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1370954723" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001239" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="DodgeHappensBeforeBlockAndConsumesNeitherBlockNorShield" fullname="Qiling.Tests.BattleEngineTests.DodgeHappensBeforeBlockAndConsumesNeitherBlockNorShield" methodname="DodgeHappensBeforeBlockAndConsumesNeitherBlockNorShield" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1290746162" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001542" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1031" name="DuplicateAndCrossWeaponEntitiesRejected" fullname="Qiling.Tests.BattleEngineTests.DuplicateAndCrossWeaponEntitiesRejected" methodname="DuplicateAndCrossWeaponEntitiesRejected" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="323858794" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000683" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1032" name="DurationExtensionSumsRelativeThenCeilsOnce" fullname="Qiling.Tests.BattleEngineTests.DurationExtensionSumsRelativeThenCeilsOnce" methodname="DurationExtensionSumsRelativeThenCeilsOnce" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1623703878" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000359" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1034" name="EveryWeaponCanFinishAllFourEncountersWithoutInfiniteLoop" fullname="Qiling.Tests.BattleEngineTests.EveryWeaponCanFinishAllFourEncountersWithoutInfiniteLoop" methodname="EveryWeaponCanFinishAllFourEncountersWithoutInfiniteLoop" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1615102406" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.076844" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="FlyingShieldAlwaysSwitchesAndCanReturnToEarlierTarget" fullname="Qiling.Tests.BattleEngineTests.FlyingShieldAlwaysSwitchesAndCanReturnToEarlierTarget" methodname="FlyingShieldAlwaysSwitchesAndCanReturnToEarlierTarget" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="675516530" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001309" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="FlyingShieldStopsWithOneLegalTarget" fullname="Qiling.Tests.BattleEngineTests.FlyingShieldStopsWithOneLegalTarget" methodname="FlyingShieldStopsWithOneLegalTarget" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1564039897" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000678" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1033" name="FreezeResilienceAndSourceNextTurnUnfreezePreserveProgress" fullname="Qiling.Tests.BattleEngineTests.FreezeResilienceAndSourceNextTurnUnfreezePreserveProgress" methodname="FreezeResilienceAndSourceNextTurnUnfreezePreserveProgress" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="442438507" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000659" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1029" name="GuardCannotSelectSelfButItsTraitWorksInLaterSlot" fullname="Qiling.Tests.BattleEngineTests.GuardCannotSelectSelfButItsTraitWorksInLaterSlot" methodname="GuardCannotSelectSelfButItsTraitWorksInLaterSlot" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="176541055" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000579" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="HalfUpRoundAndDefenseFormulaArePerSegment" fullname="Qiling.Tests.BattleEngineTests.HalfUpRoundAndDefenseFormulaArePerSegment" methodname="HalfUpRoundAndDefenseFormulaArePerSegment" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="626351852" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000441" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="MainCardsOwnTraitUsesSlotOneAndActualSequenceLength" fullname="Qiling.Tests.BattleEngineTests.MainCardsOwnTraitUsesSlotOneAndActualSequenceLength" methodname="MainCardsOwnTraitUsesSlotOneAndActualSequenceLength" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="903375073" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000416" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="MeleeFrontRestrictionAndRangedBackSelection" fullname="Qiling.Tests.BattleEngineTests.MeleeFrontRestrictionAndRangedBackSelection" methodname="MeleeFrontRestrictionAndRangedBackSelection" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1665369714" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000547" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="OneMainSkillMismatchOccupiesSlotAndTotalChainUsesAllCards" fullname="Qiling.Tests.BattleEngineTests.OneMainSkillMismatchOccupiesSlotAndTotalChainUsesAllCards" methodname="OneMainSkillMismatchOccupiesSlotAndTotalChainUsesAllCards" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1447490265" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000550" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1017" name="PoisonReadsInstantStacksAbsorbsShieldThenLosesOne" fullname="Qiling.Tests.BattleEngineTests.PoisonReadsInstantStacksAbsorbsShieldThenLosesOne" methodname="PoisonReadsInstantStacksAbsorbsShieldThenLosesOne" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1471638320" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000432" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1030" name="PreviewUsesSameDamageButNeverMutatesBattleOrRandom" fullname="Qiling.Tests.BattleEngineTests.PreviewUsesSameDamageButNeverMutatesBattleOrRandom" methodname="PreviewUsesSameDamageButNeverMutatesBattleOrRandom" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1584588918" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.005511" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="PursuitSlotRetentionSeparateFromCount" fullname="Qiling.Tests.BattleEngineTests.PursuitSlotRetentionSeparateFromCount" methodname="PursuitSlotRetentionSeparateFromCount" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="87712320" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000536" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1025" name="ReflectionReadsAbsorbedShieldPlusActualHpAndCannotReflectRecursively" fullname="Qiling.Tests.BattleEngineTests.ReflectionReadsAbsorbedShieldPlusActualHpAndCannotReflectRecursively" methodname="ReflectionReadsAbsorbedShieldPlusActualHpAndCannotReflectRecursively" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="197052450" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000758" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="SelfAppliedDurationSkipsCurrentActionAndOtherUnitsDoNotTickIt" fullname="Qiling.Tests.BattleEngineTests.SelfAppliedDurationSkipsCurrentActionAndOtherUnitsDoNotTickIt" methodname="SelfAppliedDurationSkipsCurrentActionAndOtherUnitsDoNotTickIt" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="2146029957" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000561" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1027" name="SelfPullSurvivesActionResetAndAlreadyStartedActionIsNotCancelledByPush" fullname="Qiling.Tests.BattleEngineTests.SelfPullSurvivesActionResetAndAlreadyStartedActionIsNotCancelledByPush" methodname="SelfPullSurvivesActionResetAndAlreadyStartedActionIsNotCancelledByPush" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="449226911" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000539" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="SevenNativeSegmentsConsumeFiveBlocksAndEachRemainingSegmentRounds" fullname="Qiling.Tests.BattleEngineTests.SevenNativeSegmentsConsumeFiveBlocksAndEachRemainingSegmentRounds" methodname="SevenNativeSegmentsConsumeFiveBlocksAndEachRemainingSegmentRounds" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1107090896" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000751" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="ShieldBreakConsumesOnceAndNoPursuitResourceBonus" fullname="Qiling.Tests.BattleEngineTests.ShieldBreakConsumesOnceAndNoPursuitResourceBonus" methodname="ShieldBreakConsumesOnceAndNoPursuitResourceBonus" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1545375059" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000666" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="SimultaneousReadyOrderReproducibleAndWaitingPushRemovesQualification" fullname="Qiling.Tests.BattleEngineTests.SimultaneousReadyOrderReproducibleAndWaitingPushRemovesQualification" methodname="SimultaneousReadyOrderReproducibleAndWaitingPushRemovesQualification" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="895376442" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001658" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="SpeedNaturallyDeterminesFirstActor" fullname="Qiling.Tests.BattleEngineTests.SpeedNaturallyDeterminesFirstActor" methodname="SpeedNaturallyDeterminesFirstActor" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="2039991172" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000466" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1020" name="StackableWeaknessAddsAndRefreshesInsteadOfMultiplyingDuration" fullname="Qiling.Tests.BattleEngineTests.StackableWeaknessAddsAndRefreshesInsteadOfMultiplyingDuration" methodname="StackableWeaknessAddsAndRefreshesInsteadOfMultiplyingDuration" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1217167371" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000496" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="SweepSplitsBonusAcrossActualNativeTargets" fullname="Qiling.Tests.BattleEngineTests.SweepSplitsBonusAcrossActualNativeTargets" methodname="SweepSplitsBonusAcrossActualNativeTargets" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="1139478195" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000632" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="TimelinePausesWhilePlayerComposesAndPreservesOtherProgress" fullname="Qiling.Tests.BattleEngineTests.TimelinePausesWhilePlayerComposesAndPreservesOtherProgress" methodname="TimelinePausesWhilePlayerComposesAndPreservesOtherProgress" classname="Qiling.Tests.BattleEngineTests" runstate="Runnable" seed="952146752" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001220" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1035" name="DebugLoadoutTests" fullname="Qiling.Tests.DebugLoadoutTests" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.034776" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1047" name="AppliedSnapshotDoesNotFollowDraftAndRefusesEnemyActionWindow" fullname="Qiling.Tests.DebugLoadoutTests.AppliedSnapshotDoesNotFollowDraftAndRefusesEnemyActionWindow" methodname="AppliedSnapshotDoesNotFollowDraftAndRefusesEnemyActionWindow" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="698648726" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.002229" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1039" name="BatchKeepsOtherPositionsAndSequenceAndIsAtomicWhenSlotWouldHaveGap" fullname="Qiling.Tests.DebugLoadoutTests.BatchKeepsOtherPositionsAndSequenceAndIsAtomicWhenSlotWouldHaveGap" methodname="BatchKeepsOtherPositionsAndSequenceAndIsAtomicWhenSlotWouldHaveGap" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="780999438" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001780" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="CanUseDuplicateAndMismatchedTraitsWithoutChangingSkillOrCatalog" fullname="Qiling.Tests.DebugLoadoutTests.CanUseDuplicateAndMismatchedTraitsWithoutChangingSkillOrCatalog" methodname="CanUseDuplicateAndMismatchedTraitsWithoutChangingSkillOrCatalog" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="238716973" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000714" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1049" name="DetailedTotalsSeparateCalculatedShieldLifeAndOverkillPerTarget" fullname="Qiling.Tests.DebugLoadoutTests.DetailedTotalsSeparateCalculatedShieldLifeAndOverkillPerTarget" methodname="DetailedTotalsSeparateCalculatedShieldLifeAndOverkillPerTarget" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="1438576530" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001020" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1037" name="EnforcesOneToThreeAndRejectsUnimplementedOrPendingWithoutMutation" fullname="Qiling.Tests.DebugLoadoutTests.EnforcesOneToThreeAndRejectsUnimplementedOrPendingWithoutMutation" methodname="EnforcesOneToThreeAndRejectsUnimplementedOrPendingWithoutMutation" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="875874836" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000599" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1048" name="ExistingCounterRetainsCastTraitsAfterConfigurationApplied" fullname="Qiling.Tests.DebugLoadoutTests.ExistingCounterRetainsCastTraitsAfterConfigurationApplied" methodname="ExistingCounterRetainsCastTraitsAfterConfigurationApplied" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="1096794366" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001024" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1050" name="FivePursuitPreviewNeverChangesRngRecordsOrReplayAndMatchesResolution" fullname="Qiling.Tests.DebugLoadoutTests.FivePursuitPreviewNeverChangesRngRecordsOrReplayAndMatchesResolution" methodname="FivePursuitPreviewNeverChangesRngRecordsOrReplayAndMatchesResolution" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="1379947813" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.006441" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1045" name="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire" fullname="Qiling.Tests.DebugLoadoutTests.FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.007936" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1041" name="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(0,54,15)" fullname="Qiling.Tests.DebugLoadoutTests.FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(0,54,15)" methodname="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="983968765" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001990" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1042" name="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(1,56,0)" fullname="Qiling.Tests.DebugLoadoutTests.FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(1,56,0)" methodname="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="49617093" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000884" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1043" name="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(2,133,15)" fullname="Qiling.Tests.DebugLoadoutTests.FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(2,133,15)" methodname="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="1227835637" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001338" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1044" name="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(3,254,15)" fullname="Qiling.Tests.DebugLoadoutTests.FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire(3,254,15)" methodname="FourBuildsHaveIndependentGoldenDamageWithoutIncreasingRapidFire" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="647067830" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001537" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1038" name="InitialSpearPlaceholderCanBeRestoredButNeverAssignedToOtherCards" fullname="Qiling.Tests.DebugLoadoutTests.InitialSpearPlaceholderCanBeRestoredButNeverAssignedToOtherCards" methodname="InitialSpearPlaceholderCanBeRestoredButNeverAssignedToOtherCards" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="527138604" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.000819" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="RepeatedBonusIsOnePoolSharedAcrossSevenNativeHitsOnly" fullname="Qiling.Tests.DebugLoadoutTests.RepeatedBonusIsOnePoolSharedAcrossSevenNativeHitsOnly" methodname="RepeatedBonusIsOnePoolSharedAcrossSevenNativeHitsOnly" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="762429208" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.002161" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1051" name="SameSeedAndRecordedActionsReproduceNewRunsIncludingTransferredHits" fullname="Qiling.Tests.DebugLoadoutTests.SameSeedAndRecordedActionsReproduceNewRunsIncludingTransferredHits" methodname="SameSeedAndRecordedActionsReproduceNewRunsIncludingTransferredHits" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="27487581" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.003276" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1040" name="WeaponsAreIndependentAndJsonRoundTripPreservesAllProfiles" fullname="Qiling.Tests.DebugLoadoutTests.WeaponsAreIndependentAndJsonRoundTripPreservesAllProfiles" methodname="WeaponsAreIndependentAndJsonRoundTripPreservesAllProfiles" classname="Qiling.Tests.DebugLoadoutTests" runstate="Runnable" seed="1575527421" result="Passed" start-time="2026-10-20 06:05:40Z" end-time="2026-10-20 06:05:40Z" duration="0.001953" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/student/AppData/LocalLow/DefaultCompany/nine-card-roguelike\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

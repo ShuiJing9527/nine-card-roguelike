@@ -1,0 +1,286 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383a89de8536a1840bd18103e4ff5981, type: 3}
+  m_Name: BattleViewConfig
+  m_EditorClassIdentifier: 
+  selectionPage: {fileID: 8078592536901761881, guid: bcfb90c075830cd47ab4eafb42046119, type: 3}
+  battlePage: {fileID: 2989919572767065163, guid: e19119be771f4b14bbec39ea3b721af6, type: 3}
+  elementPrefab: {fileID: 8110368690302505251, guid: 41b4fc58b7df5b24da0419281e20cf57, type: 3}
+  panels:
+  - id: Settings Overlay
+    prefab: {fileID: 689889415446467147, guid: 5344312ffed57f343beacc6a3a223cf4, type: 3}
+  - id: Preview Overlay
+    prefab: {fileID: 8145510237856307089, guid: 18e20fa206a904643a0ac31f50f00b3e, type: 3}
+  - id: Log Overlay
+    prefab: {fileID: 7340740718839392555, guid: a91de2edd92dd2b4b96f8934523d6087, type: 3}
+  - id: Trait Test Overlay
+    prefab: {fileID: 628059793315931866, guid: 209512e8491a61f449bd6d9c1d03b906, type: 3}
+  font: {fileID: 12800000, guid: 1e9b77d6c37aff24db6e1dabfc56b543, type: 2}
+  text: {r: 0.89, g: 0.93, b: 0.98, a: 1}
+  muted: {r: 0.62, g: 0.7, b: 0.8, a: 1}
+  gold: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  player: {r: 0.26, g: 0.72, b: 0.88, a: 1}
+  cardIdle: {r: 0.065, g: 0.12, b: 0.18, a: 1}
+  cardSelected: {r: 0.16, g: 0.25, b: 0.3, a: 1}
+  cardFrame: {fileID: 0}
+  buttonSprite: {fileID: 0}
+  panelSprite: {fileID: 0}
+  shieldIcon: {fileID: 0}
+  choiceBorderWidth: 2
+  units:
+  - id: "\u730E\u5F13"
+    icon: {fileID: 0}
+    color: {r: 0.26, g: 0.72, b: 0.88, a: 1}
+  - id: "\u5927\u5251"
+    icon: {fileID: 0}
+    color: {r: 0.26, g: 0.72, b: 0.88, a: 1}
+  - id: "\u6CD5\u6756"
+    icon: {fileID: 0}
+    color: {r: 0.26, g: 0.72, b: 0.88, a: 1}
+  - id: "\u957F\u77DB"
+    icon: {fileID: 0}
+    color: {r: 0.26, g: 0.72, b: 0.88, a: 1}
+  - id: "\u76FE\u724C"
+    icon: {fileID: 0}
+    color: {r: 0.26, g: 0.72, b: 0.88, a: 1}
+  - id: "\u666E\u901A\u53F2\u83B1\u59C6"
+    icon: {fileID: 0}
+    color: {r: 0.3, g: 0.72, b: 0.48, a: 1}
+  - id: "\u7194\u5CA9\u53F2\u83B1\u59C6"
+    icon: {fileID: 0}
+    color: {r: 0.88, g: 0.36, b: 0.18, a: 1}
+  - id: "\u6BD2\u7D20\u53F2\u83B1\u59C6"
+    icon: {fileID: 0}
+    color: {r: 0.3, g: 0.72, b: 0.48, a: 1}
+  - id: "\u5F69\u8679\u53F2\u83B1\u59C6"
+    icon: {fileID: 0}
+    color: {r: 0.67, g: 0.48, b: 0.85, a: 1}
+  types:
+  - id: Offense
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Survival
+    icon: {fileID: 0}
+    color: {r: 0.31, g: 0.79, b: 0.72, a: 1}
+  - id: Status
+    icon: {fileID: 0}
+    color: {r: 0.74, g: 0.52, b: 0.95, a: 1}
+  - id: Universal
+    icon: {fileID: 0}
+    color: {r: 0.74, g: 0.52, b: 0.95, a: 1}
+  - id: OffenseSurvival
+    icon: {fileID: 0}
+    color: {r: 0.74, g: 0.52, b: 0.95, a: 1}
+  - id: Pending
+    icon: {fileID: 0}
+    color: {r: 0.74, g: 0.52, b: 0.95, a: 1}
+  traits:
+  - id: "\u8FFD\u51FB"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u950B\u9510"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u7A7F\u7532"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u58C1\u969C"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u589E\u5E45"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u7075\u52A8"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u6DF1\u5316"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u5EF6\u7EED"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u5F3A\u5316"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u7834\u52BF"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u987D\u5F3A"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u7834\u9B54"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u5F85\u5B9A"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u4E13\u6CE8"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u955C\u50CF"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u8FDE\u9501\u53CD\u5E94"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u538B\u5236"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u7EC8\u7ED3"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u4E58\u9699"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u88C2\u9699"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u8D2F\u901A"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u8FDE\u9501\u6536\u76CA"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u8FDE\u9501\u84C4\u52BF"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u8FDE\u9501\u534F\u594F"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u540C\u8C03"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: "\u4EA4\u7EC7"
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  statuses:
+  - id: Shield
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Heal
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Cleanse
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Poison
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Burn
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Bleed
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Weakness
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: AttackUp
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: SpecialAttackUp
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: DefenseUp
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: SpecialDefenseUp
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: SpeedUp
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: DefensePercent
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: SpecialDefensePercent
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: SpeedPercent
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Evade
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: CritUp
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: DebuffImmune
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Block
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: MeleeReduction
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Reflect
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: ShieldBoost
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Push
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Guard
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  - id: Freeze
+    icon: {fileID: 0}
+    color: {r: 0.98, g: 0.75, b: 0.36, a: 1}
+  hoverLift: 65
+  hoverScale: 1.12
+  hoverDuration: 0.1
+  selectPulse: 0.98
+  cardArrangeDuration: 0.16
+  cardCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cardHoverSound: {fileID: 0}
+  cardAddSound: {fileID: 0}
+  cardRemoveSound: {fileID: 0}
+  playerPlaceholder: {fileID: 8004989159151309483, guid: 73bc5f30bc6b2da40a7e0d8faae07261, type: 3}
+  enemyPlaceholder: {fileID: 1264214129474091105, guid: 888948e247ef1514c90ff68a98dea42f, type: 3}
+  backgroundPrefab: {fileID: 0}
+  defaultSkill: {fileID: 11400000, guid: c766205298aade643bdaf787f4e28720, type: 2}
+  avatarSeparation: 7
+  avatarLaneHeight: 44
+  unitInfoOffset: 12
+  intentOffset: 82
+  infoVerticalRange: {x: 440, y: 480}
+  intentVerticalRange: {x: 160, y: 330}
+  floatingTextLifetime: 0.85
+  floatingTextRise: 75
+  floatingTextPrefab: {fileID: 6696447059400540973, guid: d2de29faf00fa0b42b018255f8bc041e, type: 3}
+  statusIconPrefab: {fileID: 1450616934404627588, guid: e881a5c5d02dc484f87d92e2aa5a70a8, type: 3}

@@ -1,0 +1,6 @@
+{
+  "name": "Qiling.Editor",
+  "references": ["Qiling.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

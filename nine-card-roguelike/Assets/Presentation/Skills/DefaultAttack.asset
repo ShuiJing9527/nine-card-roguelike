@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312b60917fed0c84bb79e3c0501b5273, type: 3}
+  m_Name: DefaultAttack
+  m_EditorClassIdentifier: 
+  attackState: Attack
+  hitState: Hit
+  deathState: Death
+  idleState: Idle
+  attackClip: {fileID: 0}
+  hitClip: {fileID: 0}
+  deathClip: {fileID: 0}
+  windup: 0.12
+  travel: 0.1
+  hitDuration: 0.07
+  recovery: 0.12
+  deathDuration: 0.25
+  effectLifetime: 1
+  moveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  projectileCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  lungeDistance: 0.22
+  hitDistance: 0.08
+  hitScale: 0.96
+  projectileArc: 0.3
+  projectileScale: {x: 0.1, y: 0.1, z: 0.1}
+  effectScale: {x: 1, y: 1, z: 1}
+  projectileRotation: {x: 0, y: 0, z: 0}
+  placeholderProjectile: {r: 1, g: 0.75, b: 0.3, a: 1}
+  hitTint: {r: 1, g: 0.4, b: 0.35, a: 1}
+  castEffect: {fileID: 0}
+  projectile: {fileID: 3717977355704010587, guid: 05177babe0844724f9efd1ae0cf75943, type: 3}
+  impactEffect: {fileID: 3963715329587162770, guid: edc198121f810bb4cba596f0ab437271, type: 3}
+  endEffect: {fileID: 0}
+  castSound: {fileID: 0}
+  launchSound: {fileID: 0}
+  impactSound: {fileID: 0}
+  endSound: {fileID: 0}
+  volume: 0.6
+  shakeAmplitude: 0.025
+  shakeDuration: 0.08
+  shakeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-20 07:07:00Z" end-time="2026-10-20 07:07:05Z" duration="5.5007764">
+  <test-suite type="TestSuite" id="1014" name="nine-card-roguelike" fullname="nine-card-roguelike" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-20 07:07:00Z" end-time="2026-10-20 07:07:05Z" duration="5.500776" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1008" name="Qiling.Tests.PlayMode.dll" fullname="C:/YY/Card/nine-card-roguelike/nine-card-roguelike/Library/ScriptAssemblies/Qiling.Tests.PlayMode.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-20 07:07:00Z" end-time="2026-10-20 07:07:05Z" duration="5.490606" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="20756" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1009" name="Qiling" fullname="Qiling" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-20 07:07:00Z" end-time="2026-10-20 07:07:05Z" duration="5.489439" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1010" name="Tests" fullname="Qiling.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-20 07:07:00Z" end-time="2026-10-20 07:07:05Z" duration="5.488604" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="BattleLayoutTests" fullname="Qiling.Tests.BattleLayoutTests" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 07:07:00Z" end-time="2026-10-20 07:07:03Z" duration="2.833657" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="FanHoverHasStableDistinctClickableBandsAndScrollableDetails" fullname="Qiling.Tests.BattleLayoutTests.FanHoverHasStableDistinctClickableBandsAndScrollableDetails" methodname="FanHoverHasStableDistinctClickableBandsAndScrollableDetails" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" seed="521348646" result="Passed" start-time="2026-10-20 07:07:00Z" end-time="2026-10-20 07:07:01Z" duration="1.112823" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="LayoutFitsMultipleAspectRatiosAndModalBlocksBattleInput" fullname="Qiling.Tests.BattleLayoutTests.LayoutFitsMultipleAspectRatiosAndModalBlocksBattleInput" methodname="LayoutFitsMultipleAspectRatiosAndModalBlocksBattleInput" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" seed="31958320" result="Passed" start-time="2026-10-20 07:07:01Z" end-time="2026-10-20 07:07:02Z" duration="1.282465" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="SharedRailReadsProgressAndSeparatesCoincidentPortraitsWithoutChangingRules" fullname="Qiling.Tests.BattleLayoutTests.SharedRailReadsProgressAndSeparatesCoincidentPortraitsWithoutChangingRules" methodname="SharedRailReadsProgressAndSeparatesCoincidentPortraitsWithoutChangingRules" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" seed="771763675" result="Passed" start-time="2026-10-20 07:07:02Z" end-time="2026-10-20 07:07:03Z" duration="0.423206" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1005" name="DemoFlowTests" fullname="Qiling.Tests.DemoFlowTests" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 07:07:03Z" end-time="2026-10-20 07:07:05Z" duration="2.653152" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1006" name="CanChooseWeaponComposeTargetConfirmRetryAndReturn" fullname="Qiling.Tests.DemoFlowTests.CanChooseWeaponComposeTargetConfirmRetryAndReturn" methodname="CanChooseWeaponComposeTargetConfirmRetryAndReturn" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" seed="987094821" result="Passed" start-time="2026-10-20 07:07:03Z" end-time="2026-10-20 07:07:04Z" duration="1.129572" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" fullname="Qiling.Tests.DemoFlowTests.FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" methodname="FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" seed="789521858" result="Passed" start-time="2026-10-20 07:07:04Z" end-time="2026-10-20 07:07:05Z" duration="1.509027" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/student/AppData/LocalLow/DefaultCompany/nine-card-roguelike\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

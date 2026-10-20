@@ -1,0 +1,6 @@
+{
+  "name": "Qiling.Runtime",
+  "rootNamespace": "Qiling",
+  "references": ["Unity.ugui", "Unity.InputSystem"],
+  "autoReferenced": true
+}

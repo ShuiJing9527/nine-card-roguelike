@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-20 06:24:45Z" end-time="2026-10-20 06:24:48Z" duration="2.3399527">
+  <test-suite type="TestSuite" id="1010" name="nine-card-roguelike" fullname="nine-card-roguelike" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 06:24:45Z" end-time="2026-10-20 06:24:48Z" duration="2.339953" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1004" name="Qiling.Tests.PlayMode.dll" fullname="C:/YY/Card/nine-card-roguelike/nine-card-roguelike/Library/ScriptAssemblies/Qiling.Tests.PlayMode.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 06:24:45Z" end-time="2026-10-20 06:24:48Z" duration="2.332297" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="32120" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1005" name="Qiling" fullname="Qiling" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 06:24:45Z" end-time="2026-10-20 06:24:48Z" duration="2.331285" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1006" name="Tests" fullname="Qiling.Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 06:24:45Z" end-time="2026-10-20 06:24:48Z" duration="2.330607" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="DemoFlowTests" fullname="Qiling.Tests.DemoFlowTests" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 06:24:45Z" end-time="2026-10-20 06:24:48Z" duration="2.329320" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="CanChooseWeaponComposeTargetConfirmRetryAndReturn" fullname="Qiling.Tests.DemoFlowTests.CanChooseWeaponComposeTargetConfirmRetryAndReturn" methodname="CanChooseWeaponComposeTargetConfirmRetryAndReturn" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" seed="729106996" result="Passed" start-time="2026-10-20 06:24:45Z" end-time="2026-10-20 06:24:47Z" duration="1.104174" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" fullname="Qiling.Tests.DemoFlowTests.FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" methodname="FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" seed="328428153" result="Passed" start-time="2026-10-20 06:24:47Z" end-time="2026-10-20 06:24:48Z" duration="1.212244" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/student/AppData/LocalLow/DefaultCompany/nine-card-roguelike\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

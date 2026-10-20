@@ -1,0 +1,2876 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9137900f0d4d4c48b6d77a7d9b88279, type: 3}
+  m_Name: BattleCatalog
+  m_EditorClassIdentifier: 
+  sourceVersion: "2026-10-20 \u6D4B\u8BD5\u914D\u7F6E\uFF08\u89C4\u5219\u4E66\u6587\u4EF6\u540D2026-10-16\uFF09"
+  rules:
+    defenseConstant: 10
+    evadeCap: 0.75
+    penetrationCap: 1
+    critCap: 1
+    sustainedReductionCap: 0.75
+    pushCap: 0.8
+    repeatCap: 0.8
+    combinedReductionCap: 0.9
+    pursuitRetention:
+    - 0.9
+    - 0.8
+    - 0.7
+    - 0.6
+    - 0.5
+    poisonPerStack: 2
+    burnDamage: 5
+    freezeResilience: 3
+    reflectAfterDeath: 1
+    enableLandingTest: 1
+  weapons:
+  - portrait: {fileID: 0}
+    id: "\u730E\u5F13"
+    title: "\u730E\u5F13"
+    note: "\u56FA\u6709\u80FD\u529B\u5F85\u5B9A\uFF0C\u9996\u7248\u4E0D\u542F\u7528\u5373\u65F6\u518D\u52A8\u3002"
+    panel:
+      hp: 100
+      attack: 15
+      specialAttack: 2
+      defense: 3
+      specialDefense: 2
+      speed: 8
+      crit: 0.05
+      critDamage: 1.5
+    cards:
+    - "\u730E\u5F13_1"
+    - "\u730E\u5F13_2"
+    - "\u730E\u5F13_3"
+    - "\u730E\u5F13_4"
+    - "\u730E\u5F13_5"
+    - "\u730E\u5F13_6"
+    - "\u730E\u5F13_7"
+    - "\u730E\u5F13_8"
+    - "\u730E\u5F13_9"
+    visualPrefab: {fileID: 8004989159151309483, guid: 73bc5f30bc6b2da40a7e0d8faae07261, type: 3}
+  - portrait: {fileID: 0}
+    id: "\u5927\u5251"
+    title: "\u5927\u5251"
+    note: "\u56FA\u6709\u80FD\u529B\u5F85\u5B9A\uFF0C\u9996\u7248\u4E0D\u542F\u7528\u5373\u65F6\u518D\u52A8\u3002"
+    panel:
+      hp: 150
+      attack: 24
+      specialAttack: 1
+      defense: 8
+      specialDefense: 3
+      speed: 5
+      crit: 0.05
+      critDamage: 1.5
+    cards:
+    - "\u5927\u5251_1"
+    - "\u5927\u5251_2"
+    - "\u5927\u5251_3"
+    - "\u5927\u5251_4"
+    - "\u5927\u5251_5"
+    - "\u5927\u5251_6"
+    - "\u5927\u5251_7"
+    - "\u5927\u5251_8"
+    - "\u5927\u5251_9"
+    visualPrefab: {fileID: 8004989159151309483, guid: 73bc5f30bc6b2da40a7e0d8faae07261, type: 3}
+  - portrait: {fileID: 0}
+    id: "\u6CD5\u6756"
+    title: "\u6CD5\u6756"
+    note: "\u56FA\u6709\u80FD\u529B\u5F85\u5B9A\uFF0C\u9996\u7248\u4E0D\u542F\u7528\u5373\u65F6\u518D\u52A8\u3002"
+    panel:
+      hp: 120
+      attack: 6
+      specialAttack: 16
+      defense: 6
+      specialDefense: 10
+      speed: 6
+      crit: 0.05
+      critDamage: 1.5
+    cards:
+    - "\u6CD5\u6756_1"
+    - "\u6CD5\u6756_2"
+    - "\u6CD5\u6756_3"
+    - "\u6CD5\u6756_4"
+    - "\u6CD5\u6756_5"
+    - "\u6CD5\u6756_6"
+    - "\u6CD5\u6756_7"
+    - "\u6CD5\u6756_8"
+    - "\u6CD5\u6756_9"
+    visualPrefab: {fileID: 8004989159151309483, guid: 73bc5f30bc6b2da40a7e0d8faae07261, type: 3}
+  - portrait: {fileID: 0}
+    id: "\u957F\u77DB"
+    title: "\u957F\u77DB"
+    note: "\u56FA\u6709\u80FD\u529B\u5F85\u5B9A\uFF0C\u9996\u7248\u4E0D\u542F\u7528\u5373\u65F6\u518D\u52A8\u3002"
+    panel:
+      hp: 120
+      attack: 12
+      specialAttack: 2
+      defense: 7
+      specialDefense: 5
+      speed: 7
+      crit: 0.05
+      critDamage: 1.5
+    cards:
+    - "\u957F\u77DB_1"
+    - "\u957F\u77DB_2"
+    - "\u957F\u77DB_3"
+    - "\u957F\u77DB_4"
+    - "\u957F\u77DB_5"
+    - "\u957F\u77DB_6"
+    - "\u957F\u77DB_7"
+    - "\u957F\u77DB_8"
+    - "\u957F\u77DB_9"
+    visualPrefab: {fileID: 8004989159151309483, guid: 73bc5f30bc6b2da40a7e0d8faae07261, type: 3}
+  - portrait: {fileID: 0}
+    id: "\u76FE\u724C"
+    title: "\u76FE\u724C"
+    note: "\u56FA\u6709\u80FD\u529B\u5F85\u5B9A\uFF0C\u9996\u7248\u4E0D\u542F\u7528\u5373\u65F6\u518D\u52A8\u3002"
+    panel:
+      hp: 180
+      attack: 4
+      specialAttack: 2
+      defense: 18
+      specialDefense: 8
+      speed: 4
+      crit: 0.05
+      critDamage: 1.5
+    cards:
+    - "\u76FE\u724C_1"
+    - "\u76FE\u724C_2"
+    - "\u76FE\u724C_3"
+    - "\u76FE\u724C_4"
+    - "\u76FE\u724C_5"
+    - "\u76FE\u724C_6"
+    - "\u76FE\u724C_7"
+    - "\u76FE\u724C_8"
+    - "\u76FE\u724C_9"
+    visualPrefab: {fileID: 8004989159151309483, guid: 73bc5f30bc6b2da40a7e0d8faae07261, type: 3}
+  cards:
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_1"
+    skill: "\u8FDE\u5C04"
+    match: 0
+    traits:
+    - "\u8FFD\u51FB"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_2"
+    skill: "\u7834\u98CE\u7BAD"
+    match: 0
+    traits:
+    - "\u950B\u9510"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_3"
+    skill: "\u591A\u91CD\u626B\u5C04"
+    match: 0
+    traits:
+    - "\u7A7F\u7532"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_4"
+    skill: "\u75BE\u98CE\u62A4\u76FE"
+    match: 1
+    traits:
+    - "\u58C1\u969C"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_5"
+    skill: "\u7075\u5DE7\u95EA\u907F"
+    match: 1
+    traits:
+    - "\u589E\u5E45"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_6"
+    skill: "\u98CE\u4E4B\u9A71\u6563"
+    match: 1
+    traits:
+    - "\u7075\u52A8"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_7"
+    skill: "\u6BD2\u7BAD\u77E2"
+    match: 2
+    traits:
+    - "\u6DF1\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_8"
+    skill: "\u6270\u4E71\u5C04\u51FB"
+    match: 2
+    traits:
+    - "\u5EF6\u7EED"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u730E\u5F13_9"
+    skill: "\u9E70\u773C\u6821\u51C6"
+    match: 2
+    traits:
+    - "\u5F3A\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_1"
+    skill: "\u5288\u5C71\u65A9"
+    match: 0
+    traits:
+    - "\u950B\u9510"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_2"
+    skill: "\u6A2A\u626B\u5343\u519B"
+    match: 0
+    traits:
+    - "\u7A7F\u7532"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_3"
+    skill: "\u8FCE\u51FB\u67B6\u52BF"
+    match: 0
+    traits:
+    - "\u7834\u52BF"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_4"
+    skill: "\u67B6\u5251\u9632\u5FA1"
+    match: 1
+    traits:
+    - "\u58C1\u969C"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_5"
+    skill: "\u91CD\u6574\u65D7\u9F13"
+    match: 1
+    traits:
+    - "\u987D\u5F3A"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_6"
+    skill: "\u7834\u7F1A"
+    match: 1
+    traits:
+    - "\u5EF6\u7EED"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_7"
+    skill: "\u78D0\u77F3\u4E4B\u8EAF"
+    match: 2
+    traits:
+    - "\u589E\u5E45"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_8"
+    skill: "\u5A01\u6151"
+    match: 2
+    traits:
+    - "\u6DF1\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u5927\u5251_9"
+    skill: "\u72C2\u6218\u4E4B\u6012"
+    match: 2
+    traits:
+    - "\u5F3A\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_1"
+    skill: "\u9B54\u529B\u98DE\u5F39"
+    match: 0
+    traits:
+    - "\u950B\u9510"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_2"
+    skill: "\u9B54\u529B\u9707\u8361"
+    match: 0
+    traits:
+    - "\u7834\u9B54"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_3"
+    skill: "\u9644\u9B54\u6756\u51FB"
+    match: 0
+    traits:
+    - "\u7834\u52BF"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_4"
+    skill: "\u9B54\u529B\u5C4F\u969C"
+    match: 1
+    traits:
+    - "\u58C1\u969C"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_5"
+    skill: "\u6CBB\u6108\u672F"
+    match: 1
+    traits:
+    - "\u987D\u5F3A"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_6"
+    skill: "\u51C0\u5316\u672F"
+    match: 1
+    traits:
+    - "\u5EF6\u7EED"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_7"
+    skill: "\u9B54\u529B\u704C\u6CE8"
+    match: 2
+    traits:
+    - "\u5F3A\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_8"
+    skill: "\u5A01\u6151"
+    match: 2
+    traits:
+    - "\u6DF1\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u6CD5\u6756_9"
+    skill: "\u8F7B\u7FBD\u672F"
+    match: 2
+    traits:
+    - "\u589E\u5E45"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_1"
+    skill: "\u8D2F\u5FC3\u523A"
+    match: 0
+    traits:
+    - "\u950B\u9510"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_2"
+    skill: "\u8FDE\u73AF\u7A81\u523A"
+    match: 0
+    traits:
+    - "\u7A7F\u7532"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_3"
+    skill: "\u6311\u7A7A\u523A"
+    match: 0
+    traits:
+    - "\u8FFD\u51FB"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_4"
+    skill: "\u65CB\u77DB\u5FA1\u7BAD"
+    match: 1
+    traits:
+    - "\u5EF6\u7EED"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_5"
+    skill: "\u8C03\u606F"
+    match: 1
+    traits:
+    - "\u7075\u52A8"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_6"
+    skill: "\u62D2\u654C\u67B6\u52BF"
+    match: 1
+    traits:
+    - "\u5F85\u5B9A"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_7"
+    skill: "\u88C2\u4F24\u523A"
+    match: 2
+    traits:
+    - "\u6DF1\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_8"
+    skill: "\u538B\u9635"
+    match: 2
+    traits:
+    - "\u589E\u5E45"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u957F\u77DB_9"
+    skill: "\u8FC5\u653B\u67B6\u52BF"
+    match: 2
+    traits:
+    - "\u5F3A\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_1"
+    skill: "\u76FE\u51FB"
+    match: 0
+    traits:
+    - "\u950B\u9510"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_2"
+    skill: "\u56DE\u65CB\u98DE\u76FE"
+    match: 0
+    traits:
+    - "\u7A7F\u7532"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_3"
+    skill: "\u788E\u76FE\u51B2\u51FB"
+    match: 0
+    traits:
+    - "\u7834\u52BF"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_4"
+    skill: "\u575A\u76FE"
+    match: 1
+    traits:
+    - "\u58C1\u969C"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_5"
+    skill: "\u633A\u8EAB\u5B88\u62A4"
+    match: 1
+    traits:
+    - "\u589E\u5E45"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_6"
+    skill: "\u62A4\u76FE\u6CBB\u7597"
+    match: 1
+    traits:
+    - "\u987D\u5F3A"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_7"
+    skill: "\u94A2\u94C1\u610F\u5FD7"
+    match: 2
+    traits:
+    - "\u5F3A\u5316"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_8"
+    skill: "\u68D8\u7532\u58C1\u5792"
+    match: 2
+    traits:
+    - "\u5EF6\u7EED"
+  - frame: {fileID: 0}
+    art: {fileID: 0}
+    typeIcon: {fileID: 0}
+    id: "\u76FE\u724C_9"
+    skill: "\u62A4\u76FE\u5F3A\u5316"
+    match: 2
+    traits:
+    - "\u6DF1\u5316"
+  skills:
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8FDE\u5C04"
+    title: "\u8FDE\u5C04"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u5C04\u51FA 2\uFF0B\u603B\u8FDE\u9501\u6570
+      \u652F\u7BAD\uFF0C\u6BCF\u7BAD\u9020\u6210\u7269\u653B60%\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 0
+    reach: 2
+    target: 0
+    attribute: 0
+    pattern: 1
+    coefficient:
+      basis: 0.6
+      perChain: 0
+    segments:
+      basis: 2
+      perChain: 1
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u7834\u98CE\u7BAD"
+    title: "\u7834\u98CE\u7BAD"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u5C04\u51FA\u91CD\u7BAD\uFF0C\u9020\u6210\u7269\u653B\u3014300%\uFF0B\u603B\u8FDE\u9501\u6570\xD710%\u3015\u7684\u7269\u7406\u4F24\u5BB3\uFF1B\u672C\u6B21\u653B\u51FB\u53CA\u5176\u8FFD\u51FB\u65E0\u89C6\u76EE\u6807
+      \u603B\u8FDE\u9501\u6570\xD76% \u7684\u7269\u9632\u3002"
+    note: 
+    damageType: 0
+    reach: 2
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 3
+      perChain: 0.1
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0.06
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u591A\u91CD\u626B\u5C04"
+    title: "\u591A\u91CD\u626B\u5C04"
+    description: "\u5411\u6BCF\u540D\u654C\u4EBA\u5404\u5C04\u51FA\u4E00\u652F\u7BAD\uFF0C\u6BCF\u7BAD\u9020\u6210\u7269\u653B\u3014100%\uFF0B\u603B\u8FDE\u9501\u6570\xD710%\u3015\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 0
+    reach: 2
+    target: 2
+    attribute: 0
+    pattern: 2
+    coefficient:
+      basis: 1
+      perChain: 0.1
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u75BE\u98CE\u62A4\u76FE"
+    title: "\u75BE\u98CE\u62A4\u76FE"
+    description: "\u83B7\u5F97\u76F8\u5F53\u4E8E \u7269\u653B\xD7\u3014200%\uFF0B\u603B\u8FDE\u9501\u6570\xD720%\u3015
+      \u7684\u62A4\u76FE\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 0
+      attribute: 0
+      value:
+        basis: 2
+        perChain: 0.2
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u7075\u5DE7\u95EA\u907F"
+    title: "\u7075\u5DE7\u95EA\u907F"
+    description: "\u95EA\u907F\u7387\u63D0\u9AD8 \u603B\u8FDE\u9501\u6570\xD710%\uFF0C\u6301\u7EED
+      1\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 15
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.1
+      duration: 1
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u98CE\u4E4B\u9A71\u6563"
+    title: "\u98CE\u4E4B\u9A71\u6563"
+    description: "\u79FB\u9664\u81EA\u8EAB \u603B\u8FDE\u9501\u6570 \u79CD\u968F\u673A\u51CF\u76CA\u72B6\u6001\uFF0C\u5E76\u6062\u590D\u76F8\u5F53\u4E8E
+      \u901F\u5EA6\xD7100% \u7684\u751F\u547D\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 2
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 1
+      attribute: 4
+      value:
+        basis: 1
+        perChain: 0
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u6BD2\u7BAD\u77E2"
+    title: "\u6BD2\u7BAD\u77E2"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u5C04\u51FA\u6BD2\u7BAD\uFF0C\u9020\u6210\u7269\u653B50%\u7684\u7269\u7406\u4F24\u5BB3\uFF1B\u547D\u4E2D\u540E\u65BD\u52A0
+      \u603B\u8FDE\u9501\u6570 \u5C42\u4E2D\u6BD2\u3002"
+    note: 
+    damageType: 0
+    reach: 2
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0.5
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 3
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 0
+      onHit: 1
+      stacking: 1
+      percent: 0
+      rangedOnly: 0
+      negative: 1
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u6270\u4E71\u5C04\u51FB"
+    title: "\u6270\u4E71\u5C04\u51FB"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u5C04\u51FB\uFF0C\u9020\u6210\u7269\u653B100%\u7684\u7269\u7406\u4F24\u5BB3\uFF1B\u547D\u4E2D\u540E\u51FB\u9000\u76EE\u6807
+      \u603B\u8FDE\u9501\u6570\xD75% \u7684\u884C\u52A8\u6761\u3002"
+    note: 
+    damageType: 0
+    reach: 2
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 1
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 22
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.05
+      duration: 0
+      onHit: 1
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u9E70\u773C\u6821\u51C6"
+    title: "\u9E70\u773C\u6821\u51C6"
+    description: "\u7269\u653B\u63D0\u9AD8 \u603B\u8FDE\u9501\u6570\uFF0C\u6301\u7EED
+      2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 7
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u5288\u5C71\u65A9"
+    title: "\u5288\u5C71\u65A9"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u6325\u51FA\u91CD\u65A9\uFF0C\u9020\u6210\u7269\u653B\u3014400%\uFF0B\u603B\u8FDE\u9501\u6570\xD715%\u3015\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 4
+      perChain: 0.15
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u6A2A\u626B\u5343\u519B"
+    title: "\u6A2A\u626B\u5343\u519B"
+    description: "\u6325\u5251\u6A2A\u626B\u654C\u65B9\u524D\u6392\uFF0C\u5BF9\u6BCF\u540D\u76EE\u6807\u9020\u6210\u7269\u653B\u3014135%\uFF0B\u603B\u8FDE\u9501\u6570\xD715%\u3015\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 1
+    attribute: 0
+    pattern: 2
+    coefficient:
+      basis: 1.35
+      perChain: 0.15
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8FCE\u51FB\u67B6\u52BF"
+    title: "\u8FCE\u51FB\u67B6\u52BF"
+    description: "\u8FDB\u5165\u53CD\u51FB\u59FF\u6001\uFF0C\u6301\u7EED1\u56DE\u5408\u3002\u88AB\u654C\u4EBA\u7684\u76F4\u63A5\u653B\u51FB\u547D\u4E2D\u6216\u6210\u529F\u683C\u6321\u540E\uFF0C\u82E5\u653B\u51FB\u8005\u7B26\u5408\u8FD1\u6218\u76EE\u6807\u89C4\u5219\uFF0C\u5BF9\u5176\u53D1\u52A8\u4E00\u6B21\u53CD\u51FB\uFF0C\u9020\u6210\u7269\u653B\u3014200%\uFF0B\u603B\u8FDE\u9501\u6570\xD715%\u3015\u7684\u7269\u7406\u4F24\u5BB3\u3002\u6BCF\u6B21\u654C\u65B9\u51FA\u62DB\u6700\u591A\u89E6\u53D1\u4E00\u6B21\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 3
+    attribute: 0
+    pattern: 4
+    coefficient:
+      basis: 2
+      perChain: 0.15
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 1
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u67B6\u5251\u9632\u5FA1"
+    title: "\u67B6\u5251\u9632\u5FA1"
+    description: "\u83B7\u5F97\u76F8\u5F53\u4E8E \u7269\u9632\xD7\u3014150%\uFF0B\u603B\u8FDE\u9501\u6570\xD720%\u3015
+      \u7684\u62A4\u76FE\uFF0C\u8FDB\u5165\u62DB\u67B6\u59FF\u6001\uFF0C\u6301\u7EED1\u56DE\u5408\uFF0C\u53EF\u683C\u63211\u4E2A\u76F4\u63A5\u653B\u51FB\u6BB5\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 0
+      attribute: 2
+      value:
+        basis: 1.5
+        perChain: 0.2
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 18
+      attribute: 0
+      value:
+        basis: 1
+        perChain: 0
+      duration: 1
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u91CD\u6574\u65D7\u9F13"
+    title: "\u91CD\u6574\u65D7\u9F13"
+    description: "\u6062\u590D\u81EA\u8EAB \u5DF2\u635F\u5931\u751F\u547D\xD7\u301420%\uFF0B\u603B\u8FDE\u9501\u6570\xD78%\u3015
+      \u7684\u751F\u547D\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 1
+      attribute: 6
+      value:
+        basis: 0.2
+        perChain: 0.08
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u7834\u7F1A"
+    title: "\u7834\u7F1A"
+    description: "\u79FB\u9664\u81EA\u8EAB \u603B\u8FDE\u9501\u6570 \u79CD\u968F\u673A\u51CF\u76CA\u72B6\u6001\uFF0C\u8FDB\u5165\u62DB\u67B6\u59FF\u6001\uFF0C\u6301\u7EED
+      1\u56DE\u5408\uFF0C\u53EF\u683C\u6321 1\u6B21\u76F4\u63A5\u653B\u51FB\u6BB5\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 2
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 18
+      attribute: 0
+      value:
+        basis: 1
+        perChain: 0
+      duration: 1
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u78D0\u77F3\u4E4B\u8EAF"
+    title: "\u78D0\u77F3\u4E4B\u8EAF"
+    description: "\u7269\u9632\u4E0E\u7279\u9632\u63D0\u9AD8 \u603B\u8FDE\u9501\u6570\xD710%\uFF0C\u6301\u7EED
+      2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 12
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 13
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u5A01\u6151"
+    title: "\u5A01\u6151"
+    description: "\u4F7F\u4E00\u540D\u654C\u4EBA\u83B7\u5F97 \u603B\u8FDE\u9501\u6570
+      \u5C42\u865A\u5F31\uFF0C\u6301\u7EED 2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 6
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 2
+      onHit: 0
+      stacking: 1
+      percent: 0
+      rangedOnly: 0
+      negative: 1
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u72C2\u6218\u4E4B\u6012"
+    title: "\u72C2\u6218\u4E4B\u6012"
+    description: "\u7269\u653B\u63D0\u9AD8 \u603B\u8FDE\u9501\u6570\xD72\uFF0C\u7269\u9632\u4E0E\u7279\u9632\u964D\u4F4E
+      30%\uFF0C\u6301\u7EED 2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 7
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 2
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 12
+      attribute: 0
+      value:
+        basis: -0.3
+        perChain: 0
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 1
+      pending: 0
+      note: 
+    - kind: 13
+      attribute: 0
+      value:
+        basis: -0.3
+        perChain: 0
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 1
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u9B54\u529B\u98DE\u5F39"
+    title: "\u9B54\u529B\u98DE\u5F39"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u53D1\u5C04\u9B54\u529B\u98DE\u5F39\uFF0C\u9020\u6210\u7279\u653B\u3014390%\uFF0B\u603B\u8FDE\u9501\u6570\xD714%\u3015\u7684\u7279\u6B8A\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 1
+    reach: 2
+    target: 0
+    attribute: 1
+    pattern: 0
+    coefficient:
+      basis: 3.9
+      perChain: 0.14
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u9B54\u529B\u9707\u8361"
+    title: "\u9B54\u529B\u9707\u8361"
+    description: "\u91CA\u653E\u9B54\u529B\u51B2\u51FB\uFF0C\u5BF9\u6240\u6709\u654C\u4EBA\u5404\u9020\u6210\u7279\u653B\u3014120%\uFF0B\u603B\u8FDE\u9501\u6570\xD712%\u3015\u7684\u7279\u6B8A\u4F24\u5BB3\uFF1B\u547D\u4E2D\u540E\u51FB\u9000\u8BE5\u76EE\u6807
+      \u603B\u8FDE\u9501\u6570\xD71% \u7684\u884C\u52A8\u6761\uFF0C\u6BCF\u540D\u76EE\u6807\u6BCF\u6B21\u51FA\u62DB\u6700\u591A\u4E00\u6B21\u3002"
+    note: 
+    damageType: 1
+    reach: 2
+    target: 2
+    attribute: 1
+    pattern: 2
+    coefficient:
+      basis: 1.2
+      perChain: 0.12
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 22
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.01
+      duration: 0
+      onHit: 1
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u9644\u9B54\u6756\u51FB"
+    title: "\u9644\u9B54\u6756\u51FB"
+    description: "\u4EE5\u9B54\u529B\u5F3A\u5316\u6CD5\u6756\uFF0C\u6572\u51FB\u4E00\u540D\u654C\u4EBA\uFF0C\u9020\u6210\u3014\u7269\u653B\uFF0B\u7279\u653B\u3015\xD7\u3014240%\uFF0B\u603B\u8FDE\u9501\u6570\xD712%\u3015\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 8
+    pattern: 0
+    coefficient:
+      basis: 2.4
+      perChain: 0.12
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u9B54\u529B\u5C4F\u969C"
+    title: "\u9B54\u529B\u5C4F\u969C"
+    description: "\u4F7F\u4E00\u540D\u5DF1\u65B9\u5355\u4F4D\u83B7\u5F97\u76F8\u5F53\u4E8E
+      \u65BD\u6CD5\u8005\u7279\u653B\xD7\u3014200%\uFF0B\u603B\u8FDE\u9501\u6570\xD720%\u3015
+      \u7684\u62A4\u76FE\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 4
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 0
+      attribute: 1
+      value:
+        basis: 2
+        perChain: 0.2
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u6CBB\u6108\u672F"
+    title: "\u6CBB\u6108\u672F"
+    description: "\u6062\u590D\u4E00\u540D\u5DF1\u65B9\u5355\u4F4D\u76F8\u5F53\u4E8E
+      \u65BD\u6CD5\u8005\u7279\u9632\xD7\u3014220%\uFF0B\u603B\u8FDE\u9501\u6570\xD725%\u3015
+      \u7684\u751F\u547D\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 4
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 1
+      attribute: 3
+      value:
+        basis: 2.2
+        perChain: 0.25
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u51C0\u5316\u672F"
+    title: "\u51C0\u5316\u672F"
+    description: "\u79FB\u9664\u4E00\u540D\u5DF1\u65B9\u5355\u4F4D \u603B\u8FDE\u9501\u6570
+      \u79CD\u968F\u673A\u51CF\u76CA\u72B6\u6001\uFF0C\u5E76\u4F7F\u5176\u83B7\u5F97\u51CF\u76CA\u514D\u75AB\uFF0C\u6301\u7EED1\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 4
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 2
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 17
+      attribute: 0
+      value:
+        basis: 1
+        perChain: 0
+      duration: 1
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u9B54\u529B\u704C\u6CE8"
+    title: "\u9B54\u529B\u704C\u6CE8"
+    description: "\u4F7F\u4E00\u540D\u5DF1\u65B9\u5355\u4F4D\u7684\u7279\u653B\u63D0\u9AD8
+      \u603B\u8FDE\u9501\u6570\xD72\uFF0C\u6301\u7EED2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 4
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 8
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 2
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8F7B\u7FBD\u672F"
+    title: "\u8F7B\u7FBD\u672F"
+    description: "\u4F7F\u4E00\u540D\u5DF1\u65B9\u5355\u4F4D\u7684\u901F\u5EA6\u63D0\u9AD8
+      \u603B\u8FDE\u9501\u6570\xD710%\uFF0C\u6301\u7EED2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 4
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 14
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8D2F\u5FC3\u523A"
+    title: "\u8D2F\u5FC3\u523A"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u53D1\u52A8\u7A81\u523A\uFF0C\u9020\u6210\u7269\u653B430%\u7684\u7269\u7406\u4F24\u5BB3\uFF1B\u672C\u6B21\u653B\u51FB\u7684\u66B4\u51FB\u7387\u63D0\u9AD8
+      \u603B\u8FDE\u9501\u6570\xD78%\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 4.3
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0.08
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8FDE\u73AF\u7A81\u523A"
+    title: "\u8FDE\u73AF\u7A81\u523A"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u8FDE\u7EED\u523A\u51FB \u603B\u8FDE\u9501\u6570
+      \u6B21\uFF0C\u6BCF\u6B21\u9020\u6210\u7269\u653B100%\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 0
+    pattern: 1
+    coefficient:
+      basis: 1
+      perChain: 0
+    segments:
+      basis: 0
+      perChain: 1
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u6311\u7A7A\u523A"
+    title: "\u6311\u7A7A\u523A"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u53D1\u52A8\u4E0A\u6311\u653B\u51FB\uFF0C\u9020\u6210\u7269\u653B\u3014165%\uFF0B\u603B\u8FDE\u9501\u6570\xD711%\u3015\u7684\u7269\u7406\u4F24\u5BB3\uFF0C\u5E76\u5C06\u5176\u6311\u98DE\u3002\u76EE\u6807\u843D\u5730\u6216\u78B0\u649E\u53E6\u4E00\u540D\u654C\u4EBA\u65F6\uFF0C\u518D\u5BF9\u88AB\u6311\u98DE\u76EE\u6807\u9020\u6210\u7269\u653B165%\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: "\u6D4B\u8BD5\uFF1A\u7B2C13\u9875\u7B2C\u4E8C\u6BB5165%\uFF1B\u7B2C08/18\u9875\u6709150%\u51B2\u7A81\u3002\u843D\u70B9/\u78B0\u649E\u989D\u5916\u76EE\u6807\u672A\u5B9E\u73B0\u3002"
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 1.65
+      perChain: 0.11
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 1.65
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u65CB\u77DB\u5FA1\u7BAD"
+    title: "\u65CB\u77DB\u5FA1\u7BAD"
+    description: "\u65CB\u8F6C\u957F\u77DB\u5F62\u6210\u9632\u5FA1\uFF0C\u6301\u7EED1\u56DE\u5408\uFF0C\u53EF\u683C\u6321
+      \u603B\u8FDE\u9501\u6570\xD72 \u4E2A\u8FDC\u7A0B\u76F4\u63A5\u653B\u51FB\u6BB5\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 18
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 2
+      duration: 1
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 1
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8C03\u606F"
+    title: "\u8C03\u606F"
+    description: "\u6062\u590D\u81EA\u8EAB\u76F8\u5F53\u4E8E \u901F\u5EA6\xD7\u3014150%\uFF0B\u603B\u8FDE\u9501\u6570\xD720%\u3015
+      \u7684\u751F\u547D\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 1
+      attribute: 4
+      value:
+        basis: 1.5
+        perChain: 0.2
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u62D2\u654C\u67B6\u52BF"
+    title: "\u62D2\u654C\u67B6\u52BF"
+    description: "\u8FDB\u5165\u62D2\u654C\u67B6\u52BF\uFF0C\u6301\u7EED1\u56DE\u5408\u3002\u53D7\u5230\u7684\u8FD1\u6218\u76F4\u63A5\u653B\u51FB\u4F24\u5BB3\u964D\u4F4E
+      \u603B\u8FDE\u9501\u6570\xD710%\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 19
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.1
+      duration: 1
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u88C2\u4F24\u523A"
+    title: "\u88C2\u4F24\u523A"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u523A\u51FA\u4E00\u51FB\uFF0C\u9020\u6210\u7269\u653B50%\u7684\u7269\u7406\u4F24\u5BB3\uFF1B\u547D\u4E2D\u540E\u65BD\u52A0
+      \u603B\u8FDE\u9501\u6570 \u5C42\u6D41\u8840\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0.5
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 5
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 0
+      onHit: 1
+      stacking: 1
+      percent: 0
+      rangedOnly: 0
+      negative: 1
+      pending: 1
+      note: "\u5F85\u5B9A\uFF1A\u6D41\u8840\u6301\u7EED/\u8870\u51CF/\u4F4D\u79FB\u4F24\u5BB3\u7CFB\u6570\uFF0C\u5F53\u524D\u4EC5\u8BB0\u5F55\u5C42\u6570\uFF0C\u4E0D\u9020\u6210\u6D41\u8840\u4F24\u5BB3\u3002"
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u538B\u9635"
+    title: "\u538B\u9635"
+    description: "\u4EE5\u957F\u77DB\u538B\u8FEB\u654C\u9635\uFF0C\u4F7F\u654C\u65B9\u524D\u6392\u6240\u6709\u5355\u4F4D\u7684\u884C\u52A8\u6761\u51FB\u9000
+      \u603B\u8FDE\u9501\u6570\xD73%\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 1
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 22
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.03
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8FC5\u653B\u67B6\u52BF"
+    title: "\u8FC5\u653B\u67B6\u52BF"
+    description: "\u81EA\u8EAB\u7269\u653B\u4E0E\u901F\u5EA6\u5404\u63D0\u9AD8 \u603B\u8FDE\u9501\u6570\uFF0C\u6301\u7EED2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 7
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 11
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u76FE\u51FB"
+    title: "\u76FE\u51FB"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u53D1\u52A8\u76FE\u51FB\uFF0C\u9020\u6210\u7269\u9632\u3014375%\uFF0B\u603B\u8FDE\u9501\u6570\xD715%\u3015\u7684\u7269\u7406\u4F24\u5BB3\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 2
+    pattern: 0
+    coefficient:
+      basis: 3.75
+      perChain: 0.15
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u56DE\u65CB\u98DE\u76FE"
+    title: "\u56DE\u65CB\u98DE\u76FE"
+    description: "\u5411\u4E00\u540D\u654C\u4EBA\u6295\u63B7\u76FE\u724C\uFF0C\u9020\u6210\u7269\u9632150%\u7684\u7269\u7406\u4F24\u5BB3\uFF0C\u968F\u540E\u6700\u591A\u968F\u673A\u5F39\u5C04
+      \u603B\u8FDE\u9501\u6570 \u6B21\uFF0C\u6BCF\u6B21\u9020\u6210\u7269\u9632105%\u7684\u7269\u7406\u4F24\u5BB3\u3002\u6BCF\u6B21\u5F39\u5C04\u5FC5\u987B\u6362\u5230\u53E6\u4E00\u540D\u5408\u6CD5\u654C\u4EBA\uFF1B\u6CA1\u6709\u53E6\u4E00\u540D\u5408\u6CD5\u654C\u4EBA\u65F6\u505C\u6B62\u3002"
+    note: 
+    damageType: 0
+    reach: 2
+    target: 0
+    attribute: 2
+    pattern: 3
+    coefficient:
+      basis: 1.5
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 1.05
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u788E\u76FE\u51B2\u51FB"
+    title: "\u788E\u76FE\u51B2\u51FB"
+    description: "\u6D88\u8017\u81EA\u8EAB\u5F53\u524D\u62A4\u76FE\u768450%\uFF0C\u5411\u4E00\u540D\u654C\u4EBA\u53D1\u52A8\u51B2\u51FB\u3002\u8BE5\u6BB5\u7269\u7406\u4F24\u5BB3\u7684\u57FA\u7840\u91CF\uFF1D\u7269\u653B\xD7\u3014375%\uFF0B\u603B\u8FDE\u9501\u6570\xD715%\u3015\uFF0B\u6D88\u8017\u62A4\u76FE\u503C\u7684300%\uFF0C\u518D\u7EDF\u4E00\u8BA1\u7B97\u7269\u9632\u51CF\u4F24\u3001\u589E\u4F24\u4E0E\u66B4\u51FB\u3002"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 3.75
+      perChain: 0.15
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0.5
+    shieldResource: 3
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u575A\u76FE"
+    title: "\u575A\u76FE"
+    description: "\u83B7\u5F97\u76F8\u5F53\u4E8E \u7269\u9632\xD7\u3014250%\uFF0B\u603B\u8FDE\u9501\u6570\xD730%\u3015
+      \u7684\u62A4\u76FE\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 0
+      attribute: 2
+      value:
+        basis: 2.5
+        perChain: 0.3
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u633A\u8EAB\u5B88\u62A4"
+    title: "\u633A\u8EAB\u5B88\u62A4"
+    description: "\u5B88\u62A4\u4E00\u540D\u5176\u4ED6\u5DF1\u65B9\u5355\u4F4D\uFF0C\u6301\u7EED1\u56DE\u5408\u3002\u8BE5\u5355\u4F4D\u53D7\u5230\u76F4\u63A5\u653B\u51FB\u65F6\uFF0C\u7531\u81EA\u8EAB\u4EE3\u4E3A\u627F\u53D7\uFF1B\u627F\u53D7\u7684\u8BE5\u6B21\u4F24\u5BB3\u964D\u4F4E
+      \u603B\u8FDE\u9501\u6570\xD74%\uFF0C\u6309\u81EA\u8EAB\u9632\u5FA1\u3001\u683C\u6321\u4E0E\u62A4\u76FE\u7ED3\u7B97\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 5
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 23
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.04
+      duration: 1
+      onHit: 0
+      stacking: 0
+      percent: 1
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u62A4\u76FE\u6CBB\u7597"
+    title: "\u62A4\u76FE\u6CBB\u7597"
+    description: "\u6062\u590D\u81EA\u8EAB\u76F8\u5F53\u4E8E \u5F53\u524D\u62A4\u76FE\u503C\xD7\u301420%\uFF0B\u603B\u8FDE\u9501\u6570\xD78%\u3015
+      \u7684\u751F\u547D\uFF0C\u4E0D\u6D88\u8017\u62A4\u76FE\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 1
+      attribute: 7
+      value:
+        basis: 0.2
+        perChain: 0.08
+      duration: 0
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u94A2\u94C1\u610F\u5FD7"
+    title: "\u94A2\u94C1\u610F\u5FD7"
+    description: "\u81EA\u8EAB\u7269\u9632\u63D0\u9AD8 \u603B\u8FDE\u9501\u6570\xD72\uFF0C\u7279\u9632\u63D0\u9AD8
+      \u603B\u8FDE\u9501\u6570\uFF0C\u6301\u7EED2\u56DE\u5408\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 9
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 2
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+    - kind: 10
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u68D8\u7532\u58C1\u5792"
+    title: "\u68D8\u7532\u58C1\u5792"
+    description: "\u81EA\u8EAB\u83B7\u5F97\u68D8\u7532\u58C1\u5792\uFF0C\u6301\u7EED2\u56DE\u5408\u3002\u53D7\u5230\u76F4\u63A5\u653B\u51FB\u4F24\u5BB3\u540E\uFF0C\u5BF9\u653B\u51FB\u8005\u9020\u6210\u76F8\u5F53\u4E8E\u8BE5\u6BB5\u5B9E\u9645\u627F\u53D7\u4F24\u5BB3\xD7\u603B\u8FDE\u9501\u6570\xD710%\u7684\u53CD\u4F24\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 20
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 0.1
+      duration: 2
+      onHit: 0
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u62A4\u76FE\u5F3A\u5316"
+    title: "\u62A4\u76FE\u5F3A\u5316"
+    description: "\u81EA\u8EAB\u83B7\u5F97 \u603B\u8FDE\u9501\u6570 \u5C42\u62A4\u76FE\u5F3A\u5316\uFF0C\u6301\u7EED2\u56DE\u5408\u3002\u6BCF\u5C42\u4F7F\u81EA\u8EAB\u83B7\u5F97\u7684\u62A4\u76FE\u91CF\u63D0\u9AD810%\u3002"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 21
+      attribute: 0
+      value:
+        basis: 0
+        perChain: 1
+      duration: 2
+      onHit: 0
+      stacking: 1
+      percent: 0
+      rangedOnly: 0
+      negative: 0
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u5F39\u8DF3\u649E\u51FB"
+    title: "\u5F39\u8DF3\u649E\u51FB"
+    description: "\u5F39\u8DF3\u649E\u51FB\uFF08\u7B2C20\u9875\u56FA\u5B9A\u7CFB\u6570\uFF0C\u4E0D\u8BFB\u73A9\u5BB6\u8FDE\u9501\uFF09"
+    note: 
+    damageType: 0
+    reach: 1
+    target: 0
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 1
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u84C4\u70ED"
+    title: "\u84C4\u70ED"
+    description: "\u84C4\u70ED\uFF08\u7B2C20\u9875\u56FA\u5B9A\u7CFB\u6570\uFF0C\u4E0D\u8BFB\u73A9\u5BB6\u8FDE\u9501\uFF09"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u7194\u5CA9\u55B7\u5410"
+    title: "\u7194\u5CA9\u55B7\u5410"
+    description: "\u7194\u5CA9\u55B7\u5410\uFF08\u7B2C20\u9875\u56FA\u5B9A\u7CFB\u6570\uFF0C\u4E0D\u8BFB\u73A9\u5BB6\u8FDE\u9501\uFF09"
+    note: 
+    damageType: 1
+    reach: 2
+    target: 0
+    attribute: 1
+    pattern: 0
+    coefficient:
+      basis: 1.8
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 4
+      attribute: 0
+      value:
+        basis: 1
+        perChain: 0
+      duration: 2
+      onHit: 1
+      stacking: 0
+      percent: 0
+      rangedOnly: 0
+      negative: 1
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u6BD2\u6DB2\u55B7\u5C04"
+    title: "\u6BD2\u6DB2\u55B7\u5C04"
+    description: "\u6BD2\u6DB2\u55B7\u5C04\uFF08\u7B2C20\u9875\u56FA\u5B9A\u7CFB\u6570\uFF0C\u4E0D\u8BFB\u73A9\u5BB6\u8FDE\u9501\uFF09"
+    note: 
+    damageType: 1
+    reach: 2
+    target: 0
+    attribute: 1
+    pattern: 0
+    coefficient:
+      basis: 0.5
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects:
+    - kind: 3
+      attribute: 0
+      value:
+        basis: 2
+        perChain: 0
+      duration: 0
+      onHit: 1
+      stacking: 1
+      percent: 0
+      rangedOnly: 0
+      negative: 1
+      pending: 0
+      note: 
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8679\u5149\u51DD\u805A"
+    title: "\u8679\u5149\u51DD\u805A"
+    description: "\u8679\u5149\u51DD\u805A\uFF08\u7B2C20\u9875\u56FA\u5B9A\u7CFB\u6570\uFF0C\u4E0D\u8BFB\u73A9\u5BB6\u8FDE\u9501\uFF09"
+    note: 
+    damageType: 2
+    reach: 0
+    target: 3
+    attribute: 0
+    pattern: 0
+    coefficient:
+      basis: 0
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  - icon: {fileID: 0}
+    presentation: {fileID: 0}
+    id: "\u8679\u5149\u55B7\u5C04"
+    title: "\u8679\u5149\u55B7\u5C04"
+    description: "\u8679\u5149\u55B7\u5C04\uFF08\u7B2C20\u9875\u56FA\u5B9A\u7CFB\u6570\uFF0C\u4E0D\u8BFB\u73A9\u5BB6\u8FDE\u9501\uFF09"
+    note: 
+    damageType: 1
+    reach: 2
+    target: 0
+    attribute: 1
+    pattern: 0
+    coefficient:
+      basis: 3
+      perChain: 0
+    segments:
+      basis: 1
+      perChain: 0
+    penetration:
+      basis: 0
+      perChain: 0
+    critBonus:
+      basis: 0
+      perChain: 0
+    bounceCoefficient: 0
+    landingCoefficient: 0
+    shieldCost: 0
+    shieldResource: 0
+    duration: 0
+    effects: []
+  traits:
+  - icon: {fileID: 0}
+    id: "\u8FFD\u51FB"
+    title: "\u8FFD\u51FB"
+    description: "\u8FFD\u52A0 \u5F53\u524D\u8FDE\u9501\u6570 \u4E2A\u540C\u7C7B\u578B\u76F4\u63A5\u653B\u51FB\u6BB5\u3002\u6BCF\u6BB5\u4EE5\u672C\u6B21\u4E3B\u6280\u80FD\u539F\u751F\u603B\u7CFB\u6570\u768415%\u4E3A\u57FA\u7840\uFF0C\u518D\u6309\u672C\u5361\u5B9E\u96451\uFF5E5\u53F7\u4F4D\u4F9D\u6B21\u4FDD\u755990%\u300180%\u300170%\u300160%\u300150%\u3002"
+    note: "\u539F\u751F\u603B\u7CFB\u6570\u4E3A\u4E3B\u6280\u80FD\u9884\u5B9A\u76F4\u63A5\u653B\u51FB\u6BB5\u7CFB\u6570\u4E4B\u548C\uFF1B\u7FA4\u653B\u4EC5\u8BA1\u4E00\u540D\u76EE\u6807\u7684\u4E00\u5957\u6BB5\u6570\uFF0C\u4E0D\u4E58\u654C\u4EBA\u6570\u3002\u6982\u7387\u7EED\u5C04\u53EA\u8BA1\u9996\u6B21\u5FC5\u5B9A\u6BB5\uFF1B\u6311\u98DE\u843D\u5730\u7B49\u4E8C\u6B21\u4F24\u5BB3\u3001\u8BCD\u6761\u52A0\u503C\u548C\u6D88\u8017\u62A4\u76FE\u8F6C\u4F24\u4E0D\u8BA1\u5165\u57FA\u51C6\u3002\u968F\u673A\u5F39\u5C04\u6309\u5408\u6CD5\u76EE\u6807\u4E0B\u9884\u5B9A\u7684\u539F\u751F\u6BB5\u5408\u8BA1\u3002\u8FFD\u52A0\u6B21\u6570\u53EF\u968F\u5F53\u524D\u8FDE\u9501\u6570\u63D0\u9AD8\uFF0C\u69FD\u4F4D\u6BD4\u4F8B\u4E0D\u53D8\uFF1B\u4E0D\u590D\u5236\u989D\u5916\u72B6\u6001\u3001\u63A7\u5236\u3001\u6574\u5957\u7FA4\u653B\u6216\u518D\u6B21\u751F\u6210\u8FFD\u51FB/\u955C\u50CF\u3002"
+    match: 0
+    rate: 0.15
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u950B\u9510"
+    title: "\u950B\u9510"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u7684\u76F4\u63A5\u4F24\u5BB3\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD710%\u3002"
+    note: "\u4E0E\u5F3A\u5316\u53CA\u5176\u4ED6\u540C\u7C7B\u4F24\u5BB3\u63D0\u9AD8\u52A0\u7B97\uFF1B\u539F\u751F\u6BB5\u548C\u8FFD\u51FB\u5747\u53EF\u6536\u76CA\uFF0C\u4E0D\u653E\u5927\u6CBB\u7597\u3001\u62A4\u76FE\u3001\u53CD\u4F24\u6BD4\u4F8B\u548C\u6301\u7EED\u4F24\u5BB3\u3002"
+    match: 0
+    rate: 0.1
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u7A7F\u7532"
+    title: "\u7A7F\u7532"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u65E0\u89C6\u76EE\u6807 \u5F53\u524D\u8FDE\u9501\u6570\xD75%
+      \u7684\u7269\u9632\u3002"
+    note: "\u4EC5\u65E0\u89C6\u7269\u9632\uFF0C\u4E0E\u8FD1\u6218/\u8FDC\u7A0B\u65E0\u5173\u3002\u540C\u7C7B\u65E0\u89C6\u76F8\u52A0\uFF0C\u5E76\u4E0E\u66B4\u51FB\u65F6\u88C2\u9699\u7684\u7269\u9632\u65E0\u89C6\u5171\u7528100%\u4E0A\u9650\u3002\u4E94\u5F20\u5404\u4E00\u6761\u3001\u65E0\u8FDE\u9501\u4FEE\u6B63\u65F6\u5408\u8BA175%\uFF1B\u6EA2\u51FA\u65E0\u989D\u5916\u6536\u76CA\u3002"
+    match: 0
+    rate: 0.05
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u58C1\u969C"
+    title: "\u58C1\u969C"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u7684\u4F24\u5BB3\u57FA\u7840\u91CF\u3001\u62A4\u76FE\u91CF\u6216\u6062\u590D\u91CF\uFF0C\u989D\u5916\u589E\u52A0
+      \u65BD\u6CD5\u8005\u7269\u9632\xD7\u3014\u5F53\u524D\u8FDE\u9501\u6570\xD7100%\u3015\u3002"
+    note: "\u653B\u51FB\u52A0\u503C\u6574\u6B21\u4E00\u4EFD\uFF0C\u5206\u644A\u81F3\u539F\u751F\u653B\u51FB\u6BB5\uFF0C\u4E0D\u5206\u7ED9\u8FFD\u51FB\uFF1B\u4E0E\u57FA\u7840\u4F24\u5BB3\u4E00\u540C\u53D7\u76EE\u6807\u9632\u5FA1\u3001\u589E\u4F24\u3001\u66B4\u51FB\u548C\u51CF\u4F24\u5F71\u54CD\u3002\u62A4\u76FE/\u6062\u590D\u76F4\u63A5\u52A0\u5230\u5DF2\u6709\u5BF9\u5E94\u6548\u679C\u91CF\u3002\u4E0D\u589E\u52A0\u683C\u6321\u6B21\u6570\u3001\u6982\u7387\u3001\u51CF\u4F24\u6216\u53CD\u4F24\u6BD4\u4F8B\u3002"
+    match: 4
+    rate: 1
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u589E\u5E45"
+    title: "\u589E\u5E45"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u5DF2\u6709\u7684\u6982\u7387\u3001\u51CF\u4F24\u3001\u5C5E\u6027\u767E\u5206\u6BD4\u589E\u51CF\u6216\u884C\u52A8\u6761\u63A8\u62C9\u5E45\u5EA6\uFF0C\u76F8\u5BF9\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD75%\u3002"
+    note: "\u591A\u6761\u76F8\u5BF9\u589E\u5E45\u76F8\u52A0\uFF0C\u4E0D\u76F4\u63A5\u52A0\u767E\u5206\u70B9\u3002\u4F8B\u5982\u57FA\u784050%\uFF0C\u5F53\u524D\u8FDE\u9501\u65705\u7684\u589E\u5E45\u4F7F\u5176\u6210\u4E3A62.5%\u3002\u591A\u4E2A\u9002\u7528\u5B57\u6BB5\u5206\u522B\u5F3A\u5316\uFF1B\u4E0D\u5F3A\u5316\u8D1F\u9762\u4EE3\u4EF7\u3001\u653B\u51FB/\u6CBB\u7597/\u62A4\u76FE\u7CFB\u6570\u3001\u539F\u751F\u9632\u5FA1\u65E0\u89C6\u3001\u5438\u8840\u6216\u53CD\u4F24\u3002\u6700\u7EC8\u95EA\u907F\u7387\u6700\u9AD875%\uFF0C\u66B4\u51FB\u53CA\u666E\u901A\u89E6\u53D1\u6982\u7387\u6700\u9AD8100%\uFF0C\u989D\u5916\u653B\u51FB/\u6280\u80FD\u91CD\u590D/\u518D\u884C\u52A8\u6982\u7387\u6700\u9AD880%\uFF1B\u6301\u7EED\u51CF\u4F24\u6700\u9AD875%\uFF0C\u4E00\u6B21\u6027\u5355\u6BB5\u53CA\u5408\u6210\u603B\u51CF\u4F24\u6700\u9AD890%\uFF1B\u540C\u6B21\u51FA\u62DB\u5373\u65F6\u63A8\u62C9\u6761\u603B\u5E45\u5EA6\u6700\u9AD880%\u3002"
+    match: 3
+    rate: 0.05
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u7075\u52A8"
+    title: "\u7075\u52A8"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u7684\u4F24\u5BB3\u57FA\u7840\u91CF\u3001\u62A4\u76FE\u91CF\u6216\u6062\u590D\u91CF\uFF0C\u989D\u5916\u589E\u52A0
+      \u65BD\u6CD5\u8005\u901F\u5EA6\xD7\u5F53\u524D\u8FDE\u9501\u6570\xD760%\u3002"
+    note: "\u653B\u51FB\u6574\u6B21\u4E00\u4EFD\uFF0C\u5206\u644A\u81F3\u539F\u751F\u653B\u51FB\u6BB5\uFF0C\u4E0D\u5206\u7ED9\u8FFD\u51FB\u3002\u901F\u5EA6\u540C\u65F6\u5F71\u54CD\u884C\u52A8\u9891\u7387\uFF0C\u56E0\u6B64\u5C5E\u6027\u6362\u7B97\u7CFB\u6570\u4F4E\u4E8E\u58C1\u969C\uFF1B\u672C\u8BCD\u6761\u4E0D\u989D\u5916\u63D0\u9AD8\u901F\u5EA6\u3001\u884C\u52A8\u6761\u6216\u95EA\u907F\u3002"
+    match: 4
+    rate: 0.6
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u6DF1\u5316"
+    title: "\u6DF1\u5316"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u65BD\u52A0\u7684\u72B6\u6001\u5C42\u6570\u989D\u5916\u589E\u52A0
+      \u5F53\u524D\u8FDE\u9501\u6570 \u5C42\u3002"
+    note: "\u589E\u52A0\u4E3B\u6280\u80FD\u5DF2\u6709\u7684\u53EF\u53E0\u5C42\u72B6\u6001\uFF0C\u5305\u62EC\u4E2D\u6BD2\u3001\u865A\u5F31\u3001\u62A4\u76FE\u5F3A\u5316\uFF1B\u4E0D\u4E3A\u611F\u7535/\u707C\u4F24\u589E\u52A0\u5C42\u6570\uFF0C\u4E0D\u589E\u52A0\u62DB\u67B6\u683C\u6321\u6B21\u6570\u3002"
+    match: 2
+    rate: 1
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u5EF6\u7EED"
+    title: "\u5EF6\u7EED"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u5DF2\u6709\u7684\u9650\u65F6\u6548\u679C\uFF0C\u6301\u7EED\u56DE\u5408\u76F8\u5BF9\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD710%\u3002"
+    note: "\u591A\u6761\u589E\u5E45\u5148\u76F8\u52A0\uFF1B\u989D\u5916\u56DE\u5408\uFF1D\u57FA\u7840\u56DE\u5408\xD7\u5EF6\u7EED\u589E\u5E45\u603B\u548C\uFF0C\u7EDF\u4E00\u5411\u4E0A\u53D6\u6574\u540E\u52A0\u56DE\u57FA\u7840\u56DE\u5408\u3002\u57FA\u78401\u56DE\u5408\u914D\u4E94\u6761\u5EF6\u7EED\u4E3A3\u56DE\u5408\uFF1B\u57FA\u78402\u56DE\u5408\u4E3A5\u56DE\u5408\u3002\u4E0D\u5EF6\u957F\u65E0\u65F6\u9650\u62A4\u76FE\u3001\u7F1D\u5F71\u7B49\u51BB\u7ED3\u884C\u52A8\u6761\u5F3A\u63A7\uFF0C\u4E0D\u589E\u52A0\u683C\u6321\u6B21\u6570\uFF1B\u540C\u540D\u9650\u65F6\u6548\u679C\u5237\u65B0\u53D6\u8F83\u957F\u5269\u4F59\u65F6\u95F4\uFF0C\u4E0D\u7D2F\u8BA1\u56DE\u5408\u3002"
+    match: 3
+    rate: 0.1
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u5F3A\u5316"
+    title: "\u5F3A\u5316"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u7684\u76F4\u63A5\u4F24\u5BB3\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD78%\uFF1B\u5DF2\u6709\u7684\u975E\u4F24\u5BB3\u56FA\u5B9A\u6548\u679C\u91CF\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD710%\u3002"
+    note: "\u653B\u51FB\u589E\u4F24\u4E0E\u950B\u9510\u7B49\u76F8\u52A0\uFF1B\u7EAF\u653B\u52BF\u950B\u9510\u6BCF\u8FDE\u950110%\uFF0C\u5F3A\u5316\u6362\u53D6\u901A\u7528\u6027\u3002\u975E\u4F24\u5BB3\u53EA\u5F3A\u5316\u4E3B\u6280\u80FD\u57FA\u7840\u91CF\uFF0C\u518D\u52A0\u58C1\u969C\u7B49\u52A0\u503C\uFF1B\u4E0D\u6539\u53D8\u6982\u7387\u3001\u767E\u5206\u6BD4\u5B57\u6BB5\u3001\u6301\u7EED\u56DE\u5408\u6216\u683C\u6321\u6B21\u6570\u3002"
+    match: 3
+    rate: 0.08
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u7834\u52BF"
+    title: "\u7834\u52BF"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u7684\u66B4\u51FB\u4F24\u5BB3\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD720\u4E2A\u767E\u5206\u70B9\u3002"
+    note: "\u589E\u52A0\u66B4\u51FB\u500D\u7387\u800C\u975E\u66B4\u51FB\u6982\u7387\uFF1B150%\u589E\u52A020\u4E2A\u767E\u5206\u70B9\u4E3A170%\u3002\u9002\u5408\u4E0E\u4E13\u6CE8\u6216\u6280\u80FD\u81EA\u5E26\u66B4\u51FB\u7387\u642D\u914D\uFF0C\u975E\u66B4\u51FB\u6BB5\u65E0\u6536\u76CA\u3002"
+    match: 0
+    rate: 0.2
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u987D\u5F3A"
+    title: "\u987D\u5F3A"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u7684\u4F24\u5BB3\u57FA\u7840\u91CF\u3001\u62A4\u76FE\u91CF\u6216\u6062\u590D\u91CF\uFF0C\u989D\u5916\u589E\u52A0
+      \u65BD\u6CD5\u8005\u6700\u5927\u751F\u547D\xD7\u5F53\u524D\u8FDE\u9501\u6570\xD73%\u3002"
+    note: "\u8BFB\u53D6\u65BD\u6CD5\u8005\u6700\u5927\u751F\u547D\u3002\u653B\u51FB\u52A0\u503C\u6574\u6B21\u4E00\u4EFD\u5E76\u5728\u9632\u5FA1\u524D\u8BA1\u5165\uFF0C\u4E0D\u9010\u6BB5\u5B8C\u6574\u589E\u52A0\u3001\u4E0D\u76F4\u63A5\u7A7F\u9632\uFF1B\u62A4\u76FE\u548C\u6062\u590D\u6309\u5DF2\u6709\u5BF9\u5E94\u6548\u679C\u52A0\u503C\u3002\u4E94\u53F7\u4F4D\u4E3A\u6700\u5927\u751F\u547D15%\uFF1B\u4E0D\u6539\u53D8\u6280\u80FD\u539F\u6709\u751F\u547D\u7CFB\u6570\uFF0C\u4E0D\u989D\u5916\u751F\u6210\u6CBB\u7597\u6216\u62A4\u76FE\u3002"
+    match: 4
+    rate: 0.03
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u7834\u9B54"
+    title: "\u7834\u9B54"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u65E0\u89C6\u76EE\u6807 \u5F53\u524D\u8FDE\u9501\u6570\xD75%
+      \u7684\u7279\u9632\u3002"
+    note: "\u4EC5\u65E0\u89C6\u7279\u9632\uFF0C\u4E0E\u8FD1\u6218/\u8FDC\u7A0B\u65E0\u5173\u3002\u540C\u7C7B\u65E0\u89C6\u76F8\u52A0\uFF0C\u5E76\u4E0E\u66B4\u51FB\u65F6\u88C2\u9699\u7684\u7279\u9632\u65E0\u89C6\u5171\u7528100%\u4E0A\u9650\u3002\u4E94\u5F20\u5404\u4E00\u6761\u3001\u65E0\u8FDE\u9501\u4FEE\u6B63\u65F6\u5408\u8BA175%\uFF1B\u6EA2\u51FA\u65E0\u989D\u5916\u6536\u76CA\u3002"
+    match: 0
+    rate: 0.05
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u5F85\u5B9A"
+    title: "\u5F85\u5B9A"
+    description: "\u62D2\u654C\u67B6\u52BF\u539F\u751F\u8BCD\u6761\u672A\u5B9A\u7A3F\u3002"
+    note: 
+    match: 5
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u4E13\u6CE8"
+    title: "\u4E13\u6CE8"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u7684\u66B4\u51FB\u7387\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD75%\u3002"
+    note: "\u63D0\u9AD8\u66B4\u51FB\u6982\u7387\uFF0C\u4E3B\u6280\u80FD\u66B4\u51FB\u7387\u4E0E\u5176\u4ED6\u589E\u5E45\u6700\u7EC8\u5408\u8BA1\u6700\u9AD8100%\uFF1B\u4E0D\u63D0\u9AD8\u4F24\u5BB3\u7CFB\u6570\u3002"
+    match: 0
+    rate: 0
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u955C\u50CF"
+    title: "\u955C\u50CF"
+    description: "\u53EC\u5524\u4E00\u4E2A\u955C\u50CF\uFF0C\u4EE5\u5F53\u524D\u8FDE\u9501\u6570\xD720%\u7684\u6548\u679C\u5F3A\u5EA6\u6A21\u4EFF\u672C\u6B21\u4E3B\u6280\u80FD\u3002"
+    note: "\u590D\u5236\u539F\u4E3B\u6280\u80FD\u7684\u57FA\u7840\u4F24\u5BB3\u7CFB\u6570\u548C\u539F\u751F\u6BB5\u6570\uFF0C\u6309\u955C\u50CF\u5F3A\u5EA6\u7F29\u653E\uFF0C\u4E0D\u590D\u5236\u8BCD\u6761\u3001\u8FFD\u51FB\u3001\u8BCD\u6761\u52A0\u503C\u6216\u5176\u4ED6\u955C\u50CF\u3002\u62A4\u76FE\u6D88\u8017\u548C\u975E\u6570\u503C\u63A7\u5236\u7B49\u7279\u6B8A\u590D\u5236\u89C4\u5219\u4ECD\u5F85\u5B9A\u3002"
+    match: 3
+    rate: 0
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u8FDE\u9501\u53CD\u5E94"
+    title: "\u8FDE\u9501\u53CD\u5E94"
+    description: "\u672C\u5361\u7684\u5F53\u524D\u8FDE\u9501\u6570\u7FFB\u500D\uFF0C\u672C\u5361\u5176\u4ED6\u8BCD\u6761\u6309\u4FEE\u6B63\u540E\u7684\u5F53\u524D\u8FDE\u9501\u6570\u8BA1\u7B97\u3002"
+    note: "\u53EA\u4F5C\u7528\u672C\u5361\uFF0C\u4E0D\u6539\u53D8\u5B9E\u9645\u69FD\u4F4D\u3001\u5361\u6570\u6216\u603B\u8FDE\u9501\u6570\u3002\u591A\u6761\u540C\u540D\u6309\u57FA\u7840\u503C\u52A0\u7B97\uFF1A\u4E00\u67612\u500D\u3001\u4E24\u67613\u500D\uFF1B\u5148\u4FEE\u6B63\u5F53\u524D\u8FDE\u9501\u6570\uFF0C\u518D\u8BA1\u7B97\u5176\u4ED6\u8BCD\u6761\u3002\u8FDE\u9501\u6570\u4FEE\u6B63\u4E0D\u53D7\u6536\u76CA\u653E\u5927\u8BCD\u6761\u518D\u6B21\u653E\u5927\u3002"
+    match: 3
+    rate: 0
+    pending: 0
+  - icon: {fileID: 0}
+    id: "\u538B\u5236"
+    title: "\u538B\u5236"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u653B\u51FB\u751F\u547D\u9AD8\u4E8E70%\u7684\u76EE\u6807\u65F6\uFF0C\u4F24\u5BB3\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD720%\u3002"
+    note: "\u6BCF\u6BB5\u653B\u51FB\u7ED3\u7B97\u524D\u5224\u65AD\u76EE\u6807\u751F\u547D\u6BD4\u4F8B\uFF1B\u4E25\u683C\u9AD8\u4E8E70%\u751F\u6548\u3002"
+    match: 0
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u7EC8\u7ED3"
+    title: "\u7EC8\u7ED3"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u653B\u51FB\u751F\u547D\u4F4E\u4E8E30%\u7684\u76EE\u6807\u65F6\uFF0C\u4F24\u5BB3\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD720%\u3002"
+    note: "\u6BCF\u6BB5\u653B\u51FB\u7ED3\u7B97\u524D\u5224\u65AD\u76EE\u6807\u751F\u547D\u6BD4\u4F8B\uFF1B\u4E25\u683C\u4F4E\u4E8E30%\u751F\u6548\u3002"
+    match: 0
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u4E58\u9699"
+    title: "\u4E58\u9699"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u653B\u51FB\u5E26\u6709\u51CF\u76CA\u72B6\u6001\u7684\u76EE\u6807\u65F6\uFF0C\u4F24\u5BB3\u63D0\u9AD8
+      \u5F53\u524D\u8FDE\u9501\u6570\xD715%\u3002"
+    note: "\u76EE\u6807\u81F3\u5C11\u6709\u4E00\u79CD\u51CF\u76CA\u5373\u53EF\uFF0C\u591A\u79CD\u51CF\u76CA\u4E0D\u91CD\u590D\u89E6\u53D1\uFF1B\u6BCF\u6BB5\u653B\u51FB\u5206\u522B\u5224\u65AD\u3002"
+    match: 0
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u88C2\u9699"
+    title: "\u88C2\u9699"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u66B4\u51FB\u65F6\uFF0C\u989D\u5916\u65E0\u89C6\u76EE\u6807
+      \u5F53\u524D\u8FDE\u9501\u6570\xD710% \u7684\u5BF9\u5E94\u9632\u5FA1\u3002"
+    note: "\u4EC5\u66B4\u51FB\u6BB5\u751F\u6548\uFF0C\u4FDD\u7559\u6BCF\u5F53\u524D\u8FDE\u9501\u657010%\u7684\u5BF9\u5E94\u9632\u5FA1\u65E0\u89C6\uFF1B\u4E0E\u7A7F\u7532\u6216\u7834\u9B54\u7684\u5BF9\u5E94\u65E0\u89C6\u6BD4\u4F8B\u76F8\u52A0\uFF0C\u5408\u8BA1\u6700\u9AD8100%\u3002\u975E\u66B4\u51FB\u4E0D\u89E6\u53D1\uFF0C\u4E0D\u628A\u7269\u9632\u4E0E\u7279\u9632\u6DF7\u7528\uFF0C\u6EA2\u51FA\u4E0D\u8F6C\u5316\u4E3A\u589E\u4F24\u3002"
+    match: 0
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u8D2F\u901A"
+    title: "\u8D2F\u901A"
+    description: "\u672C\u6B21\u4E3B\u6280\u80FD\u9020\u6210\u7684\u76F4\u63A5\u4F24\u5BB3\u4E2D\uFF0C\u6709
+      \u5F53\u524D\u8FDE\u9501\u6570\xD75% \u7684\u90E8\u5206\u65E0\u89C6\u62A4\u76FE\uFF0C\u76F4\u63A5\u6263\u9664\u751F\u547D\u3002"
+    note: "\u7ECF\u9632\u5FA1\u7B49\u4FEE\u6B63\u540E\u7684\u4F24\u5BB3\u6309\u6BD4\u4F8B\u5206\u6D41\u81F3\u751F\u547D\uFF0C\u5176\u4F59\u6B63\u5E38\u6263\u76FE\u53CA\u6EA2\u51FA\u6263\u751F\u547D\uFF1B\u4E0D\u589E\u52A0\u4F24\u5BB3\u603B\u91CF\uFF0C\u4E0D\u8DF3\u8FC7\u7269\u9632/\u7279\u9632\u3002"
+    match: 0
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u8FDE\u9501\u6536\u76CA"
+    title: "\u8FDE\u9501\u6536\u76CA"
+    description: "\u672C\u5361\u5F53\u524D\u8FDE\u9501\u6570\u4E3A3\u7684\u500D\u6570\u65F6\uFF0C\u672C\u5361\u5176\u4ED6\u6709\u6548\u8BCD\u6761\u7684\u6536\u76CA\u7FFB\u500D\u3002"
+    note: "\u5148\u8BFB\u53D6\u8FDE\u9501\u53CD\u5E94\u7B49\u4FEE\u6B63\u540E\u7684\u5F53\u524D\u8FDE\u9501\u6570\u3002\u53EA\u653E\u5927\u975E\u6536\u76CA\u653E\u5927\u3001\u975E\u8FDE\u9501\u6570\u4FEE\u6B63\u8BCD\u6761\uFF1B\u4E0D\u4E92\u76F8\u9012\u5F52\u589E\u5F3A\u3002\u591A\u6761\u6536\u76CA\u653E\u5927\u7684\u589E\u91CF\u76F8\u52A0\uFF1A\u4E24\u6761\u7FFB\u500D\u5408\u8BA13\u500D\uFF0C\u4E0D\u662F4\u500D\u3002"
+    match: 3
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u8FDE\u9501\u84C4\u52BF"
+    title: "\u8FDE\u9501\u84C4\u52BF"
+    description: "\u672C\u5361\u5F53\u524D\u8FDE\u9501\u6570\u4E3A\u5947\u6570\u65F6\uFF0C\u672C\u5361\u5176\u4ED6\u6709\u6548\u8BCD\u6761\u7684\u6536\u76CA\u63D0\u9AD850%\u3002"
+    note: "\u53EA\u653E\u5927\u672C\u5361\u5176\u4ED6\u975E\u6536\u76CA\u653E\u5927\u3001\u975E\u8FDE\u9501\u6570\u4FEE\u6B63\u8BCD\u6761\uFF1B\u591A\u6761\u6536\u76CA\u653E\u5927\u7684\u589E\u91CF\u76F8\u52A0\u3002\u9002\u54081/3/5\u53F7\u4F4D\uFF1B\u8FDE\u9501\u53CD\u5E94\u540E\u6309\u4FEE\u6B63\u503C\u5224\u5947\u5076\u3002"
+    match: 3
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u8FDE\u9501\u534F\u594F"
+    title: "\u8FDE\u9501\u534F\u594F"
+    description: "\u672C\u5361\u5F53\u524D\u8FDE\u9501\u6570\u4E3A\u5076\u6570\u65F6\uFF0C\u672C\u5361\u5176\u4ED6\u6709\u6548\u8BCD\u6761\u7684\u6536\u76CA\u63D0\u9AD875%\u3002"
+    note: "\u5076\u6570\u69FD\u4F4D\u8F83\u5C11\uFF0C\u5355\u6B21\u6536\u76CA\u9AD8\u4E8E\u84C4\u52BF\u3002\u53EA\u653E\u5927\u672C\u5361\u5176\u4ED6\u975E\u6536\u76CA\u653E\u5927\u3001\u975E\u8FDE\u9501\u6570\u4FEE\u6B63\u8BCD\u6761\uFF1B\u589E\u91CF\u76F8\u52A0\uFF0C\u4E0D\u4E92\u76F8\u653E\u5927\u3002"
+    match: 3
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u540C\u8C03"
+    title: "\u540C\u8C03"
+    description: "\u672C\u5361\u4E0E\u524D\u4E00\u5F20\u5361\u7684\u4E3B\u6280\u80FD\u5339\u914D\u7C7B\u578B\u76F8\u540C\u65F6\uFF0C\u672C\u5361\u5176\u4ED6\u6709\u6548\u8BCD\u6761\u7684\u6536\u76CA\u63D0\u9AD850%\u3002"
+    note: "1\u53F7\u4F4D\u4E0D\u89E6\u53D1\u3002\u53EA\u653E\u5927\u672C\u5361\u5176\u4ED6\u975E\u6536\u76CA\u653E\u5927\u3001\u975E\u8FDE\u9501\u6570\u4FEE\u6B63\u8BCD\u6761\uFF1B\u4E0D\u4F7F\u4E0D\u5339\u914D\u7684\u8BCD\u6761\u751F\u6548\u3002\u591A\u6761\u6536\u76CA\u653E\u5927\u589E\u91CF\u76F8\u52A0\u3002"
+    match: 3
+    rate: 0
+    pending: 1
+  - icon: {fileID: 0}
+    id: "\u4EA4\u7EC7"
+    title: "\u4EA4\u7EC7"
+    description: "\u672C\u5361\u4E0E\u524D\u4E00\u5F20\u5361\u7684\u4E3B\u6280\u80FD\u5339\u914D\u7C7B\u578B\u4E0D\u540C\u65F6\uFF0C\u672C\u5361\u5176\u4ED6\u6709\u6548\u8BCD\u6761\u7684\u6536\u76CA\u63D0\u9AD850%\u3002"
+    note: "\u4E0E\u540C\u8C03\u91C7\u7528\u76F8\u540C\u6536\u76CA\uFF0C\u5206\u522B\u652F\u6301\u540C\u7C7B\u578B\u53CA\u4EA4\u66FF\u7C7B\u578B\u6392\u5217\u30021\u53F7\u4F4D\u4E0D\u89E6\u53D1\uFF1B\u5F02\u7C7B\u578B\u6392\u5217\u4E0D\u51CF\u5C11\u603B\u8FDE\u9501\u6570\u3002\u53EA\u653E\u5927\u672C\u5361\u5176\u4ED6\u975E\u6536\u76CA\u653E\u5927\u3001\u975E\u8FDE\u9501\u6570\u4FEE\u6B63\u8BCD\u6761\uFF1B\u589E\u91CF\u76F8\u52A0\u3002"
+    match: 3
+    rate: 0
+    pending: 1
+  monsters:
+  - portrait: {fileID: 0}
+    id: "\u666E\u901A\u53F2\u83B1\u59C6"
+    title: "\u666E\u901A\u53F2\u83B1\u59C6"
+    panel:
+      hp: 60
+      attack: 6
+      specialAttack: 2
+      defense: 5
+      specialDefense: 3
+      speed: 6
+      crit: 0
+      critDamage: 1.5
+    phases:
+    - title: "\u5F39\u8DF3\u649E\u51FB"
+      skill: "\u5F39\u8DF3\u649E\u51FB"
+      defense: 5
+      specialDefense: 3
+    visualPrefab: {fileID: 1264214129474091105, guid: 888948e247ef1514c90ff68a98dea42f, type: 3}
+  - portrait: {fileID: 0}
+    id: "\u7194\u5CA9\u53F2\u83B1\u59C6"
+    title: "\u7194\u5CA9\u53F2\u83B1\u59C6"
+    panel:
+      hp: 100
+      attack: 5
+      specialAttack: 10
+      defense: 15
+      specialDefense: 5
+      speed: 3
+      crit: 0
+      critDamage: 1.5
+    phases:
+    - title: "\u84C4\u70ED"
+      skill: "\u84C4\u70ED"
+      defense: 15
+      specialDefense: 5
+    - title: "\u7194\u5CA9\u55B7\u5410"
+      skill: "\u7194\u5CA9\u55B7\u5410"
+      defense: 15
+      specialDefense: 5
+    visualPrefab: {fileID: 2573309168537974623, guid: e5b7a3299ac412a49ab92e525f4c6bef, type: 3}
+  - portrait: {fileID: 0}
+    id: "\u6BD2\u7D20\u53F2\u83B1\u59C6"
+    title: "\u6BD2\u7D20\u53F2\u83B1\u59C6"
+    panel:
+      hp: 75
+      attack: 4
+      specialAttack: 6
+      defense: 3
+      specialDefense: 10
+      speed: 5
+      crit: 0
+      critDamage: 1.5
+    phases:
+    - title: "\u6BD2\u6DB2\u55B7\u5C04"
+      skill: "\u6BD2\u6DB2\u55B7\u5C04"
+      defense: 3
+      specialDefense: 10
+    visualPrefab: {fileID: 8954890673042451907, guid: 41f3103657565db44b9421f044ade23e, type: 3}
+  - portrait: {fileID: 0}
+    id: "\u5F69\u8679\u53F2\u83B1\u59C6"
+    title: "\u5F69\u8679\u53F2\u83B1\u59C6"
+    panel:
+      hp: 440
+      attack: 18
+      specialAttack: 18
+      defense: 15
+      specialDefense: 15
+      speed: 5
+      crit: 0
+      critDamage: 1.5
+    phases:
+    - title: "\u900F\u660E"
+      skill: "\u5F39\u8DF3\u649E\u51FB"
+      defense: 15
+      specialDefense: 15
+    - title: "\u8D64\u8272"
+      skill: "\u8679\u5149\u51DD\u805A"
+      defense: 25
+      specialDefense: 5
+    - title: "\u84DD\u8272"
+      skill: "\u8679\u5149\u55B7\u5C04"
+      defense: 5
+      specialDefense: 25
+    visualPrefab: {fileID: 4581451400309954708, guid: 6d5f8104e2fbe6b49943b6b0ff06ed03, type: 3}
+  encounters:
+  - title: "\u9996\u6B21\u906D\u9047"
+    enemies:
+    - monster: "\u666E\u901A\u53F2\u83B1\u59C6"
+      backRow: 0
+    - monster: "\u5F69\u8679\u53F2\u83B1\u59C6"
+      backRow: 1
+  - title: "\u5355Boss"
+    enemies:
+    - monster: "\u5F69\u8679\u53F2\u83B1\u59C6"
+      backRow: 1
+  - title: "\u7194\u5CA9\u6D4B\u8BD5"
+    enemies:
+    - monster: "\u7194\u5CA9\u53F2\u83B1\u59C6"
+      backRow: 0
+  - title: "\u6BD2\u7D20\u6D4B\u8BD5"
+    enemies:
+    - monster: "\u6BD2\u7D20\u53F2\u83B1\u59C6"
+      backRow: 1
+  pending:
+  - "\u4E2D\u6BD2\u6BCF\u5C422\u70B9\u3001\u707C\u4F245\u70B9\u5747\u4E3A\u672C\u8F6E\u6D4B\u8BD5\u53C2\u6570\u3002"
+  - "\u6D41\u8840\u4EC5\u8BB0\u5F55\u5C42\u6570\uFF1A\u6301\u7EED/\u8870\u51CF/\u4F4D\u79FB\u4F24\u5BB3\u7CFB\u6570\u5F85\u5B9A\u3002"
+  - "\u62D2\u654C\u67B6\u52BF\u539F\u751F\u8BCD\u6761\u5F85\u5B9A\uFF0C\u4E0D\u4EA7\u751F\u8BCD\u6761\u6536\u76CA\u3002"
+  - "\u6311\u7A7A\u523A\u7B2C\u4E8C\u6BB5\u9ED8\u8BA4\u4F7F\u7528\u7B2C13\u9875165%\u6D4B\u8BD5\u503C\uFF1B\u4E0E\u5176\u4ED6\u9875150%\u51B2\u7A81\uFF0C\u53EF\u5173\u95ED\u7B2C\u4E8C\u6BB5\u6D4B\u8BD5\u3002\u78B0\u649E\u843D\u70B9/\u53E6\u4E00\u4E2A\u654C\u4EBA\u4E0D\u6A21\u62DF\u3002"
+  - "\u730E\u5F13\u5373\u65F6\u518D\u52A8\u89E6\u53D1\u6761\u4EF6\u4E0E\u5176\u4F59\u6B66\u5668\u56FA\u6709\u80FD\u529B\u5F85\u5B9A\uFF0C\u672A\u542F\u7528\u3002"
+  - "\u540C\u540D\u56FA\u5B9A\u5C5E\u6027\u589E\u76CA\u3001\u62DB\u67B6\u3001\u53CD\u51FB\u59FF\u6001\u7684\u91CD\u590D\u5E45\u5EA6\u672A\u5B9A\uFF1A\u6709\u6548\u671F\u95F4\u62D2\u7EDD\u91CD\u590D\u65BD\u653E\uFF0C\u907F\u514D\u81EA\u884C\u51B3\u5B9A\u53E0\u52A0\u3002"
+  - "\u81F4\u6B7B\u53CD\u4F24\u5148\u540E\u5F85\u5B9A\uFF1A\u9ED8\u8BA4\u6D4B\u8BD5\u5012\u4E0B\u540E\u4ECD\u8FD4\u8FD8\u5DF2\u627F\u53D7\u4F24\u5BB3\uFF0C\u53EF\u5728Rules\u4E2D\u5173\u95ED\u3002"
+  - "\u6CBB\u7597\u6EA2\u51FA\u5F85\u5B9A\uFF1ADemo\u4EC5\u6062\u590D\u81F3\u6700\u5927\u751F\u547D\uFF0C\u6EA2\u51FA\u4E0D\u8F6C\u6362\u5176\u4ED6\u6536\u76CA\u3002"
+  - "\u591A\u79CD\u62A4\u76FE\u6C60\u3001\u955C\u50CF\u3001\u6269\u5C55\u8BCD\u6761\u3001\u5F3A\u63A7\u5361\u4E0E\u5947\u7269\u4E0D\u5728\u672C\u7248\u5361\u6C60\uFF1B\u6570\u636E\u7ED3\u6784\u4FDD\u7559\u63A5\u53E3\u3002"

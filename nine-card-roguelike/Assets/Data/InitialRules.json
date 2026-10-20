@@ -1,0 +1,2292 @@
+{
+  "sourceVersion": "2026-10-20 测试配置（规则书文件名2026-10-16）",
+  "weapons": [
+    {
+      "id": "猎弓",
+      "title": "猎弓",
+      "panel": {
+        "hp": 100,
+        "attack": 15.0,
+        "specialAttack": 2.0,
+        "defense": 3.0,
+        "specialDefense": 2.0,
+        "speed": 8.0,
+        "crit": 0.05,
+        "critDamage": 1.5
+      },
+      "cards": [
+        "猎弓_1",
+        "猎弓_2",
+        "猎弓_3",
+        "猎弓_4",
+        "猎弓_5",
+        "猎弓_6",
+        "猎弓_7",
+        "猎弓_8",
+        "猎弓_9"
+      ],
+      "note": "固有能力待定，首版不启用即时再动。"
+    },
+    {
+      "id": "大剑",
+      "title": "大剑",
+      "panel": {
+        "hp": 150,
+        "attack": 24.0,
+        "specialAttack": 1.0,
+        "defense": 8.0,
+        "specialDefense": 3.0,
+        "speed": 5.0,
+        "crit": 0.05,
+        "critDamage": 1.5
+      },
+      "cards": [
+        "大剑_1",
+        "大剑_2",
+        "大剑_3",
+        "大剑_4",
+        "大剑_5",
+        "大剑_6",
+        "大剑_7",
+        "大剑_8",
+        "大剑_9"
+      ],
+      "note": "固有能力待定，首版不启用即时再动。"
+    },
+    {
+      "id": "法杖",
+      "title": "法杖",
+      "panel": {
+        "hp": 120,
+        "attack": 6.0,
+        "specialAttack": 16.0,
+        "defense": 6.0,
+        "specialDefense": 10.0,
+        "speed": 6.0,
+        "crit": 0.05,
+        "critDamage": 1.5
+      },
+      "cards": [
+        "法杖_1",
+        "法杖_2",
+        "法杖_3",
+        "法杖_4",
+        "法杖_5",
+        "法杖_6",
+        "法杖_7",
+        "法杖_8",
+        "法杖_9"
+      ],
+      "note": "固有能力待定，首版不启用即时再动。"
+    },
+    {
+      "id": "长矛",
+      "title": "长矛",
+      "panel": {
+        "hp": 120,
+        "attack": 12.0,
+        "specialAttack": 2.0,
+        "defense": 7.0,
+        "specialDefense": 5.0,
+        "speed": 7.0,
+        "crit": 0.05,
+        "critDamage": 1.5
+      },
+      "cards": [
+        "长矛_1",
+        "长矛_2",
+        "长矛_3",
+        "长矛_4",
+        "长矛_5",
+        "长矛_6",
+        "长矛_7",
+        "长矛_8",
+        "长矛_9"
+      ],
+      "note": "固有能力待定，首版不启用即时再动。"
+    },
+    {
+      "id": "盾牌",
+      "title": "盾牌",
+      "panel": {
+        "hp": 180,
+        "attack": 4.0,
+        "specialAttack": 2.0,
+        "defense": 18.0,
+        "specialDefense": 8.0,
+        "speed": 4.0,
+        "crit": 0.05,
+        "critDamage": 1.5
+      },
+      "cards": [
+        "盾牌_1",
+        "盾牌_2",
+        "盾牌_3",
+        "盾牌_4",
+        "盾牌_5",
+        "盾牌_6",
+        "盾牌_7",
+        "盾牌_8",
+        "盾牌_9"
+      ],
+      "note": "固有能力待定，首版不启用即时再动。"
+    }
+  ],
+  "cards": [
+    {
+      "id": "猎弓_1",
+      "skill": "连射",
+      "match": 0,
+      "traits": [
+        "追击"
+      ]
+    },
+    {
+      "id": "猎弓_2",
+      "skill": "破风箭",
+      "match": 0,
+      "traits": [
+        "锋锐"
+      ]
+    },
+    {
+      "id": "猎弓_3",
+      "skill": "多重扫射",
+      "match": 0,
+      "traits": [
+        "穿甲"
+      ]
+    },
+    {
+      "id": "猎弓_4",
+      "skill": "疾风护盾",
+      "match": 1,
+      "traits": [
+        "壁障"
+      ]
+    },
+    {
+      "id": "猎弓_5",
+      "skill": "灵巧闪避",
+      "match": 1,
+      "traits": [
+        "增幅"
+      ]
+    },
+    {
+      "id": "猎弓_6",
+      "skill": "风之驱散",
+      "match": 1,
+      "traits": [
+        "灵动"
+      ]
+    },
+    {
+      "id": "猎弓_7",
+      "skill": "毒箭矢",
+      "match": 2,
+      "traits": [
+        "深化"
+      ]
+    },
+    {
+      "id": "猎弓_8",
+      "skill": "扰乱射击",
+      "match": 2,
+      "traits": [
+        "延续"
+      ]
+    },
+    {
+      "id": "猎弓_9",
+      "skill": "鹰眼校准",
+      "match": 2,
+      "traits": [
+        "强化"
+      ]
+    },
+    {
+      "id": "大剑_1",
+      "skill": "劈山斩",
+      "match": 0,
+      "traits": [
+        "锋锐"
+      ]
+    },
+    {
+      "id": "大剑_2",
+      "skill": "横扫千军",
+      "match": 0,
+      "traits": [
+        "穿甲"
+      ]
+    },
+    {
+      "id": "大剑_3",
+      "skill": "迎击架势",
+      "match": 0,
+      "traits": [
+        "破势"
+      ]
+    },
+    {
+      "id": "大剑_4",
+      "skill": "架剑防御",
+      "match": 1,
+      "traits": [
+        "壁障"
+      ]
+    },
+    {
+      "id": "大剑_5",
+      "skill": "重整旗鼓",
+      "match": 1,
+      "traits": [
+        "顽强"
+      ]
+    },
+    {
+      "id": "大剑_6",
+      "skill": "破缚",
+      "match": 1,
+      "traits": [
+        "延续"
+      ]
+    },
+    {
+      "id": "大剑_7",
+      "skill": "磐石之躯",
+      "match": 2,
+      "traits": [
+        "增幅"
+      ]
+    },
+    {
+      "id": "大剑_8",
+      "skill": "威慑",
+      "match": 2,
+      "traits": [
+        "深化"
+      ]
+    },
+    {
+      "id": "大剑_9",
+      "skill": "狂战之怒",
+      "match": 2,
+      "traits": [
+        "强化"
+      ]
+    },
+    {
+      "id": "法杖_1",
+      "skill": "魔力飞弹",
+      "match": 0,
+      "traits": [
+        "锋锐"
+      ]
+    },
+    {
+      "id": "法杖_2",
+      "skill": "魔力震荡",
+      "match": 0,
+      "traits": [
+        "破魔"
+      ]
+    },
+    {
+      "id": "法杖_3",
+      "skill": "附魔杖击",
+      "match": 0,
+      "traits": [
+        "破势"
+      ]
+    },
+    {
+      "id": "法杖_4",
+      "skill": "魔力屏障",
+      "match": 1,
+      "traits": [
+        "壁障"
+      ]
+    },
+    {
+      "id": "法杖_5",
+      "skill": "治愈术",
+      "match": 1,
+      "traits": [
+        "顽强"
+      ]
+    },
+    {
+      "id": "法杖_6",
+      "skill": "净化术",
+      "match": 1,
+      "traits": [
+        "延续"
+      ]
+    },
+    {
+      "id": "法杖_7",
+      "skill": "魔力灌注",
+      "match": 2,
+      "traits": [
+        "强化"
+      ]
+    },
+    {
+      "id": "法杖_8",
+      "skill": "威慑",
+      "match": 2,
+      "traits": [
+        "深化"
+      ]
+    },
+    {
+      "id": "法杖_9",
+      "skill": "轻羽术",
+      "match": 2,
+      "traits": [
+        "增幅"
+      ]
+    },
+    {
+      "id": "长矛_1",
+      "skill": "贯心刺",
+      "match": 0,
+      "traits": [
+        "锋锐"
+      ]
+    },
+    {
+      "id": "长矛_2",
+      "skill": "连环突刺",
+      "match": 0,
+      "traits": [
+        "穿甲"
+      ]
+    },
+    {
+      "id": "长矛_3",
+      "skill": "挑空刺",
+      "match": 0,
+      "traits": [
+        "追击"
+      ]
+    },
+    {
+      "id": "长矛_4",
+      "skill": "旋矛御箭",
+      "match": 1,
+      "traits": [
+        "延续"
+      ]
+    },
+    {
+      "id": "长矛_5",
+      "skill": "调息",
+      "match": 1,
+      "traits": [
+        "灵动"
+      ]
+    },
+    {
+      "id": "长矛_6",
+      "skill": "拒敌架势",
+      "match": 1,
+      "traits": [
+        "待定"
+      ]
+    },
+    {
+      "id": "长矛_7",
+      "skill": "裂伤刺",
+      "match": 2,
+      "traits": [
+        "深化"
+      ]
+    },
+    {
+      "id": "长矛_8",
+      "skill": "压阵",
+      "match": 2,
+      "traits": [
+        "增幅"
+      ]
+    },
+    {
+      "id": "长矛_9",
+      "skill": "迅攻架势",
+      "match": 2,
+      "traits": [
+        "强化"
+      ]
+    },
+    {
+      "id": "盾牌_1",
+      "skill": "盾击",
+      "match": 0,
+      "traits": [
+        "锋锐"
+      ]
+    },
+    {
+      "id": "盾牌_2",
+      "skill": "回旋飞盾",
+      "match": 0,
+      "traits": [
+        "穿甲"
+      ]
+    },
+    {
+      "id": "盾牌_3",
+      "skill": "碎盾冲击",
+      "match": 0,
+      "traits": [
+        "破势"
+      ]
+    },
+    {
+      "id": "盾牌_4",
+      "skill": "坚盾",
+      "match": 1,
+      "traits": [
+        "壁障"
+      ]
+    },
+    {
+      "id": "盾牌_5",
+      "skill": "挺身守护",
+      "match": 1,
+      "traits": [
+        "增幅"
+      ]
+    },
+    {
+      "id": "盾牌_6",
+      "skill": "护盾治疗",
+      "match": 1,
+      "traits": [
+        "顽强"
+      ]
+    },
+    {
+      "id": "盾牌_7",
+      "skill": "钢铁意志",
+      "match": 2,
+      "traits": [
+        "强化"
+      ]
+    },
+    {
+      "id": "盾牌_8",
+      "skill": "棘甲壁垒",
+      "match": 2,
+      "traits": [
+        "延续"
+      ]
+    },
+    {
+      "id": "盾牌_9",
+      "skill": "护盾强化",
+      "match": 2,
+      "traits": [
+        "深化"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "连射",
+      "title": "连射",
+      "attribute": 0,
+      "pattern": 1,
+      "coefficient": {
+        "basis": 0.6,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 2,
+        "perChain": 1
+      },
+      "effects": [],
+      "description": "向一名敌人射出 2＋总连锁数 支箭，每箭造成物攻60%的物理伤害。",
+      "damageType": 0,
+      "reach": 2,
+      "target": 0
+    },
+    {
+      "id": "破风箭",
+      "title": "破风箭",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 3,
+        "perChain": 0.1
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "penetration": {
+        "basis": 0,
+        "perChain": 0.06
+      },
+      "description": "向一名敌人射出重箭，造成物攻〔300%＋总连锁数×10%〕的物理伤害；本次攻击及其追击无视目标 总连锁数×6% 的物防。",
+      "damageType": 0,
+      "reach": 2,
+      "target": 0
+    },
+    {
+      "id": "多重扫射",
+      "title": "多重扫射",
+      "attribute": 0,
+      "pattern": 2,
+      "coefficient": {
+        "basis": 1,
+        "perChain": 0.1
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "description": "向每名敌人各射出一支箭，每箭造成物攻〔100%＋总连锁数×10%〕的物理伤害。",
+      "damageType": 0,
+      "reach": 2,
+      "target": 2
+    },
+    {
+      "id": "疾风护盾",
+      "title": "疾风护盾",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 0,
+          "attribute": 0,
+          "value": {
+            "basis": 2,
+            "perChain": 0.2
+          },
+          "duration": 0
+        }
+      ],
+      "description": "获得相当于 物攻×〔200%＋总连锁数×20%〕 的护盾。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "灵巧闪避",
+      "title": "灵巧闪避",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 15,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 1,
+          "percent": true
+        }
+      ],
+      "description": "闪避率提高 总连锁数×10%，持续 1回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "风之驱散",
+      "title": "风之驱散",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 2,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 0
+        },
+        {
+          "kind": 1,
+          "attribute": 4,
+          "value": {
+            "basis": 1,
+            "perChain": 0
+          },
+          "duration": 0
+        }
+      ],
+      "description": "移除自身 总连锁数 种随机减益状态，并恢复相当于 速度×100% 的生命。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "毒箭矢",
+      "title": "毒箭矢",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0.5,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 3,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 0,
+          "onHit": true,
+          "stacking": true,
+          "negative": true
+        }
+      ],
+      "description": "向一名敌人射出毒箭，造成物攻50%的物理伤害；命中后施加 总连锁数 层中毒。",
+      "damageType": 0,
+      "reach": 2,
+      "target": 0
+    },
+    {
+      "id": "扰乱射击",
+      "title": "扰乱射击",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 22,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.05
+          },
+          "duration": 0,
+          "onHit": true,
+          "percent": true
+        }
+      ],
+      "description": "向一名敌人射击，造成物攻100%的物理伤害；命中后击退目标 总连锁数×5% 的行动条。",
+      "damageType": 0,
+      "reach": 2,
+      "target": 0
+    },
+    {
+      "id": "鹰眼校准",
+      "title": "鹰眼校准",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 7,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 2
+        }
+      ],
+      "description": "物攻提高 总连锁数，持续 2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "劈山斩",
+      "title": "劈山斩",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 4,
+        "perChain": 0.15
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "description": "向一名敌人挥出重斩，造成物攻〔400%＋总连锁数×15%〕的物理伤害。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "横扫千军",
+      "title": "横扫千军",
+      "attribute": 0,
+      "pattern": 2,
+      "coefficient": {
+        "basis": 1.35,
+        "perChain": 0.15
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "description": "挥剑横扫敌方前排，对每名目标造成物攻〔135%＋总连锁数×15%〕的物理伤害。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 1
+    },
+    {
+      "id": "迎击架势",
+      "title": "迎击架势",
+      "attribute": 0,
+      "pattern": 4,
+      "coefficient": {
+        "basis": 2,
+        "perChain": 0.15
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "duration": 1,
+      "description": "进入反击姿态，持续1回合。被敌人的直接攻击命中或成功格挡后，若攻击者符合近战目标规则，对其发动一次反击，造成物攻〔200%＋总连锁数×15%〕的物理伤害。每次敌方出招最多触发一次。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 3
+    },
+    {
+      "id": "架剑防御",
+      "title": "架剑防御",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 0,
+          "attribute": 2,
+          "value": {
+            "basis": 1.5,
+            "perChain": 0.2
+          },
+          "duration": 0
+        },
+        {
+          "kind": 18,
+          "attribute": 0,
+          "value": {
+            "basis": 1,
+            "perChain": 0
+          },
+          "duration": 1
+        }
+      ],
+      "description": "获得相当于 物防×〔150%＋总连锁数×20%〕 的护盾，进入招架姿态，持续1回合，可格挡1个直接攻击段。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "重整旗鼓",
+      "title": "重整旗鼓",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 1,
+          "attribute": 6,
+          "value": {
+            "basis": 0.2,
+            "perChain": 0.08
+          },
+          "duration": 0
+        }
+      ],
+      "description": "恢复自身 已损失生命×〔20%＋总连锁数×8%〕 的生命。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "破缚",
+      "title": "破缚",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 2,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 0
+        },
+        {
+          "kind": 18,
+          "attribute": 0,
+          "value": {
+            "basis": 1,
+            "perChain": 0
+          },
+          "duration": 1
+        }
+      ],
+      "description": "移除自身 总连锁数 种随机减益状态，进入招架姿态，持续 1回合，可格挡 1次直接攻击段。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "磐石之躯",
+      "title": "磐石之躯",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 12,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 2,
+          "percent": true
+        },
+        {
+          "kind": 13,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 2,
+          "percent": true
+        }
+      ],
+      "description": "物防与特防提高 总连锁数×10%，持续 2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "威慑",
+      "title": "威慑",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 6,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 2,
+          "stacking": true,
+          "negative": true
+        }
+      ],
+      "description": "使一名敌人获得 总连锁数 层虚弱，持续 2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 0
+    },
+    {
+      "id": "狂战之怒",
+      "title": "狂战之怒",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 7,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 2
+          },
+          "duration": 2
+        },
+        {
+          "kind": 12,
+          "attribute": 0,
+          "value": {
+            "basis": -0.3,
+            "perChain": 0
+          },
+          "duration": 2,
+          "percent": true,
+          "negative": true
+        },
+        {
+          "kind": 13,
+          "attribute": 0,
+          "value": {
+            "basis": -0.3,
+            "perChain": 0
+          },
+          "duration": 2,
+          "percent": true,
+          "negative": true
+        }
+      ],
+      "description": "物攻提高 总连锁数×2，物防与特防降低 30%，持续 2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "魔力飞弹",
+      "title": "魔力飞弹",
+      "attribute": 1,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 3.9,
+        "perChain": 0.14
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "description": "向一名敌人发射魔力飞弹，造成特攻〔390%＋总连锁数×14%〕的特殊伤害。",
+      "damageType": 1,
+      "reach": 2,
+      "target": 0
+    },
+    {
+      "id": "魔力震荡",
+      "title": "魔力震荡",
+      "attribute": 1,
+      "pattern": 2,
+      "coefficient": {
+        "basis": 1.2,
+        "perChain": 0.12
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 22,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.01
+          },
+          "duration": 0,
+          "onHit": true,
+          "percent": true
+        }
+      ],
+      "description": "释放魔力冲击，对所有敌人各造成特攻〔120%＋总连锁数×12%〕的特殊伤害；命中后击退该目标 总连锁数×1% 的行动条，每名目标每次出招最多一次。",
+      "damageType": 1,
+      "reach": 2,
+      "target": 2
+    },
+    {
+      "id": "附魔杖击",
+      "title": "附魔杖击",
+      "attribute": 8,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 2.4,
+        "perChain": 0.12
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "description": "以魔力强化法杖，敲击一名敌人，造成〔物攻＋特攻〕×〔240%＋总连锁数×12%〕的物理伤害。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "魔力屏障",
+      "title": "魔力屏障",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 0,
+          "attribute": 1,
+          "value": {
+            "basis": 2,
+            "perChain": 0.2
+          },
+          "duration": 0
+        }
+      ],
+      "description": "使一名己方单位获得相当于 施法者特攻×〔200%＋总连锁数×20%〕 的护盾。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 4
+    },
+    {
+      "id": "治愈术",
+      "title": "治愈术",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 1,
+          "attribute": 3,
+          "value": {
+            "basis": 2.2,
+            "perChain": 0.25
+          },
+          "duration": 0
+        }
+      ],
+      "description": "恢复一名己方单位相当于 施法者特防×〔220%＋总连锁数×25%〕 的生命。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 4
+    },
+    {
+      "id": "净化术",
+      "title": "净化术",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 2,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 0
+        },
+        {
+          "kind": 17,
+          "attribute": 0,
+          "value": {
+            "basis": 1,
+            "perChain": 0
+          },
+          "duration": 1
+        }
+      ],
+      "description": "移除一名己方单位 总连锁数 种随机减益状态，并使其获得减益免疫，持续1回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 4
+    },
+    {
+      "id": "魔力灌注",
+      "title": "魔力灌注",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 8,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 2
+          },
+          "duration": 2
+        }
+      ],
+      "description": "使一名己方单位的特攻提高 总连锁数×2，持续2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 4
+    },
+    {
+      "id": "轻羽术",
+      "title": "轻羽术",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 14,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 2,
+          "percent": true
+        }
+      ],
+      "description": "使一名己方单位的速度提高 总连锁数×10%，持续2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 4
+    },
+    {
+      "id": "贯心刺",
+      "title": "贯心刺",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 4.3,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "critBonus": {
+        "basis": 0,
+        "perChain": 0.08
+      },
+      "description": "向一名敌人发动突刺，造成物攻430%的物理伤害；本次攻击的暴击率提高 总连锁数×8%。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "连环突刺",
+      "title": "连环突刺",
+      "attribute": 0,
+      "pattern": 1,
+      "coefficient": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 0,
+        "perChain": 1
+      },
+      "effects": [],
+      "description": "向一名敌人连续刺击 总连锁数 次，每次造成物攻100%的物理伤害。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "挑空刺",
+      "title": "挑空刺",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 1.65,
+        "perChain": 0.11
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "landingCoefficient": 1.65,
+      "note": "测试：第13页第二段165%；第08/18页有150%冲突。落点/碰撞额外目标未实现。",
+      "description": "向一名敌人发动上挑攻击，造成物攻〔165%＋总连锁数×11%〕的物理伤害，并将其挑飞。目标落地或碰撞另一名敌人时，再对被挑飞目标造成物攻165%的物理伤害。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "旋矛御箭",
+      "title": "旋矛御箭",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 18,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 2
+          },
+          "duration": 1,
+          "rangedOnly": true
+        }
+      ],
+      "description": "旋转长矛形成防御，持续1回合，可格挡 总连锁数×2 个远程直接攻击段。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "调息",
+      "title": "调息",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 1,
+          "attribute": 4,
+          "value": {
+            "basis": 1.5,
+            "perChain": 0.2
+          },
+          "duration": 0
+        }
+      ],
+      "description": "恢复自身相当于 速度×〔150%＋总连锁数×20%〕 的生命。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "拒敌架势",
+      "title": "拒敌架势",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 19,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 1,
+          "percent": true
+        }
+      ],
+      "description": "进入拒敌架势，持续1回合。受到的近战直接攻击伤害降低 总连锁数×10%。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "裂伤刺",
+      "title": "裂伤刺",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0.5,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 5,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 0,
+          "onHit": true,
+          "stacking": true,
+          "negative": true,
+          "pending": true,
+          "note": "待定：流血持续/衰减/位移伤害系数，当前仅记录层数，不造成流血伤害。"
+        }
+      ],
+      "description": "向一名敌人刺出一击，造成物攻50%的物理伤害；命中后施加 总连锁数 层流血。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "压阵",
+      "title": "压阵",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 22,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.03
+          },
+          "duration": 0,
+          "percent": true
+        }
+      ],
+      "description": "以长矛压迫敌阵，使敌方前排所有单位的行动条击退 总连锁数×3%。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 1
+    },
+    {
+      "id": "迅攻架势",
+      "title": "迅攻架势",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 7,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 2
+        },
+        {
+          "kind": 11,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 2
+        }
+      ],
+      "description": "自身物攻与速度各提高 总连锁数，持续2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "盾击",
+      "title": "盾击",
+      "attribute": 2,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 3.75,
+        "perChain": 0.15
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "description": "向一名敌人发动盾击，造成物防〔375%＋总连锁数×15%〕的物理伤害。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "回旋飞盾",
+      "title": "回旋飞盾",
+      "attribute": 2,
+      "pattern": 3,
+      "coefficient": {
+        "basis": 1.5,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "bounceCoefficient": 1.05,
+      "description": "向一名敌人投掷盾牌，造成物防150%的物理伤害，随后最多随机弹射 总连锁数 次，每次造成物防105%的物理伤害。每次弹射必须换到另一名合法敌人；没有另一名合法敌人时停止。",
+      "damageType": 0,
+      "reach": 2,
+      "target": 0
+    },
+    {
+      "id": "碎盾冲击",
+      "title": "碎盾冲击",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 3.75,
+        "perChain": 0.15
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "shieldCost": 0.5,
+      "shieldResource": 3,
+      "description": "消耗自身当前护盾的50%，向一名敌人发动冲击。该段物理伤害的基础量＝物攻×〔375%＋总连锁数×15%〕＋消耗护盾值的300%，再统一计算物防减伤、增伤与暴击。",
+      "damageType": 0,
+      "reach": 1,
+      "target": 0
+    },
+    {
+      "id": "坚盾",
+      "title": "坚盾",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 0,
+          "attribute": 2,
+          "value": {
+            "basis": 2.5,
+            "perChain": 0.3
+          },
+          "duration": 0
+        }
+      ],
+      "description": "获得相当于 物防×〔250%＋总连锁数×30%〕 的护盾。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "挺身守护",
+      "title": "挺身守护",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 23,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.04
+          },
+          "duration": 1,
+          "percent": true
+        }
+      ],
+      "description": "守护一名其他己方单位，持续1回合。该单位受到直接攻击时，由自身代为承受；承受的该次伤害降低 总连锁数×4%，按自身防御、格挡与护盾结算。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 5
+    },
+    {
+      "id": "护盾治疗",
+      "title": "护盾治疗",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 1,
+          "attribute": 7,
+          "value": {
+            "basis": 0.2,
+            "perChain": 0.08
+          },
+          "duration": 0
+        }
+      ],
+      "description": "恢复自身相当于 当前护盾值×〔20%＋总连锁数×8%〕 的生命，不消耗护盾。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "钢铁意志",
+      "title": "钢铁意志",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 9,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 2
+          },
+          "duration": 2
+        },
+        {
+          "kind": 10,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 2
+        }
+      ],
+      "description": "自身物防提高 总连锁数×2，特防提高 总连锁数，持续2回合。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "棘甲壁垒",
+      "title": "棘甲壁垒",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 20,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 2
+        }
+      ],
+      "description": "自身获得棘甲壁垒，持续2回合。受到直接攻击伤害后，对攻击者造成相当于该段实际承受伤害×总连锁数×10%的反伤。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "护盾强化",
+      "title": "护盾强化",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 21,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 2,
+          "stacking": true
+        }
+      ],
+      "description": "自身获得 总连锁数 层护盾强化，持续2回合。每层使自身获得的护盾量提高10%。",
+      "damageType": 2,
+      "reach": 0,
+      "target": 3
+    },
+    {
+      "id": "弹跳撞击",
+      "title": "弹跳撞击",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "damageType": 0,
+      "reach": 1,
+      "target": 0,
+      "description": "弹跳撞击（第20页固定系数，不读玩家连锁）"
+    },
+    {
+      "id": "蓄热",
+      "title": "蓄热",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "damageType": 2,
+      "reach": 0,
+      "target": 3,
+      "description": "蓄热（第20页固定系数，不读玩家连锁）"
+    },
+    {
+      "id": "熔岩喷吐",
+      "title": "熔岩喷吐",
+      "attribute": 1,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 1.8,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 4,
+          "attribute": 0,
+          "value": {
+            "basis": 1,
+            "perChain": 0
+          },
+          "duration": 2,
+          "onHit": true,
+          "negative": true
+        }
+      ],
+      "damageType": 1,
+      "reach": 2,
+      "target": 0,
+      "description": "熔岩喷吐（第20页固定系数，不读玩家连锁）"
+    },
+    {
+      "id": "毒液喷射",
+      "title": "毒液喷射",
+      "attribute": 1,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0.5,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [
+        {
+          "kind": 3,
+          "attribute": 0,
+          "value": {
+            "basis": 2,
+            "perChain": 0
+          },
+          "duration": 0,
+          "onHit": true,
+          "stacking": true,
+          "negative": true
+        }
+      ],
+      "damageType": 1,
+      "reach": 2,
+      "target": 0,
+      "description": "毒液喷射（第20页固定系数，不读玩家连锁）"
+    },
+    {
+      "id": "虹光凝聚",
+      "title": "虹光凝聚",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "damageType": 2,
+      "reach": 0,
+      "target": 3,
+      "description": "虹光凝聚（第20页固定系数，不读玩家连锁）"
+    },
+    {
+      "id": "虹光喷射",
+      "title": "虹光喷射",
+      "attribute": 1,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 3,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "effects": [],
+      "damageType": 1,
+      "reach": 2,
+      "target": 0,
+      "description": "虹光喷射（第20页固定系数，不读玩家连锁）"
+    }
+  ],
+  "traits": [
+    {
+      "id": "追击",
+      "title": "追击",
+      "match": 0,
+      "rate": 0.15,
+      "pending": false,
+      "description": "追加 当前连锁数 个同类型直接攻击段。每段以本次主技能原生总系数的15%为基础，再按本卡实际1～5号位依次保留90%、80%、70%、60%、50%。",
+      "note": "原生总系数为主技能预定直接攻击段系数之和；群攻仅计一名目标的一套段数，不乘敌人数。概率续射只计首次必定段；挑飞落地等二次伤害、词条加值和消耗护盾转伤不计入基准。随机弹射按合法目标下预定的原生段合计。追加次数可随当前连锁数提高，槽位比例不变；不复制额外状态、控制、整套群攻或再次生成追击/镜像。"
+    },
+    {
+      "id": "锋锐",
+      "title": "锋锐",
+      "match": 0,
+      "rate": 0.1,
+      "pending": false,
+      "description": "本次主技能的直接伤害提高 当前连锁数×10%。",
+      "note": "与强化及其他同类伤害提高加算；原生段和追击均可收益，不放大治疗、护盾、反伤比例和持续伤害。"
+    },
+    {
+      "id": "穿甲",
+      "title": "穿甲",
+      "match": 0,
+      "rate": 0.05,
+      "pending": false,
+      "description": "本次主技能无视目标 当前连锁数×5% 的物防。",
+      "note": "仅无视物防，与近战/远程无关。同类无视相加，并与暴击时裂隙的物防无视共用100%上限。五张各一条、无连锁修正时合计75%；溢出无额外收益。"
+    },
+    {
+      "id": "壁障",
+      "title": "壁障",
+      "match": 4,
+      "rate": 1,
+      "pending": false,
+      "description": "本次主技能的伤害基础量、护盾量或恢复量，额外增加 施法者物防×〔当前连锁数×100%〕。",
+      "note": "攻击加值整次一份，分摊至原生攻击段，不分给追击；与基础伤害一同受目标防御、增伤、暴击和减伤影响。护盾/恢复直接加到已有对应效果量。不增加格挡次数、概率、减伤或反伤比例。"
+    },
+    {
+      "id": "增幅",
+      "title": "增幅",
+      "match": 3,
+      "rate": 0.05,
+      "pending": false,
+      "description": "本次主技能已有的概率、减伤、属性百分比增减或行动条推拉幅度，相对提高 当前连锁数×5%。",
+      "note": "多条相对增幅相加，不直接加百分点。例如基础50%，当前连锁数5的增幅使其成为62.5%。多个适用字段分别强化；不强化负面代价、攻击/治疗/护盾系数、原生防御无视、吸血或反伤。最终闪避率最高75%，暴击及普通触发概率最高100%，额外攻击/技能重复/再行动概率最高80%；持续减伤最高75%，一次性单段及合成总减伤最高90%；同次出招即时推拉条总幅度最高80%。"
+    },
+    {
+      "id": "灵动",
+      "title": "灵动",
+      "match": 4,
+      "rate": 0.6,
+      "pending": false,
+      "description": "本次主技能的伤害基础量、护盾量或恢复量，额外增加 施法者速度×当前连锁数×60%。",
+      "note": "攻击整次一份，分摊至原生攻击段，不分给追击。速度同时影响行动频率，因此属性换算系数低于壁障；本词条不额外提高速度、行动条或闪避。"
+    },
+    {
+      "id": "深化",
+      "title": "深化",
+      "match": 2,
+      "rate": 1,
+      "pending": false,
+      "description": "本次主技能施加的状态层数额外增加 当前连锁数 层。",
+      "note": "增加主技能已有的可叠层状态，包括中毒、虚弱、护盾强化；不为感电/灼伤增加层数，不增加招架格挡次数。"
+    },
+    {
+      "id": "延续",
+      "title": "延续",
+      "match": 3,
+      "rate": 0.1,
+      "pending": false,
+      "description": "本次主技能已有的限时效果，持续回合相对提高 当前连锁数×10%。",
+      "note": "多条增幅先相加；额外回合＝基础回合×延续增幅总和，统一向上取整后加回基础回合。基础1回合配五条延续为3回合；基础2回合为5回合。不延长无时限护盾、缝影等冻结行动条强控，不增加格挡次数；同名限时效果刷新取较长剩余时间，不累计回合。"
+    },
+    {
+      "id": "强化",
+      "title": "强化",
+      "match": 3,
+      "rate": 0.08,
+      "pending": false,
+      "description": "本次主技能的直接伤害提高 当前连锁数×8%；已有的非伤害固定效果量提高 当前连锁数×10%。",
+      "note": "攻击增伤与锋锐等相加；纯攻势锋锐每连锁10%，强化换取通用性。非伤害只强化主技能基础量，再加壁障等加值；不改变概率、百分比字段、持续回合或格挡次数。"
+    },
+    {
+      "id": "专注",
+      "title": "专注",
+      "match": 0,
+      "rate": 0,
+      "pending": false,
+      "description": "本次主技能的暴击率提高 当前连锁数×5%。",
+      "note": "提高暴击概率，主技能暴击率与其他增幅最终合计最高100%；不提高伤害系数。"
+    },
+    {
+      "id": "破势",
+      "title": "破势",
+      "match": 0,
+      "rate": 0.2,
+      "pending": false,
+      "description": "本次主技能的暴击伤害提高 当前连锁数×20个百分点。",
+      "note": "增加暴击倍率而非暴击概率；150%增加20个百分点为170%。适合与专注或技能自带暴击率搭配，非暴击段无收益。"
+    },
+    {
+      "id": "镜像",
+      "title": "镜像",
+      "match": 3,
+      "rate": 0,
+      "pending": false,
+      "description": "召唤一个镜像，以当前连锁数×20%的效果强度模仿本次主技能。",
+      "note": "复制原主技能的基础伤害系数和原生段数，按镜像强度缩放，不复制词条、追击、词条加值或其他镜像。护盾消耗和非数值控制等特殊复制规则仍待定。"
+    },
+    {
+      "id": "连锁反应",
+      "title": "连锁反应",
+      "match": 3,
+      "rate": 0,
+      "pending": false,
+      "description": "本卡的当前连锁数翻倍，本卡其他词条按修正后的当前连锁数计算。",
+      "note": "只作用本卡，不改变实际槽位、卡数或总连锁数。多条同名按基础值加算：一条2倍、两条3倍；先修正当前连锁数，再计算其他词条。连锁数修正不受收益放大词条再次放大。"
+    },
+    {
+      "id": "顽强",
+      "title": "顽强",
+      "match": 4,
+      "rate": 0.03,
+      "pending": false,
+      "description": "本次主技能的伤害基础量、护盾量或恢复量，额外增加 施法者最大生命×当前连锁数×3%。",
+      "note": "读取施法者最大生命。攻击加值整次一份并在防御前计入，不逐段完整增加、不直接穿防；护盾和恢复按已有对应效果加值。五号位为最大生命15%；不改变技能原有生命系数，不额外生成治疗或护盾。"
+    },
+    {
+      "id": "破魔",
+      "title": "破魔",
+      "match": 0,
+      "rate": 0.05,
+      "pending": false,
+      "description": "本次主技能无视目标 当前连锁数×5% 的特防。",
+      "note": "仅无视特防，与近战/远程无关。同类无视相加，并与暴击时裂隙的特防无视共用100%上限。五张各一条、无连锁修正时合计75%；溢出无额外收益。"
+    },
+    {
+      "id": "压制",
+      "title": "压制",
+      "match": 0,
+      "rate": 0,
+      "pending": true,
+      "description": "本次主技能攻击生命高于70%的目标时，伤害提高 当前连锁数×20%。",
+      "note": "每段攻击结算前判断目标生命比例；严格高于70%生效。"
+    },
+    {
+      "id": "终结",
+      "title": "终结",
+      "match": 0,
+      "rate": 0,
+      "pending": true,
+      "description": "本次主技能攻击生命低于30%的目标时，伤害提高 当前连锁数×20%。",
+      "note": "每段攻击结算前判断目标生命比例；严格低于30%生效。"
+    },
+    {
+      "id": "乘隙",
+      "title": "乘隙",
+      "match": 0,
+      "rate": 0,
+      "pending": true,
+      "description": "本次主技能攻击带有减益状态的目标时，伤害提高 当前连锁数×15%。",
+      "note": "目标至少有一种减益即可，多种减益不重复触发；每段攻击分别判断。"
+    },
+    {
+      "id": "裂隙",
+      "title": "裂隙",
+      "match": 0,
+      "rate": 0,
+      "pending": true,
+      "description": "本次主技能暴击时，额外无视目标 当前连锁数×10% 的对应防御。",
+      "note": "仅暴击段生效，保留每当前连锁数10%的对应防御无视；与穿甲或破魔的对应无视比例相加，合计最高100%。非暴击不触发，不把物防与特防混用，溢出不转化为增伤。"
+    },
+    {
+      "id": "贯通",
+      "title": "贯通",
+      "match": 0,
+      "rate": 0,
+      "pending": true,
+      "description": "本次主技能造成的直接伤害中，有 当前连锁数×5% 的部分无视护盾，直接扣除生命。",
+      "note": "经防御等修正后的伤害按比例分流至生命，其余正常扣盾及溢出扣生命；不增加伤害总量，不跳过物防/特防。"
+    },
+    {
+      "id": "连锁收益",
+      "title": "连锁收益",
+      "match": 3,
+      "rate": 0,
+      "pending": true,
+      "description": "本卡当前连锁数为3的倍数时，本卡其他有效词条的收益翻倍。",
+      "note": "先读取连锁反应等修正后的当前连锁数。只放大非收益放大、非连锁数修正词条；不互相递归增强。多条收益放大的增量相加：两条翻倍合计3倍，不是4倍。"
+    },
+    {
+      "id": "连锁蓄势",
+      "title": "连锁蓄势",
+      "match": 3,
+      "rate": 0,
+      "pending": true,
+      "description": "本卡当前连锁数为奇数时，本卡其他有效词条的收益提高50%。",
+      "note": "只放大本卡其他非收益放大、非连锁数修正词条；多条收益放大的增量相加。适合1/3/5号位；连锁反应后按修正值判奇偶。"
+    },
+    {
+      "id": "连锁协奏",
+      "title": "连锁协奏",
+      "match": 3,
+      "rate": 0,
+      "pending": true,
+      "description": "本卡当前连锁数为偶数时，本卡其他有效词条的收益提高75%。",
+      "note": "偶数槽位较少，单次收益高于蓄势。只放大本卡其他非收益放大、非连锁数修正词条；增量相加，不互相放大。"
+    },
+    {
+      "id": "同调",
+      "title": "同调",
+      "match": 3,
+      "rate": 0,
+      "pending": true,
+      "description": "本卡与前一张卡的主技能匹配类型相同时，本卡其他有效词条的收益提高50%。",
+      "note": "1号位不触发。只放大本卡其他非收益放大、非连锁数修正词条；不使不匹配的词条生效。多条收益放大增量相加。"
+    },
+    {
+      "id": "交织",
+      "title": "交织",
+      "match": 3,
+      "rate": 0,
+      "pending": true,
+      "description": "本卡与前一张卡的主技能匹配类型不同时，本卡其他有效词条的收益提高50%。",
+      "note": "与同调采用相同收益，分别支持同类型及交替类型排列。1号位不触发；异类型排列不减少总连锁数。只放大本卡其他非收益放大、非连锁数修正词条；增量相加。"
+    },
+    {
+      "id": "待定",
+      "title": "待定",
+      "match": 5,
+      "rate": 0,
+      "pending": true,
+      "description": "拒敌架势原生词条未定稿。"
+    }
+  ],
+  "monsters": [
+    {
+      "id": "普通史莱姆",
+      "title": "普通史莱姆",
+      "panel": {
+        "hp": 60,
+        "attack": 6.0,
+        "specialAttack": 2.0,
+        "defense": 5.0,
+        "specialDefense": 3.0,
+        "speed": 6.0,
+        "crit": 0,
+        "critDamage": 1.5
+      },
+      "phases": [
+        {
+          "title": "弹跳撞击",
+          "skill": "弹跳撞击",
+          "defense": 5.0,
+          "specialDefense": 3.0
+        }
+      ]
+    },
+    {
+      "id": "熔岩史莱姆",
+      "title": "熔岩史莱姆",
+      "panel": {
+        "hp": 100,
+        "attack": 5.0,
+        "specialAttack": 10.0,
+        "defense": 15.0,
+        "specialDefense": 5.0,
+        "speed": 3.0,
+        "crit": 0,
+        "critDamage": 1.5
+      },
+      "phases": [
+        {
+          "title": "蓄热",
+          "skill": "蓄热",
+          "defense": 15.0,
+          "specialDefense": 5.0
+        },
+        {
+          "title": "熔岩喷吐",
+          "skill": "熔岩喷吐",
+          "defense": 15.0,
+          "specialDefense": 5.0
+        }
+      ]
+    },
+    {
+      "id": "毒素史莱姆",
+      "title": "毒素史莱姆",
+      "panel": {
+        "hp": 75,
+        "attack": 4.0,
+        "specialAttack": 6.0,
+        "defense": 3.0,
+        "specialDefense": 10.0,
+        "speed": 5.0,
+        "crit": 0,
+        "critDamage": 1.5
+      },
+      "phases": [
+        {
+          "title": "毒液喷射",
+          "skill": "毒液喷射",
+          "defense": 3.0,
+          "specialDefense": 10.0
+        }
+      ]
+    },
+    {
+      "id": "彩虹史莱姆",
+      "title": "彩虹史莱姆",
+      "panel": {
+        "hp": 440,
+        "attack": 18.0,
+        "specialAttack": 18.0,
+        "defense": 15.0,
+        "specialDefense": 15.0,
+        "speed": 5.0,
+        "crit": 0,
+        "critDamage": 1.5
+      },
+      "phases": [
+        {
+          "title": "透明",
+          "skill": "弹跳撞击",
+          "defense": 15,
+          "specialDefense": 15
+        },
+        {
+          "title": "赤色",
+          "skill": "虹光凝聚",
+          "defense": 25,
+          "specialDefense": 5
+        },
+        {
+          "title": "蓝色",
+          "skill": "虹光喷射",
+          "defense": 5,
+          "specialDefense": 25
+        }
+      ]
+    }
+  ],
+  "encounters": [
+    {
+      "title": "首次遭遇",
+      "enemies": [
+        {
+          "monster": "普通史莱姆",
+          "backRow": false
+        },
+        {
+          "monster": "彩虹史莱姆",
+          "backRow": true
+        }
+      ]
+    },
+    {
+      "title": "单Boss",
+      "enemies": [
+        {
+          "monster": "彩虹史莱姆",
+          "backRow": true
+        }
+      ]
+    },
+    {
+      "title": "熔岩测试",
+      "enemies": [
+        {
+          "monster": "熔岩史莱姆",
+          "backRow": false
+        }
+      ]
+    },
+    {
+      "title": "毒素测试",
+      "enemies": [
+        {
+          "monster": "毒素史莱姆",
+          "backRow": true
+        }
+      ]
+    }
+  ],
+  "pending": [
+    "中毒每层2点、灼伤5点均为本轮测试参数。",
+    "流血仅记录层数：持续/衰减/位移伤害系数待定。",
+    "拒敌架势原生词条待定，不产生词条收益。",
+    "挑空刺第二段默认使用第13页165%测试值；与其他页150%冲突，可关闭第二段测试。碰撞落点/另一个敌人不模拟。",
+    "猎弓即时再动触发条件与其余武器固有能力待定，未启用。",
+    "同名固定属性增益、招架、反击姿态的重复幅度未定：有效期间拒绝重复施放，避免自行决定叠加。",
+    "致死反伤先后待定：默认测试倒下后仍返还已承受伤害，可在Rules中关闭。",
+    "治疗溢出待定：Demo仅恢复至最大生命，溢出不转换其他收益。",
+    "多种护盾池、镜像、扩展词条、强控卡与奇物不在本版卡池；数据结构保留接口。"
+  ]
+}
