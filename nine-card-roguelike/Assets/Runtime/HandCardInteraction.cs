@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -19,9 +19,31 @@ namespace Qiling
         Vector2 rest;
         bool raised;
         public bool Raised => raised;
-        public void Initialize() { rest = face.anchoredPosition; baseScale=face.localScale; ((RectTransform)transform).anchoredPosition=rest; Restore(); }
+        public string CardId { get; set; }
+        public Vector2 AuthoredPosition { get; private set; }
+        public float AuthoredAngle { get; private set; }
+        public float AuthoredBandMin { get; private set; }
+        public float AuthoredBandMax { get; private set; }
+        bool capturedPose;
+        public void Initialize()
+        {
+            if (!capturedPose)
+            {
+                AuthoredPosition = face.anchoredPosition; AuthoredAngle = Mathf.DeltaAngle(0, angle);
+                AuthoredBandMin = bandMin; AuthoredBandMax = bandMax; baseScale = face.localScale; capturedPose = true;
+            }
+            Arrange(AuthoredPosition, AuthoredAngle, index, AuthoredBandMin, AuthoredBandMax);
+        }
+        public void CancelInteraction() { pulseActive = false; Restore(); }
+        public void Arrange(Vector2 position, float rotation, int order, float min, float max)
+        {
+            CancelInteraction(); rest = position; angle = rotation; index = order; bandMin = min; bandMax = max;
+            var hit = (RectTransform)transform; hit.anchoredPosition = rest;
+            hit.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, max - min); Restore();
+        }
         public void OnPointerEnter(PointerEventData e)
         {
+            if (!isActiveAndEnabled) return;
             raised = true;
             targetPosition = rest + Vector2.up * (config!=null?config.hoverLift:65); targetRotation=Quaternion.identity; targetScale=baseScale*(config!=null?config.hoverScale:1.12f); face.SetAsLastSibling();
             Play(config?.cardHoverSound);
@@ -57,7 +79,8 @@ namespace Qiling
             if(raised) { face.anchoredPosition=Vector2.Lerp(face.anchoredPosition,targetPosition,step); face.localRotation=Quaternion.Slerp(face.localRotation,targetRotation,step); face.localScale=Vector3.Lerp(face.localScale,targetScale,step); }
             else if(pulseActive && config!=null) { transition+=Time.unscaledDeltaTime; float t=config.cardArrangeDuration<=0?1:Mathf.Clamp01(transition/config.cardArrangeDuration); face.localScale=baseScale*Mathf.Lerp(config.selectPulse,1,config.cardCurve!=null?config.cardCurve.Evaluate(t):t); if(t>=1) pulseActive=false; }
         }
-        void OnDisable() { Restore(); }
+        void OnDisable() { CancelInteraction(); Hovered?.Invoke(false); }
+        void OnDestroy() { Hovered = null; }
     }
 
 }

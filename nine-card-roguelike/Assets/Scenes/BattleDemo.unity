@@ -551,6 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1267767688}
   - component: {fileID: 1267767689}
+  - component: {fileID: 1267767690}
   m_Layer: 0
   m_Name: Stage Light
   m_TagString: Untagged
@@ -638,6 +639,29 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1267767690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267767687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1399582162
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +875,14 @@ PrefabInstance:
     - target: {fileID: 2161951265145096399, guid: bcfb90c075830cd47ab4eafb42046119, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659528286214598744, guid: bcfb90c075830cd47ab4eafb42046119, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124864669916964373, guid: bcfb90c075830cd47ab4eafb42046119, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5896704333954433601, guid: bcfb90c075830cd47ab4eafb42046119, type: 3}
       propertyPath: m_Pivot.x

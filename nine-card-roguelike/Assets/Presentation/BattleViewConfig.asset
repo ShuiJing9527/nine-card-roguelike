@@ -24,6 +24,8 @@ MonoBehaviour:
     prefab: {fileID: 7340740718839392555, guid: a91de2edd92dd2b4b96f8934523d6087, type: 3}
   - id: Trait Test Overlay
     prefab: {fileID: 628059793315931866, guid: 209512e8491a61f449bd6d9c1d03b906, type: 3}
+  - id: Trait Status Overlay
+    prefab: {fileID: 1949866716765065569, guid: 9cad9c63fd338f04ca0ae17ee26bf540, type: 3}
   font: {fileID: 12800000, guid: 1e9b77d6c37aff24db6e1dabfc56b543, type: 2}
   text: {r: 0.89, g: 0.93, b: 0.98, a: 1}
   muted: {r: 0.62, g: 0.7, b: 0.8, a: 1}
@@ -280,7 +282,46 @@ MonoBehaviour:
   intentOffset: 82
   infoVerticalRange: {x: 440, y: 480}
   intentVerticalRange: {x: 160, y: 330}
-  floatingTextLifetime: 0.85
-  floatingTextRise: 75
+  damageColor: {r: 1, g: 0.92, b: 0.8, a: 1}
+  criticalColor: {r: 1, g: 0.65, b: 0.2, a: 1}
+  shieldColor: {r: 0.3, g: 0.78, b: 1, a: 1}
+  healColor: {r: 0.3, g: 1, b: 0.5, a: 1}
+  dodgeColor: {r: 0.75, g: 0.85, b: 1, a: 1}
+  blockColor: {r: 0.5, g: 0.75, b: 1, a: 1}
+  criticalTextScale: 1.2
+  floatingTextVerbose: 0
+  floatingTextBodyHeight: 0.68
+  floatingTextOffsetRange: {x: 54, y: 28}
+  floatingTextAvoidanceSpacing: 28
+  floatingTextPlacementAttempts: 24
+  floatingTextHorizontalDrift: 8
+  floatingTextFadeStart: 0.5
+  floatingTextTopBoundary: 170
+  floatingTextCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  floatingTextLifetime: 0.7
+  floatingTextRise: 55
   floatingTextPrefab: {fileID: 6696447059400540973, guid: d2de29faf00fa0b42b018255f8bc041e, type: 3}
   statusIconPrefab: {fileID: 1450616934404627588, guid: e881a5c5d02dc484f87d92e2aa5a70a8, type: 3}

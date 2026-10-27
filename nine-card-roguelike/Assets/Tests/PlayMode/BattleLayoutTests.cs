@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -89,7 +89,7 @@ namespace Qiling.Tests
                 DemoFlowTests.Capture("battle-layout-" + size.x + "x" + size.y, size.x, size.y, canvas =>
                 {
                     foreach (string button in new[] { "确认出招", "清空", "查看完整战斗日志", "自由重铸", "设置" }) Visible(canvas, DemoFlowTests.Find(button).GetComponent<RectTransform>());
-                    for (int i = 0; i < 9; i++) Visible(canvas, Rect("Card Face " + i));
+                    foreach (var hand in demo.authoredBattle.GetComponentsInChildren<HandCardInteraction>()) Visible(canvas, hand.face);
                     for (int i = 0; i < 5; i++) Visible(canvas, Rect("Slot " + i));
                     for (int i = 0; i < 3; i++)
                     {
@@ -105,7 +105,7 @@ namespace Qiling.Tests
             }
             long draws = demo.Battle.Rng.Draws; DemoFlowTests.Find("出招预览").onClick.Invoke(); yield return null;
             Assert.NotNull(GameObject.Find("Preview Panel")); Assert.AreEqual(draws, demo.Battle.Rng.Draws);
-            Assert.AreNotEqual("Hand Card 4", Raycast(ScreenPoint(Rect("Hand Card 4"), Vector2.zero))?.name);
+            Assert.AreNotEqual("Hand Card 8", Raycast(ScreenPoint(Rect("Hand Card 8"), Vector2.zero))?.name);
             DemoFlowTests.Find("返回战斗").onClick.Invoke(); yield return null;
             DemoFlowTests.Find("设置").onClick.Invoke(); yield return null;
             Assert.NotNull(GameObject.Find("Settings Panel")); DemoFlowTests.Find("返回战斗").onClick.Invoke(); yield return null;

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="24" result="Passed" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-27 00:46:26Z" end-time="2026-10-27 00:46:57Z" duration="31.100543">
+  <test-suite type="TestSuite" id="1036" name="nine-card-roguelike" fullname="nine-card-roguelike" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-10-27 00:46:26Z" end-time="2026-10-27 00:46:57Z" duration="31.100543" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1030" name="Qiling.Tests.PlayMode.dll" fullname="C:/YY/Card/nine-card-roguelike/Validation/GroupedPlaybackSandbox/UnityProject/Library/ScriptAssemblies/Qiling.Tests.PlayMode.dll" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-10-27 00:46:26Z" end-time="2026-10-27 00:46:57Z" duration="31.092522" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="33724" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1031" name="Qiling" fullname="Qiling" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-10-27 00:46:26Z" end-time="2026-10-27 00:46:57Z" duration="31.090792" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1032" name="Tests" fullname="Qiling.Tests" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-10-27 00:46:26Z" end-time="2026-10-27 00:46:57Z" duration="31.089690" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="BattleLayoutTests" fullname="Qiling.Tests.BattleLayoutTests" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-27 00:46:26Z" end-time="2026-10-27 00:46:28Z" duration="2.814929" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="FanHoverHasStableDistinctClickableBandsAndScrollableDetails" fullname="Qiling.Tests.BattleLayoutTests.FanHoverHasStableDistinctClickableBandsAndScrollableDetails" methodname="FanHoverHasStableDistinctClickableBandsAndScrollableDetails" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" seed="1589186351" result="Passed" start-time="2026-10-27 00:46:26Z" end-time="2026-10-27 00:46:27Z" duration="1.183188" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="LayoutFitsMultipleAspectRatiosAndModalBlocksBattleInput" fullname="Qiling.Tests.BattleLayoutTests.LayoutFitsMultipleAspectRatiosAndModalBlocksBattleInput" methodname="LayoutFitsMultipleAspectRatiosAndModalBlocksBattleInput" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" seed="641515852" result="Passed" start-time="2026-10-27 00:46:27Z" end-time="2026-10-27 00:46:28Z" duration="1.262746" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="SharedRailReadsProgressAndSeparatesCoincidentPortraitsWithoutChangingRules" fullname="Qiling.Tests.BattleLayoutTests.SharedRailReadsProgressAndSeparatesCoincidentPortraitsWithoutChangingRules" methodname="SharedRailReadsProgressAndSeparatesCoincidentPortraitsWithoutChangingRules" classname="Qiling.Tests.BattleLayoutTests" runstate="Runnable" seed="738807870" result="Passed" start-time="2026-10-27 00:46:28Z" end-time="2026-10-27 00:46:28Z" duration="0.354659" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1005" name="DemoFlowTests" fullname="Qiling.Tests.DemoFlowTests" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-27 00:46:28Z" end-time="2026-10-27 00:46:31Z" duration="2.154448" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1006" name="CanChooseWeaponComposeTargetConfirmRetryAndReturn" fullname="Qiling.Tests.DemoFlowTests.CanChooseWeaponComposeTargetConfirmRetryAndReturn" methodname="CanChooseWeaponComposeTargetConfirmRetryAndReturn" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" seed="1636641542" result="Passed" start-time="2026-10-27 00:46:28Z" end-time="2026-10-27 00:46:29Z" duration="0.930685" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" fullname="Qiling.Tests.DemoFlowTests.FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" methodname="FreeReforgePreservesOrderRetriesProfilesAndExportsReplay" classname="Qiling.Tests.DemoFlowTests" runstate="Runnable" seed="1104892304" result="Passed" start-time="2026-10-27 00:46:29Z" end-time="2026-10-27 00:46:31Z" duration="1.208131" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1008" name="HoverLifecycleTests" fullname="Qiling.Tests.HoverLifecycleTests" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-27 00:46:31Z" end-time="2026-10-27 00:46:37Z" duration="6.594756" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1011" name="AllHandsStayBoundToTheirPhysicalCardAcrossSequenceEdits" fullname="Qiling.Tests.HoverLifecycleTests.AllHandsStayBoundToTheirPhysicalCardAcrossSequenceEdits" methodname="AllHandsStayBoundToTheirPhysicalCardAcrossSequenceEdits" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="1412978037" result="Passed" start-time="2026-10-27 00:46:31Z" end-time="2026-10-27 00:46:31Z" duration="0.329093" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="ConfirmLocksUntilNextNormalPlayerTurnAndRetryRestoresExclusiveZones" fullname="Qiling.Tests.HoverLifecycleTests.ConfirmLocksUntilNextNormalPlayerTurnAndRetryRestoresExclusiveZones" methodname="ConfirmLocksUntilNextNormalPlayerTurnAndRetryRestoresExclusiveZones" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="1811589433" result="Passed" start-time="2026-10-27 00:46:31Z" end-time="2026-10-27 00:46:35Z" duration="3.882980" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="ExitWeaponChangeAndDisabledSourcesCannotResurrectStaleDetails" fullname="Qiling.Tests.HoverLifecycleTests.ExitWeaponChangeAndDisabledSourcesCannotResurrectStaleDetails" methodname="ExitWeaponChangeAndDisabledSourcesCannotResurrectStaleDetails" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="478850882" result="Passed" start-time="2026-10-27 00:46:35Z" end-time="2026-10-27 00:46:35Z" duration="0.341136" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="ReorderAndClearNeverRetargetAnOpenSlotTooltipToAnotherCard" fullname="Qiling.Tests.HoverLifecycleTests.ReorderAndClearNeverRetargetAnOpenSlotTooltipToAnotherCard" methodname="ReorderAndClearNeverRetargetAnOpenSlotTooltipToAnotherCard" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="1126484096" result="Passed" start-time="2026-10-27 00:46:35Z" end-time="2026-10-27 00:46:35Z" duration="0.334742" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="RetryInvalidatesOldEnterExitAndPanelCallbacksEvenWhenViewsAreReused" fullname="Qiling.Tests.HoverLifecycleTests.RetryInvalidatesOldEnterExitAndPanelCallbacksEvenWhenViewsAreReused" methodname="RetryInvalidatesOldEnterExitAndPanelCallbacksEvenWhenViewsAreReused" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="765713257" result="Passed" start-time="2026-10-27 00:46:35Z" end-time="2026-10-27 00:46:36Z" duration="0.526893" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="SlotRemovalInvalidatesHoveredCardInsteadOfIndexingShorterSequence" fullname="Qiling.Tests.HoverLifecycleTests.SlotRemovalInvalidatesHoveredCardInsteadOfIndexingShorterSequence" methodname="SlotRemovalInvalidatesHoveredCardInsteadOfIndexingShorterSequence" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="489745942" result="Passed" start-time="2026-10-27 00:46:36Z" end-time="2026-10-27 00:46:36Z" duration="0.309598" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="TooltipCanStillBeEnteredAndScrolledThenClosesWhenSourceDisappears" fullname="Qiling.Tests.HoverLifecycleTests.TooltipCanStillBeEnteredAndScrolledThenClosesWhenSourceDisappears" methodname="TooltipCanStillBeEnteredAndScrolledThenClosesWhenSourceDisappears" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="2046043855" result="Passed" start-time="2026-10-27 00:46:36Z" end-time="2026-10-27 00:46:37Z" duration="0.519535" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="TransferCompactsReturnsInOriginalOrderAndRejectsStaleHover" fullname="Qiling.Tests.HoverLifecycleTests.TransferCompactsReturnsInOriginalOrderAndRejectsStaleHover" methodname="TransferCompactsReturnsInOriginalOrderAndRejectsStaleHover" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="650970568" result="Passed" start-time="2026-10-27 00:46:37Z" end-time="2026-10-27 00:46:37Z" duration="0.332486" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1017" name="PresentationFlowTests" fullname="Qiling.Tests.PresentationFlowTests" classname="Qiling.Tests.PresentationFlowTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-27 00:46:37Z" end-time="2026-10-27 00:46:42Z" duration="4.722519" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1019" name="ConfiguredProjectileAndImpactPrefabActuallyPlayAndFinish" fullname="Qiling.Tests.PresentationFlowTests.ConfiguredProjectileAndImpactPrefabActuallyPlayAndFinish" methodname="ConfiguredProjectileAndImpactPrefabActuallyPlayAndFinish" classname="Qiling.Tests.PresentationFlowTests" runstate="Runnable" seed="1249544239" result="Passed" start-time="2026-10-27 00:46:37Z" end-time="2026-10-27 00:46:39Z" duration="2.031765" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1020" name="MissingAnimationsEffectsAndNullCurvesCannotBlockSegmentPlayback" fullname="Qiling.Tests.PresentationFlowTests.MissingAnimationsEffectsAndNullCurvesCannotBlockSegmentPlayback" methodname="MissingAnimationsEffectsAndNullCurvesCannotBlockSegmentPlayback" classname="Qiling.Tests.PresentationFlowTests" runstate="Runnable" seed="103643726" result="Passed" start-time="2026-10-27 00:46:39Z" end-time="2026-10-27 00:46:42Z" duration="2.382923" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="SceneEditsSurviveBindingAndRetryAndSingleBossHidesUnusedViews" fullname="Qiling.Tests.PresentationFlowTests.SceneEditsSurviveBindingAndRetryAndSingleBossHidesUnusedViews" methodname="SceneEditsSurviveBindingAndRetryAndSingleBossHidesUnusedViews" classname="Qiling.Tests.PresentationFlowTests" runstate="Runnable" seed="91688915" result="Passed" start-time="2026-10-27 00:46:42Z" end-time="2026-10-27 00:46:42Z" duration="0.290736" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1021" name="SegmentPlaybackTests" fullname="Qiling.Tests.SegmentPlaybackTests" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-27 00:46:42Z" end-time="2026-10-27 00:46:57Z" duration="14.800569" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1028" name="BatchedRetargetAndRetryNeverUseDeadTargetsOrOldEffects" fullname="Qiling.Tests.SegmentPlaybackTests.BatchedRetargetAndRetryNeverUseDeadTargetsOrOldEffects" methodname="BatchedRetargetAndRetryNeverUseDeadTargetsOrOldEffects" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="1095317031" result="Passed" start-time="2026-10-27 00:46:42Z" end-time="2026-10-27 00:46:43Z" duration="1.609628" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1027" name="BatchesLaunchTogetherShowDistinctRealNumbersAndPreserveEverySnapshot" fullname="Qiling.Tests.SegmentPlaybackTests.BatchesLaunchTogetherShowDistinctRealNumbersAndPreserveEverySnapshot" methodname="BatchesLaunchTogetherShowDistinctRealNumbersAndPreserveEverySnapshot" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="281164805" result="Passed" start-time="2026-10-27 00:46:43Z" end-time="2026-10-27 00:46:47Z" duration="3.542405" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="BouncePlaybackPathNumbersAndRetargetMatchRecordedEvents" fullname="Qiling.Tests.SegmentPlaybackTests.BouncePlaybackPathNumbersAndRetargetMatchRecordedEvents" methodname="BouncePlaybackPathNumbersAndRetargetMatchRecordedEvents" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="257920753" result="Passed" start-time="2026-10-27 00:46:47Z" end-time="2026-10-27 00:46:48Z" duration="0.921684" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1024" name="HealingAndShieldUpdateAtDedicatedEventsAndHaveDistinctVisibleFeedback" fullname="Qiling.Tests.SegmentPlaybackTests.HealingAndShieldUpdateAtDedicatedEventsAndHaveDistinctVisibleFeedback" methodname="HealingAndShieldUpdateAtDedicatedEventsAndHaveDistinctVisibleFeedback" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="348580277" result="Passed" start-time="2026-10-27 00:46:48Z" end-time="2026-10-27 00:46:49Z" duration="0.807431" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1025" name="LethalSegmentsFlyToBossAndVictoryWaitsForPlaybackAndCleansUp" fullname="Qiling.Tests.SegmentPlaybackTests.LethalSegmentsFlyToBossAndVictoryWaitsForPlaybackAndCleansUp" methodname="LethalSegmentsFlyToBossAndVictoryWaitsForPlaybackAndCleansUp" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="116744184" result="Passed" start-time="2026-10-27 00:46:49Z" end-time="2026-10-27 00:46:51Z" duration="2.096303" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1029" name="RetryDuringImpactCancelsAllOldVisualsAndLaterCallbacks" fullname="Qiling.Tests.SegmentPlaybackTests.RetryDuringImpactCancelsAllOldVisualsAndLaterCallbacks" methodname="RetryDuringImpactCancelsAllOldVisualsAndLaterCallbacks" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="1527774775" result="Passed" start-time="2026-10-27 00:46:51Z" end-time="2026-10-27 00:46:52Z" duration="0.991155" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1026" name="SkillSpecificEndEffectLifetimeIsHonoredBeforeUnlockAndCleanup" fullname="Qiling.Tests.SegmentPlaybackTests.SkillSpecificEndEffectLifetimeIsHonoredBeforeUnlockAndCleanup" methodname="SkillSpecificEndEffectLifetimeIsHonoredBeforeUnlockAndCleanup" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="1038408425" result="Passed" start-time="2026-10-27 00:46:52Z" end-time="2026-10-27 00:46:53Z" duration="1.366205" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="VisibleHpShieldFollowEachMixedResultAndInputsAndClockAreLocked" fullname="Qiling.Tests.SegmentPlaybackTests.VisibleHpShieldFollowEachMixedResultAndInputsAndClockAreLocked" methodname="VisibleHpShieldFollowEachMixedResultAndInputsAndClockAreLocked" classname="Qiling.Tests.SegmentPlaybackTests" runstate="Runnable" seed="90994654" result="Passed" start-time="2026-10-27 00:46:53Z" end-time="2026-10-27 00:46:57Z" duration="3.447521" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/student/AppData/LocalLow/DefaultCompany/nine-card-roguelike\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

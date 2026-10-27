@@ -49,7 +49,7 @@ namespace Qiling.Tests
         [UnityTest] public IEnumerator MissingAnimationsEffectsAndNullCurvesCannotBlockSegmentPlayback()
         {
             var config=Object.Instantiate(demo.viewConfig); var empty=ScriptableObject.CreateInstance<SkillPresentation>();
-            empty.windup=empty.travel=empty.hitDuration=empty.recovery=empty.deathDuration=0; empty.shakeAmplitude=0; empty.moveCurve=empty.projectileCurve=empty.shakeCurve=null;
+            empty.windup=empty.travel=empty.hitDuration=empty.recovery=empty.deathDuration=0; empty.segmentInterval=0; empty.projectileSpeed=0; empty.shakeAmplitude=0; empty.moveCurve=empty.projectileCurve=empty.shakeCurve=null;
             config.defaultSkill=empty; demo.viewConfig=config;
             var data=Object.Instantiate(demo.catalog); data.skills=demo.catalog.skills.Select(s=>JsonUtility.FromJson<SkillDef>(JsonUtility.ToJson(s))).ToList(); foreach(var skill in data.skills) skill.presentation=empty; demo.catalog=data;
             DemoFlowTests.Find("开始战斗").onClick.Invoke(); yield return null; demo.clockScale=0;

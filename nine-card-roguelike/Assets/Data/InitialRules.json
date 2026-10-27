@@ -737,10 +737,11 @@
             "basis": 0,
             "perChain": 1
           },
-          "duration": 2
+          "duration": 0,
+          "durationPerChain": 1
         }
       ],
-      "description": "物攻提高 总连锁数，持续 2回合。",
+      "description": "物攻提高 总连锁数，持续总连锁数回合。",
       "damageType": 2,
       "reach": 0,
       "target": 3
@@ -929,8 +930,9 @@
             "basis": 0,
             "perChain": 0.1
           },
-          "duration": 2,
-          "percent": true
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
         },
         {
           "kind": 13,
@@ -939,11 +941,12 @@
             "basis": 0,
             "perChain": 0.1
           },
-          "duration": 2,
-          "percent": true
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
         }
       ],
-      "description": "物防与特防提高 总连锁数×10%，持续 2回合。",
+      "description": "物防与特防提高 总连锁数×10%，持续总连锁数回合。",
       "damageType": 2,
       "reach": 0,
       "target": 3
@@ -1000,7 +1003,8 @@
             "basis": 0,
             "perChain": 2
           },
-          "duration": 2
+          "duration": 0,
+          "durationPerChain": 1
         },
         {
           "kind": 12,
@@ -1009,9 +1013,10 @@
             "basis": -0.3,
             "perChain": 0
           },
-          "duration": 2,
+          "duration": 0,
           "percent": true,
-          "negative": true
+          "negative": true,
+          "durationPerChain": 1
         },
         {
           "kind": 13,
@@ -1020,12 +1025,13 @@
             "basis": -0.3,
             "perChain": 0
           },
-          "duration": 2,
+          "duration": 0,
           "percent": true,
-          "negative": true
+          "negative": true,
+          "durationPerChain": 1
         }
       ],
-      "description": "物攻提高 总连锁数×2，物防与特防降低 30%，持续 2回合。",
+      "description": "物攻提高 总连锁数×2，物防与特防降低 30%，持续总连锁数回合。",
       "damageType": 2,
       "reach": 0,
       "target": 3
@@ -1216,10 +1222,11 @@
             "basis": 0,
             "perChain": 2
           },
-          "duration": 2
+          "duration": 0,
+          "durationPerChain": 1
         }
       ],
-      "description": "使一名己方单位的特攻提高 总连锁数×2，持续2回合。",
+      "description": "使一名己方单位的特攻提高 总连锁数×2，持续总连锁数回合。",
       "damageType": 2,
       "reach": 0,
       "target": 4
@@ -1245,11 +1252,12 @@
             "basis": 0,
             "perChain": 0.1
           },
-          "duration": 2,
-          "percent": true
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
         }
       ],
-      "description": "使一名己方单位的速度提高 总连锁数×10%，持续2回合。",
+      "description": "使一名己方单位的速度提高 总连锁数×10%，持续总连锁数回合。",
       "damageType": 2,
       "reach": 0,
       "target": 4
@@ -1491,19 +1499,22 @@
             "basis": 0,
             "perChain": 1
           },
-          "duration": 2
+          "duration": 0,
+          "durationPerChain": 1
         },
         {
-          "kind": 11,
+          "kind": 14,
           "attribute": 0,
           "value": {
             "basis": 0,
-            "perChain": 1
+            "perChain": 0.03
           },
-          "duration": 2
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
         }
       ],
-      "description": "自身物攻与速度各提高 总连锁数，持续2回合。",
+      "description": "自身物攻提高 总连锁数点；速度提高 总连锁数×3%，两者均持续总连锁数回合。物攻为固定点数，速度为百分比增益。",
       "damageType": 2,
       "reach": 0,
       "target": 3
@@ -1677,7 +1688,8 @@
             "basis": 0,
             "perChain": 2
           },
-          "duration": 2
+          "duration": 0,
+          "durationPerChain": 1
         },
         {
           "kind": 10,
@@ -1686,10 +1698,11 @@
             "basis": 0,
             "perChain": 1
           },
-          "duration": 2
+          "duration": 0,
+          "durationPerChain": 1
         }
       ],
-      "description": "自身物防提高 总连锁数×2，特防提高 总连锁数，持续2回合。",
+      "description": "自身物防提高 总连锁数×2，特防提高 总连锁数，持续总连锁数回合。",
       "damageType": 2,
       "reach": 0,
       "target": 3
@@ -1744,11 +1757,12 @@
             "basis": 0,
             "perChain": 1
           },
-          "duration": 2,
-          "stacking": true
+          "duration": 0,
+          "stacking": true,
+          "durationPerChain": 1
         }
       ],
-      "description": "自身获得 总连锁数 层护盾强化，持续2回合。每层使自身获得的护盾量提高10%。",
+      "description": "自身获得 总连锁数 层护盾强化，持续总连锁数回合。每层使自身获得的护盾量提高10%。",
       "damageType": 2,
       "reach": 0,
       "target": 3
@@ -1891,6 +1905,209 @@
       "reach": 2,
       "target": 0,
       "description": "虹光喷射（第20页固定系数，不读玩家连锁）"
+    },
+    {
+      "id": "战意",
+      "title": "战意",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "damageType": 2,
+      "reach": 0,
+      "target": 3,
+      "effects": [
+        {
+          "kind": 16,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.05
+          },
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
+        }
+      ],
+      "description": "自身暴击率提高 总连锁数×5%，持续总连锁数回合。",
+      "note": "扩展技能数据已接入；正式扩展卡获取/换卡流程尚未开放。重复施加沿用既有非叠加/限制规则。"
+    },
+    {
+      "id": "护身之风",
+      "title": "护身之风",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "damageType": 2,
+      "reach": 0,
+      "target": 3,
+      "effects": [
+        {
+          "kind": 12,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
+        },
+        {
+          "kind": 13,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.1
+          },
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
+        }
+      ],
+      "description": "自身物防与特防提高 总连锁数×10%，持续总连锁数回合。",
+      "note": "扩展技能数据已接入；正式扩展卡获取/换卡流程尚未开放。重复施加沿用既有非叠加/限制规则。"
+    },
+    {
+      "id": "疾风步",
+      "title": "疾风步",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "damageType": 2,
+      "reach": 0,
+      "target": 3,
+      "effects": [
+        {
+          "kind": 14,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 0.03
+          },
+          "duration": 0,
+          "percent": true,
+          "durationPerChain": 1
+        },
+        {
+          "kind": 25,
+          "attribute": 0,
+          "value": {
+            "basis": 0.3,
+            "perChain": 0
+          },
+          "duration": 0,
+          "percent": true
+        }
+      ],
+      "description": "自身速度提高 总连锁数×3%，持续总连锁数回合，并立即推进自身行动条30%。",
+      "note": "扩展技能数据已接入；正式扩展卡获取/换卡流程尚未开放。重复施加沿用既有非叠加/限制规则。"
+    },
+    {
+      "id": "坚岩加护",
+      "title": "坚岩加护",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "damageType": 2,
+      "reach": 0,
+      "target": 4,
+      "effects": [
+        {
+          "kind": 9,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 2
+          },
+          "duration": 0,
+          "percent": false,
+          "durationPerChain": 1
+        },
+        {
+          "kind": 10,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 2
+          },
+          "duration": 0,
+          "percent": false,
+          "durationPerChain": 1
+        }
+      ],
+      "description": "使一名己方单位的物防与特防提高 总连锁数×2，持续总连锁数回合。",
+      "note": "扩展技能数据已接入；正式扩展卡获取/换卡流程尚未开放。重复施加沿用既有非叠加/限制规则。"
+    },
+    {
+      "id": "盾墙号令",
+      "title": "盾墙号令",
+      "attribute": 0,
+      "pattern": 0,
+      "coefficient": {
+        "basis": 0,
+        "perChain": 0
+      },
+      "segments": {
+        "basis": 1,
+        "perChain": 0
+      },
+      "damageType": 2,
+      "reach": 0,
+      "target": 6,
+      "effects": [
+        {
+          "kind": 9,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 0,
+          "percent": false,
+          "durationPerChain": 1
+        },
+        {
+          "kind": 10,
+          "attribute": 0,
+          "value": {
+            "basis": 0,
+            "perChain": 1
+          },
+          "duration": 0,
+          "percent": false,
+          "durationPerChain": 1
+        }
+      ],
+      "description": "使己方全体的物防与特防各提高 总连锁数，持续总连锁数回合。",
+      "note": "扩展技能数据已接入；正式扩展卡获取/换卡流程尚未开放。重复施加沿用既有非叠加/限制规则。"
     }
   ],
   "traits": [
@@ -1898,10 +2115,10 @@
       "id": "追击",
       "title": "追击",
       "match": 0,
-      "rate": 0.15,
+      "rate": 0.5,
       "pending": false,
-      "description": "追加 当前连锁数 个同类型直接攻击段。每段以本次主技能原生总系数的15%为基础，再按本卡实际1～5号位依次保留90%、80%、70%、60%、50%。",
-      "note": "原生总系数为主技能预定直接攻击段系数之和；群攻仅计一名目标的一套段数，不乘敌人数。概率续射只计首次必定段；挑飞落地等二次伤害、词条加值和消耗护盾转伤不计入基准。随机弹射按合法目标下预定的原生段合计。追加次数可随当前连锁数提高，槽位比例不变；不复制额外状态、控制、整套群攻或再次生成追击/镜像。"
+      "description": "追加 当前连锁数 个同类型直接攻击段，每段伤害系数固定为50%，读取主技能指定的计算属性。不受槽位伤害衰减影响。",
+      "note": "用户最新确认：所有来源槽位的每段系数均为50%，不乘槽位保留率，也不逐段递减。当前连锁数修正只影响追加次数，来源槽位仅用于标识。计算属性、伤害类型与射程沿用1号位主技能；主技能内置穿透和暴击率加值作用于追击，并沿用现有增伤、穿透、暴击规则。不读取主技能单段或原生总系数，不复制壁障/灵动/顽强加值、碎盾等资源加值、附带状态、控制或再次生成追击。各段独立判定、逐段扣盾扣血，死亡后按合法目标转火；反击追击同样处理。无连锁修正时五张各带一条追击共15段，总系数750%。Rate为每段固定系数0.5。"
     },
     {
       "id": "锋锐",
@@ -1964,7 +2181,7 @@
       "rate": 0.1,
       "pending": false,
       "description": "本次主技能已有的限时效果，持续回合相对提高 当前连锁数×10%。",
-      "note": "多条增幅先相加；额外回合＝基础回合×延续增幅总和，统一向上取整后加回基础回合。基础1回合配五条延续为3回合；基础2回合为5回合。不延长无时限护盾、缝影等冻结行动条强控，不增加格挡次数；同名限时效果刷新取较长剩余时间，不累计回合。"
+      "note": "先由主技能实际总连锁计算基础时长D；每条延续读取本卡修正后当前连锁数，计入适用收益放大，全部加算。最终持续D＋ceil(D×累计延长比例)，只取整一次；强化不延长时间。D=5时：无延续5回合；当前连锁5的一条延续8回合；当前连锁10的一条延续10回合；五条当前连锁1～5的延续13回合。不增加格挡次数，不延长无时限护盾或冻结，不修改尚未接入的蓄力等待。已允许刷新的效果取较长剩余时间，不累加回合；重复幅度未定组合仍按原有限制。"
     },
     {
       "id": "强化",
@@ -1979,7 +2196,7 @@
       "id": "专注",
       "title": "专注",
       "match": 0,
-      "rate": 0,
+      "rate": 0.05,
       "pending": false,
       "description": "本次主技能的暴击率提高 当前连锁数×5%。",
       "note": "提高暴击概率，主技能暴击率与其他增幅最终合计最高100%；不提高伤害系数。"
@@ -1997,10 +2214,10 @@
       "id": "镜像",
       "title": "镜像",
       "match": 3,
-      "rate": 0,
+      "rate": 0.2,
       "pending": false,
       "description": "召唤一个镜像，以当前连锁数×20%的效果强度模仿本次主技能。",
-      "note": "复制原主技能的基础伤害系数和原生段数，按镜像强度缩放，不复制词条、追击、词条加值或其他镜像。护盾消耗和非数值控制等特殊复制规则仍待定。"
+      "note": "复制原主技能的基础伤害系数和原生段数，按镜像强度缩放，不复制词条、追击、词条加值或其他镜像。护盾消耗和非数值控制等特殊复制规则仍待定。 已接入基础伤害、治疗、护盾及明确的数值效果复制，不复制词条或词条加值。特殊资源、非数值控制、未确认的持续回合缩放、非整数层数/格挡次数取整及同名限时增益重复幅度，只限制相应镜像组合并显示原因，主技能照常执行。"
     },
     {
       "id": "连锁反应",
@@ -2033,26 +2250,28 @@
       "id": "压制",
       "title": "压制",
       "match": 0,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.2,
+      "pending": false,
       "description": "本次主技能攻击生命高于70%的目标时，伤害提高 当前连锁数×20%。",
-      "note": "每段攻击结算前判断目标生命比例；严格高于70%生效。"
+      "note": "每段攻击结算前判断目标生命比例；严格高于70%生效。",
+      "threshold": 0.7
     },
     {
       "id": "终结",
       "title": "终结",
       "match": 0,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.2,
+      "pending": false,
       "description": "本次主技能攻击生命低于30%的目标时，伤害提高 当前连锁数×20%。",
-      "note": "每段攻击结算前判断目标生命比例；严格低于30%生效。"
+      "note": "每段攻击结算前判断目标生命比例；严格低于30%生效。",
+      "threshold": 0.3
     },
     {
       "id": "乘隙",
       "title": "乘隙",
       "match": 0,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.15,
+      "pending": false,
       "description": "本次主技能攻击带有减益状态的目标时，伤害提高 当前连锁数×15%。",
       "note": "目标至少有一种减益即可，多种减益不重复触发；每段攻击分别判断。"
     },
@@ -2060,8 +2279,8 @@
       "id": "裂隙",
       "title": "裂隙",
       "match": 0,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.1,
+      "pending": false,
       "description": "本次主技能暴击时，额外无视目标 当前连锁数×10% 的对应防御。",
       "note": "仅暴击段生效，保留每当前连锁数10%的对应防御无视；与穿甲或破魔的对应无视比例相加，合计最高100%。非暴击不触发，不把物防与特防混用，溢出不转化为增伤。"
     },
@@ -2069,8 +2288,8 @@
       "id": "贯通",
       "title": "贯通",
       "match": 0,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.05,
+      "pending": false,
       "description": "本次主技能造成的直接伤害中，有 当前连锁数×5% 的部分无视护盾，直接扣除生命。",
       "note": "经防御等修正后的伤害按比例分流至生命，其余正常扣盾及溢出扣生命；不增加伤害总量，不跳过物防/特防。"
     },
@@ -2078,46 +2297,46 @@
       "id": "连锁收益",
       "title": "连锁收益",
       "match": 3,
-      "rate": 0,
-      "pending": true,
+      "rate": 1,
+      "pending": false,
       "description": "本卡当前连锁数为3的倍数时，本卡其他有效词条的收益翻倍。",
-      "note": "先读取连锁反应等修正后的当前连锁数。只放大非收益放大、非连锁数修正词条；不互相递归增强。多条收益放大的增量相加：两条翻倍合计3倍，不是4倍。"
+      "note": "先读取连锁反应等修正后的当前连锁数。只放大非收益放大、非连锁数修正词条；不互相递归增强。多条收益放大的增量相加：两条翻倍合计3倍，不是4倍。 当前实现：先合计本卡收益增量；只放大其他有效词条。追击只放大追加次数，每段固定50%不变。次数/层数按项目统一四舍五入；延续的额外回合仍按原规则汇总后向上取整。"
     },
     {
       "id": "连锁蓄势",
       "title": "连锁蓄势",
       "match": 3,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.5,
+      "pending": false,
       "description": "本卡当前连锁数为奇数时，本卡其他有效词条的收益提高50%。",
-      "note": "只放大本卡其他非收益放大、非连锁数修正词条；多条收益放大的增量相加。适合1/3/5号位；连锁反应后按修正值判奇偶。"
+      "note": "只放大本卡其他非收益放大、非连锁数修正词条；多条收益放大的增量相加。适合1/3/5号位；连锁反应后按修正值判奇偶。 当前实现：先合计本卡收益增量；只放大其他有效词条。追击只放大追加次数，每段固定50%不变。次数/层数按项目统一四舍五入；延续的额外回合仍按原规则汇总后向上取整。"
     },
     {
       "id": "连锁协奏",
       "title": "连锁协奏",
       "match": 3,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.75,
+      "pending": false,
       "description": "本卡当前连锁数为偶数时，本卡其他有效词条的收益提高75%。",
-      "note": "偶数槽位较少，单次收益高于蓄势。只放大本卡其他非收益放大、非连锁数修正词条；增量相加，不互相放大。"
+      "note": "偶数槽位较少，单次收益高于蓄势。只放大本卡其他非收益放大、非连锁数修正词条；增量相加，不互相放大。 当前实现：先合计本卡收益增量；只放大其他有效词条。追击只放大追加次数，每段固定50%不变。次数/层数按项目统一四舍五入；延续的额外回合仍按原规则汇总后向上取整。"
     },
     {
       "id": "同调",
       "title": "同调",
       "match": 3,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.5,
+      "pending": false,
       "description": "本卡与前一张卡的主技能匹配类型相同时，本卡其他有效词条的收益提高50%。",
-      "note": "1号位不触发。只放大本卡其他非收益放大、非连锁数修正词条；不使不匹配的词条生效。多条收益放大增量相加。"
+      "note": "1号位不触发。只放大本卡其他非收益放大、非连锁数修正词条；不使不匹配的词条生效。多条收益放大增量相加。 当前实现：先合计本卡收益增量；只放大其他有效词条。追击只放大追加次数，每段固定50%不变。次数/层数按项目统一四舍五入；延续的额外回合仍按原规则汇总后向上取整。"
     },
     {
       "id": "交织",
       "title": "交织",
       "match": 3,
-      "rate": 0,
-      "pending": true,
+      "rate": 0.5,
+      "pending": false,
       "description": "本卡与前一张卡的主技能匹配类型不同时，本卡其他有效词条的收益提高50%。",
-      "note": "与同调采用相同收益，分别支持同类型及交替类型排列。1号位不触发；异类型排列不减少总连锁数。只放大本卡其他非收益放大、非连锁数修正词条；增量相加。"
+      "note": "与同调采用相同收益，分别支持同类型及交替类型排列。1号位不触发；异类型排列不减少总连锁数。只放大本卡其他非收益放大、非连锁数修正词条；增量相加。 当前实现：先合计本卡收益增量；只放大其他有效词条。追击只放大追加次数，每段固定50%不变。次数/层数按项目统一四舍五入；延续的额外回合仍按原规则汇总后向上取整。"
     },
     {
       "id": "待定",
@@ -2287,6 +2506,6 @@
     "同名固定属性增益、招架、反击姿态的重复幅度未定：有效期间拒绝重复施放，避免自行决定叠加。",
     "致死反伤先后待定：默认测试倒下后仍返还已承受伤害，可在Rules中关闭。",
     "治疗溢出待定：Demo仅恢复至最大生命，溢出不转换其他收益。",
-    "多种护盾池、镜像、扩展词条、强控卡与奇物不在本版卡池；数据结构保留接口。"
+    "多种护盾池、完整扩展技能卡池与奇物后续接入；当前词条库已实现25条，镜像特殊边界按技能组合提示限制。"
   ]
 }

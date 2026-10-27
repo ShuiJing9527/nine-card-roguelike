@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-26 02:09:07Z" end-time="2026-10-26 02:09:07Z" duration="0.6450631">
+  <test-suite type="TestSuite" id="1032" name="nine-card-roguelike" fullname="nine-card-roguelike" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-10-26 02:09:07Z" end-time="2026-10-26 02:09:07Z" duration="0.645063" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1026" name="Qiling.Tests.PlayMode.dll" fullname="C:/YY/Card/nine-card-roguelike/Validation/HoverSandbox/UnityProject/Library/ScriptAssemblies/Qiling.Tests.PlayMode.dll" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-10-26 02:09:07Z" end-time="2026-10-26 02:09:07Z" duration="0.634415" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="30292" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1027" name="Qiling" fullname="Qiling" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-10-26 02:09:07Z" end-time="2026-10-26 02:09:07Z" duration="0.632443" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1028" name="Tests" fullname="Qiling.Tests" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-10-26 02:09:07Z" end-time="2026-10-26 02:09:07Z" duration="0.630714" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1008" name="HoverLifecycleTests" fullname="Qiling.Tests.HoverLifecycleTests" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-10-26 02:09:07Z" end-time="2026-10-26 02:09:07Z" duration="0.627127" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1009" name="SlotRemovalInvalidatesHoveredCardInsteadOfIndexingShorterSequence" fullname="Qiling.Tests.HoverLifecycleTests.SlotRemovalInvalidatesHoveredCardInsteadOfIndexingShorterSequence" methodname="SlotRemovalInvalidatesHoveredCardInsteadOfIndexingShorterSequence" classname="Qiling.Tests.HoverLifecycleTests" runstate="Runnable" seed="1101481345" result="Failed" start-time="2026-10-26 02:09:07Z" end-time="2026-10-26 02:09:07Z" duration="0.608913" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index'. Use UnityEngine.TestTools.LogAssert.Expect
+TearDown : Unhandled log message: '[Exception] ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <932fbe8ac5a946808aa5d7b95844e18c>:0)
+Qiling.BattleDemo+<>c__DisplayClass150_0.<BuildBattlePage>b__5 () (at Assets/Runtime/BattleDemo.Layout.cs:91)
+Qiling.BattleDemo.UpdateHover () (at Assets/Runtime/BattleDemo.Layout.cs:215)
+Qiling.BattleDemo.Update () (at Assets/Runtime/BattleDemo.cs:282)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <932fbe8ac5a946808aa5d7b95844e18c>:0)
+Qiling.BattleDemo+<>c__DisplayClass150_0.<BuildBattlePage>b__5 () (at Assets/Runtime/BattleDemo.Layout.cs:91)
+Qiling.BattleDemo.UpdateHover () (at Assets/Runtime/BattleDemo.Layout.cs:215)
+Qiling.BattleDemo.Update () (at Assets/Runtime/BattleDemo.cs:282)
+
+ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <932fbe8ac5a946808aa5d7b95844e18c>:0)
+Qiling.BattleDemo+<>c__DisplayClass150_0.<BuildBattlePage>b__5 () (at Assets/Runtime/BattleDemo.Layout.cs:91)
+Qiling.BattleDemo.UpdateHover () (at Assets/Runtime/BattleDemo.Layout.cs:215)
+UnityEngine.Component:SendMessage(String)
+Qiling.Tests.<SlotRemovalInvalidatesHoveredCardInsteadOfIndexingShorterSequence>d__13:MoveNext() (at Assets/Tests/PlayMode/HoverLifecycleTests.cs:36)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <932fbe8ac5a946808aa5d7b95844e18c>:0)
+Qiling.BattleDemo+<>c__DisplayClass150_0.<BuildBattlePage>b__5 () (at Assets/Runtime/BattleDemo.Layout.cs:91)
+Qiling.BattleDemo.UpdateHover () (at Assets/Runtime/BattleDemo.Layout.cs:215)
+Qiling.BattleDemo.Update () (at Assets/Runtime/BattleDemo.cs:282)
+
+Saving results to: C:/Users/student/AppData/LocalLow/DefaultCompany/nine-card-roguelike\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

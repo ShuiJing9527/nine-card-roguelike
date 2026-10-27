@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -153,7 +153,7 @@ namespace Qiling
         }
         void NewPage(float width = 1600, float height = 1000)
         {
-            HideHover(); ResetPresentation();
+            InvalidateHoverBindings(); ResetPresentation();
             if (uiPage != null)
             {
                 foreach (var panel in new[] { settingsPanel, previewPanel, traitOverlay }) if(panel != null) { panel.SetActive(false); DisposeView(panel); }
@@ -175,7 +175,7 @@ namespace Qiling
 
         void ShowSelection()
         {
-            battle = null; showSettings = showPreview = battlePaused = false; NewPage(); ClearUnitVisuals();
+            battle = null; sequence.Clear(); sequenceLocked = false; showSettings = showPreview = battlePaused = false; NewPage(); ClearUnitVisuals();
             var page = Box(uiPage.transform, "Selection", 0, 0, 1600, 1000, new Color(.025f, .045f, .08f, .98f));
             Label(page, "器 灵 战 斗", 70, 45, 900, 65, 44, gold);
             Label(page, "规则测试 Demo  /  九张实体卡 · 五槽排谱 · 行动条战斗", 73, 120, 1400, 40, 24, muted);
@@ -206,6 +206,7 @@ namespace Qiling
             int seed; if (!int.TryParse(seedText, out seed)) { seedText = "20261020"; seed = 20261020; }
             var profile = CurrentProfile;
             battle = new BattleEngine(catalog, seed, profile); battle.Start(selectedWeapon, selectedEncounter);
+            sequenceLocked = false; committedSerial = -1;
             sequence = new List<string>(profile.sequence); targetId = profile.target; ChooseDefaultTarget(); detailIndex = 0;
             showAllLogs = false; showTraitEditor = false; message = "已加载测试词条与最近排谱；点击词条测试可免费修改。";
             SaveProfiles(); BuildBattlePage(); SpawnUnits(); dirty = true;
@@ -241,21 +242,35 @@ namespace Qiling
                 case EffectKind.Poison: return "中毒"; case EffectKind.Burn: return "灼伤"; case EffectKind.Bleed: return "流血(待定)"; case EffectKind.Block: return "招架"; case EffectKind.Weakness: return "虚弱"; case EffectKind.Evade: return "闪避"; case EffectKind.ShieldBoost: return "护盾强化"; case EffectKind.Reflect: return "棘甲"; case EffectKind.DebuffImmune: return "减益免疫"; case EffectKind.AttackUp: return "物攻↑/反击"; case EffectKind.SpecialAttackUp: return "特攻↑"; case EffectKind.SpeedPercent: case EffectKind.SpeedUp: return "速度↑"; case EffectKind.DefensePercent: case EffectKind.DefenseUp: return "物防变动"; case EffectKind.SpecialDefensePercent: case EffectKind.SpecialDefenseUp: return "特防变动"; case EffectKind.MeleeReduction: return "近战减伤"; default: return kind.ToString();
             }
         }
-        void AddCard(int index)
+        static string StateValue(BattleState state)
         {
-            detailIndex = index; UpdateDetail();
-            if (battle.Active != battle.Player || battle.Finished) { message = "尚未轮到玩家；可先查看卡牌详情。"; dirty = true; return; }
-            string id = catalog.weapons[selectedWeapon].cards[index];
-            if (sequence.Contains(id)) { message = "这张实体卡已在排谱中，可在槽位调整或移除。"; dirty = true; return; }
-            if (sequence.Count >= 5) { message = "排谱已满五张，请先移除一张。"; dirty = true; return; }
-            sequence.Add(id); ChooseDefaultTarget(); RememberComposition(); message = ""; dirty = true;
+            switch (state.kind)
+            {
+                case EffectKind.SpeedPercent: case EffectKind.DefensePercent: case EffectKind.SpecialDefensePercent:
+                case EffectKind.Evade: case EffectKind.CritUp: case EffectKind.MeleeReduction: case EffectKind.Reflect:
+                    return state.value.ToString("0.#%");
+                default: return state.value.ToString("0.#");
+            }
         }
-        void Move(int index, int direction)
+        void AddCard(string id)
         {
-            if (index >= sequence.Count || index + direction < 0 || index + direction >= sequence.Count) return;
-            string id = sequence[index]; sequence[index] = sequence[index + direction]; sequence[index + direction] = id; ChooseDefaultTarget(); RememberComposition(); message = ""; dirty = true;
+            if (!CanEditComposition || !catalog.weapons[selectedWeapon].cards.Contains(id)) return;
+            detailIndex = catalog.weapons[selectedWeapon].cards.IndexOf(id); UpdateDetail();
+            if (sequence.Contains(id) || sequence.Count >= 5) return;
+            BeforeCardMove(); sequence.Add(id); CompositionChanged();
         }
-        void Remove(int index) { if (index < sequence.Count) { sequence.RemoveAt(index); ChooseDefaultTarget(); RememberComposition(); message = ""; dirty = true; } }
+        void MoveCard(string id, int direction)
+        {
+            if (!CanEditComposition) return;
+            int index = sequence.IndexOf(id), next = index + direction;
+            if (index < 0 || next < 0 || next >= sequence.Count) return;
+            BeforeCardMove(); sequence[index] = sequence[next]; sequence[next] = id; CompositionChanged();
+        }
+        void RemoveCard(string id)
+        {
+            if (!CanEditComposition || !sequence.Contains(id)) return;
+            BeforeCardMove(); sequence.Remove(id); CompositionChanged();
+        }
         void ChooseDefaultTarget()
         {
             if (sequence.Count == 0) { targetId = null; return; }
@@ -264,9 +279,12 @@ namespace Qiling
         }
         void Confirm()
         {
-            RememberComposition();
+            if (!CanEditComposition) return;
+            HideHover(); foreach (var hand in handInteractions) hand.CancelInteraction();
+            int serial = battle.ActionSerial;
+            PreparePresentation(); RememberComposition();
             string result = battle.Confirm(sequence, targetId);
-            if (result == null) { message = "出招结算完毕；排谱保留，可再次使用或修改。"; }
+            if (result == null) { sequenceLocked = true; committedSerial = serial; message = "排谱已锁定供查看；下次玩家正常行动开始时恢复九张手牌。"; }
             else message = result;
             dirty = true;
         }
@@ -277,7 +295,7 @@ namespace Qiling
         }
         void Update()
         {
-            UpdateHover(); TickPresentation();
+            SyncCompositionTurn(); UpdateHover(); TickPresentation();
             if (battle == null || showAllLogs || showTraitEditor || showSettings || showPreview || battlePaused) { if (battle != null && dirty && !showAllLogs && !showTraitEditor) { Refresh(); dirty = false; } return; }
             string before = battle.ActiveId; int serial = battle.ActionSerial;
             if (!battle.Finished)
@@ -286,9 +304,10 @@ namespace Qiling
                 if (!PresentationBusy && battle.Active != null && !battle.Active.player)
                 {
                     if (before != battle.ActiveId) nextEnemyTime = Time.unscaledTime + enemyActionDelay;
-                    if (Time.unscaledTime >= nextEnemyTime) { battle.EnemyAction(); dirty = true; }
+                    if (Time.unscaledTime >= nextEnemyTime) { PreparePresentation(); battle.EnemyAction(); dirty = true; }
                 }
             }
+            SyncCompositionTurn();
             if (serial != battle.ActionSerial || before != battle.ActiveId) { if (battle.Active == battle.Player) { ChooseDefaultTarget(); message = ""; } dirty = true; }
             if (showAllLogs) return;
             if (dirty || Time.unscaledTime >= refreshAt) { Refresh(); dirty = false; refreshAt = Time.unscaledTime + .12f; }
@@ -305,6 +324,6 @@ namespace Qiling
             foreach (var obj in stageObjects) if (obj != null) DisposeView(obj); stageObjects.Clear();
             foreach (var mat in unitMaterials) { generatedMaterials.Remove(mat); if (mat != null) Destroy(mat); } unitMaterials.Clear();
         }
-        void OnDestroy() { foreach (var mat in generatedMaterials) if (mat != null) Destroy(mat); }
+        void OnDestroy() { InvalidateHoverBindings(); ResetPresentation(); if(fallbackMotion!=null) Destroy(fallbackMotion); foreach (var mat in generatedMaterials) if (mat != null) Destroy(mat); }
     }
 }

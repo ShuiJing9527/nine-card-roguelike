@@ -25,6 +25,16 @@ MonoBehaviour:
   recovery: 0.12
   deathDuration: 0.25
   effectLifetime: 1
+  segmentInterval: 0.08
+  projectileSpeed: 36
+  minimumTravel: 0.06
+  maximumTravel: 0.6
+  simultaneousSegments: 1
+  segmentsPerBatch: 8
+  batchInterval: 0.08
+  sequentialTimingScale: 0.4
+  batchProjectileSpacing: 0.12
+  meleeProjectile: 0
   moveCurve:
     serializedVersion: 2
     m_Curve:
@@ -73,6 +83,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  segmentMotionDistance: 0.06
+  segmentSwing: 5
+  attackSwing: 9
   lungeDistance: 0.22
   hitDistance: 0.08
   hitScale: 0.96
@@ -80,6 +93,44 @@ MonoBehaviour:
   projectileScale: {x: 0.1, y: 0.1, z: 0.1}
   effectScale: {x: 1, y: 1, z: 1}
   projectileRotation: {x: 0, y: 0, z: 0}
+  deathScale: {x: 0, y: 0, z: 0}
+  hitShakeFrequency: 28
+  hitCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  healTint: {r: 0.3, g: 1, b: 0.5, a: 1}
+  shieldTint: {r: 0.3, g: 0.75, b: 1, a: 1}
+  dodgeTint: {r: 0.75, g: 0.85, b: 1, a: 1}
+  blockTint: {r: 0.6, g: 0.8, b: 1, a: 1}
+  healEffect: {fileID: 0}
+  shieldEffect: {fileID: 0}
+  dodgeEffect: {fileID: 0}
+  blockEffect: {fileID: 0}
+  healSound: {fileID: 0}
+  shieldSound: {fileID: 0}
+  dodgeSound: {fileID: 0}
+  blockSound: {fileID: 0}
   placeholderProjectile: {r: 1, g: 0.75, b: 0.3, a: 1}
   hitTint: {r: 1, g: 0.4, b: 0.35, a: 1}
   castEffect: {fileID: 0}

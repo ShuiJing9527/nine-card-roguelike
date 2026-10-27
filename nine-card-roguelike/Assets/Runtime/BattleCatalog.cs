@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,10 +7,10 @@ namespace Qiling
     public enum MatchType { Offense, Survival, Status, Universal, OffenseSurvival, Pending }
     public enum DamageType { Physical, Special, Change }
     public enum Reach { None, Melee, Ranged }
-    public enum TargetMode { Enemy, FrontRow, AllEnemies, Self, Ally, OtherAlly }
+    public enum TargetMode { Enemy, FrontRow, AllEnemies, Self, Ally, OtherAlly, AllAllies }
     public enum Attribute { Attack, SpecialAttack, Defense, SpecialDefense, Speed, MaxHp, LostHp, Shield, BothAttack }
     public enum Pattern { Single, Multi, Sweep, Bounce, Counter }
-    public enum EffectKind { Shield, Heal, Cleanse, Poison, Burn, Bleed, Weakness, AttackUp, SpecialAttackUp, DefenseUp, SpecialDefenseUp, SpeedUp, DefensePercent, SpecialDefensePercent, SpeedPercent, Evade, CritUp, DebuffImmune, Block, MeleeReduction, Reflect, ShieldBoost, Push, Guard, Freeze }
+    public enum EffectKind { Shield, Heal, Cleanse, Poison, Burn, Bleed, Weakness, AttackUp, SpecialAttackUp, DefenseUp, SpecialDefenseUp, SpeedUp, DefensePercent, SpecialDefensePercent, SpeedPercent, Evade, CritUp, DebuffImmune, Block, MeleeReduction, Reflect, ShieldBoost, Push, Guard, Freeze, Advance }
     [Serializable] public class Linear
     {
         public double basis, perChain;
@@ -28,6 +28,10 @@ namespace Qiling
         public Attribute attribute;
         public Linear value = new Linear();
         public int duration;
+        [Tooltip("基础持续时间＝Duration＋Duration Per Chain×本次实际总连锁数；与词条当前连锁无关。")]
+        public int durationPerChain;
+        public int BaseDuration(int totalChain) => duration + durationPerChain * totalChain;
+        public bool HasDuration => duration > 0 || durationPerChain > 0;
         public bool onHit, stacking, percent, rangedOnly, negative, pending;
         public string note;
     }
@@ -44,6 +48,9 @@ namespace Qiling
         public Linear coefficient = new Linear(), segments = new Linear { basis = 1 }, penetration = new Linear(), critBonus = new Linear();
         public double bounceCoefficient, landingCoefficient, shieldCost, shieldResource;
         public int duration;
+        public int durationPerChain;
+        public int BaseDuration(int totalChain) => duration + durationPerChain * totalChain;
+        public bool HasDuration => duration > 0 || durationPerChain > 0;
         public List<EffectDef> effects = new List<EffectDef>();
     }
     [Serializable] public class TraitDef
@@ -52,6 +59,8 @@ namespace Qiling
         public string id, title, description, note;
         public MatchType match;
         public double rate;
+        [Tooltip("仅压制/终结使用：目标生命比例阈值，严格高于/低于时触发。")]
+        public double threshold;
         public bool pending;
     }
     [Serializable] public class CardDef
@@ -91,7 +100,6 @@ namespace Qiling
         public double repeatCap = .8;
         [Tooltip("预留给扩展卡的一次性与持续减伤组合。初始单人卡池只有拒敌架势的近战持续减伤。")]
         public double combinedReductionCap = .9;
-        public double[] pursuitRetention = { .9, .8, .7, .6, .5 };
         public int poisonPerStack = 2, burnDamage = 5, freezeResilience = 3;
         [Tooltip("未定的致死反伤先后。关闭时不执行倒下后的反伤；UI始终标注测试策略。")]
         public bool reflectAfterDeath = true;

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -74,6 +74,7 @@ namespace Qiling
         }
         void RememberComposition()
         {
+            ValidateHoverTarget();
             if (battle == null) return;
             CurrentProfile.sequence = new List<string>(sequence); CurrentProfile.target = targetId; SaveProfiles();
         }
@@ -88,9 +89,27 @@ namespace Qiling
         }
         void OpenTraitEditor()
         {
-            if (battle != null && battle.IsResolving) { message = "正在结算，不能修改词条。"; return; }
+            if (battle != null && (battle.IsResolving || PresentationBusy)) { message = "正在结算，不能修改词条。"; return; }
             RememberComposition(); traitDraft = CurrentProfile.Copy(); editCard = 0; editPosition = 0; batchPosition = 0; batchReplaceAll = false;
             showTraitEditor = true; editorMessage = "免费调试：只修改词条，不修改主技能。草稿在点击保存/应用后生效；编辑时战斗暂停。"; RenderTraitEditor();
+        }
+        string TraitStatusReport()
+        {
+            var sections=new List<string>();
+            foreach(var category in new[]{"已实现且可装备","已定义但未实现","规则待定"})
+            {
+                var traits=catalog.traits.Where(t=>TraitSupport.Category(t)==category).ToList();
+                sections.Add(category + $"（{traits.Count}）\n" + string.Join("\n\n", traits.Select(t=>t.title+"："+TraitSupport.Reason(t))));
+            }
+            return "自由重铸不使用正式获取、掉落概率或稀有度过滤。已定义但未实现、规则待定的条目可查看原因，不能配置成无效果词条。\n\n"+string.Join("\n\n",sections);
+        }
+        void OpenTraitStatus()
+        {
+            var shade=CreateAuthoredModal(traitOverlay.GetComponent<RectTransform>(),"Trait Status Overlay");
+            var panel=CenterBox(shade,"Trait Status Panel",1400,850,new Color(.025f,.045f,.08f,.995f));
+            Label(panel,"词条实现状态",25,20,900,45,30,gold);
+            Button(panel,"返回词条测试",1120,20,250,46,()=>{ shade.gameObject.SetActive(false); DisposeView(shade.gameObject); });
+            var text=ScrollText(panel,25,85,1350,735,21); SetScroll(text,TraitStatusReport());
         }
         void CloseTraitEditor()
         {
@@ -104,7 +123,7 @@ namespace Qiling
             var panel = CenterBox(shade, "Trait Test Editor", 1600, 1000, new Color(.025f, .045f, .08f, .995f));
             Label(panel, "自由重铸词条 · " + catalog.weapons[selectedWeapon].title, 25, 17, 475, 48, 31, gold);
             Label(panel, "选择卡片词条槽 → 选择右侧词条 → 添加/替换。每卡1～3条，允许重复与不匹配。", 25, 75, 995, 32, 20);
-            Label(panel, "词条库：已实现可配置，其他仅查看", 1035, 75, 550, 32, 21, gold);
+            Label(panel, $"词条库：已实现{catalog.traits.Count(TraitSupport.Enabled)} / 未实现{catalog.traits.Count(t=>!t.pending && !TraitSupport.Enabled(t))} / 待定{catalog.traits.Count(t=>t.pending)}", 1035, 75, 550, 32, 21, gold);
             for (int i = 0; i < 9; i++)
             {
                 int cardIndex = i; var card = traitDraft.cards[i]; var original = catalog.Card(card.cardId); float y = 121 + i * 76;
@@ -126,8 +145,19 @@ namespace Qiling
                 var option = Button(panel, trait.title + "〔" + MatchName(trait.match) + "〕" + (enabled ? "" : trait.pending ? " 待定" : " 未实现"), x, y, 263, 30, () => { pickedTrait = trait.id; RenderTraitEditor(); }, pickedTrait == trait.id ? new Color(.29f, .35f, .45f) : enabled ? new Color(.12f, .23f, .29f) : new Color(.11f, .12f, .16f), 15); Choice(option.gameObject,pickedTrait==trait.id);
             }
             var selected = catalog.Trait(pickedTrait);
+            string combination="";
+            if(selected.id=="镜像" && battle!=null && traitDraft.sequence.Count>0)
+            {
+                var probe=traitDraft.Copy(); string error=probe.SetTrait(catalog,probe.cards[editCard].cardId,editPosition,"镜像");
+                int slot=probe.sequence.IndexOf(probe.cards[editCard].cardId);
+                if(error==null && slot>=0)
+                {
+                    var plan=battle.Plan(battle.Player,probe.sequence,configuration:probe);
+                    combination="\n\n当前排谱组合检查：\n"+string.Join("\n",plan.traitHints.Where(h=>h.StartsWith((slot+1)+"号位") && h.Contains("镜像")));
+                }
+            }
             var description = ScrollText(panel, 1035, 578, 540, 220, 18);
-            SetScroll(description, $"{selected.title}〔{MatchName(selected.match)}〕\n{TraitSupport.Status(selected)}\n\n{selected.description}\n\n计算说明：{selected.note}\n\n当前连锁默认等于卡片排谱槽位1～5；同名词条分别计算。匹配检查读取1号位主技能类型，与该卡自身类型无关。");
+            SetScroll(description, $"{selected.title}〔{MatchName(selected.match)}〕\n{TraitSupport.Status(selected)}\n{TraitSupport.Reason(selected)}{combination}\n\n{selected.description}\n\n计算说明：{selected.note}\n\n当前连锁先按本卡连锁反应修正；一条2倍、两条3倍，仅本卡其他词条受益；实际槽位与总连锁不变。匹配检查读取1号位主技能类型，与该卡自身类型无关。");
             var applyOne = Button(panel, $"将“{selected.title}”填入卡{editCard + 1}的词条{editPosition + 1}", 1035, 808, 540, 44, () => EditorOperation(traitDraft.SetTrait(catalog, traitDraft.cards[editCard].cardId, editPosition, pickedTrait)), new Color(.19f, .35f, .31f), 19);
             applyOne.interactable = TraitSupport.Enabled(selected);
             Label(panel, "当前排谱五卡批量：", 25, 817, 240, 32, 20, gold);
@@ -154,6 +184,7 @@ namespace Qiling
                 var initial = DebugLoadout.Initial(catalog, traitDraft.weaponId); initial.sequence = new List<string>(traitDraft.sequence); initial.target = traitDraft.target;
                 traitDraft = initial; EditorOperation(null, "草稿已恢复初始预组词条；排谱不变，点击保存后生效。");
             }, null, 18);
+            Button(panel, "词条实现状态", 1408, 951, 167, 40, OpenTraitStatus, null, 17);
         }
         void EditorOperation(string error, string success = "草稿已修改，点击保存/应用后生效。") { editorMessage = error ?? success; RenderTraitEditor(); }
         void SaveTraitDraft(bool applyNow)

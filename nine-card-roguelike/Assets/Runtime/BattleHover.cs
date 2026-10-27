@@ -10,6 +10,8 @@ namespace Qiling
         public Action<bool> Changed;
         public void OnPointerEnter(PointerEventData e) => Changed?.Invoke(true);
         public void OnPointerExit(PointerEventData e) => Changed?.Invoke(false);
+        void OnDisable() => Changed?.Invoke(false);
+        void OnDestroy() { Changed = null; }
     }
 
 }

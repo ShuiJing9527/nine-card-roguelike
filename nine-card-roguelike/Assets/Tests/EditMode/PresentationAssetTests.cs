@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
@@ -11,7 +11,7 @@ namespace Qiling.Tests
         [Test] public void TemplatesAndReusablePartsAreSavedAssets()
         {
             var config=AssetDatabase.LoadAssetAtPath<BattleViewConfig>(Root+"BattleViewConfig.asset"); Assert.NotNull(config);
-            Assert.NotNull(config.selectionPage); Assert.NotNull(config.battlePage); Assert.AreEqual(4,config.panels.Count);
+            Assert.NotNull(config.selectionPage); Assert.NotNull(config.battlePage); Assert.AreEqual(5,config.panels.Count); Assert.NotNull(config.Panel("Trait Status Overlay"));
             foreach(var part in new[]{"Card","CardHitRegion","SequenceSlot","Button","HealthBar","UnitHud","EnemyIntent","ActionAvatar","StatusIcon","FloatingText"}) Assert.NotNull(AssetDatabase.LoadAssetAtPath<GameObject>(Root+"UI/Components/"+part+".prefab"),part);
             Assert.AreEqual(0,AssetDatabase.LoadAssetAtPath<GameObject>(Root+"UI/Components/CardHitRegion.prefab").GetComponentsInChildren<Text>(true).Length,"Hit regions must not inherit button captions");
             Assert.Greater(config.battlePage.transform.Find("Unit Info 0").GetComponent<RectTransform>().anchoredPosition.x,100,"Editor HUD must have an authored battlefield preview position");
@@ -62,7 +62,7 @@ namespace Qiling.Tests
                 CollectionAssert.AreEqual(withArt.Damage.Select(d=>d.target),launch.Select(e=>e.target));
                 Assert.IsTrue(launch.Any(e=>e.segment.StartsWith("追击"))); Assert.AreNotEqual(launch.First().target,launch.Last().target);
                 Assert.AreEqual(withArt.Damage.Count,withArt.VisualEvents.Count(e=>e.node==VisualNode.Impact));
-                Assert.AreEqual(VisualNode.CastStart,withArt.VisualEvents.First().node); Assert.AreEqual(VisualNode.CastEnd,withArt.VisualEvents.Last().node);
+                Assert.AreEqual(VisualNode.CastStart,withArt.VisualEvents.First().node); Assert.IsTrue(withArt.VisualEvents.Any(e=>e.node==VisualNode.CastEnd)); Assert.AreEqual(VisualNode.ActionEnd,withArt.VisualEvents.Last().node);
                 Assert.IsTrue(withArt.VisualEvents.Any(e=>e.node==VisualNode.Death));
             }
             finally { Object.DestroyImmediate(plain); }

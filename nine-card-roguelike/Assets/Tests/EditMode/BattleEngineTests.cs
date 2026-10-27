@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
@@ -29,7 +29,7 @@ namespace Qiling.Tests
                 Assert.AreEqual(3, w.cards.Count(id => data.Card(id).match == MatchType.Survival)); Assert.AreEqual(3, w.cards.Count(id => data.Card(id).match == MatchType.Status));
                 foreach (var c in w.cards) { Assert.NotNull(data.Skill(data.Card(c).skill)); foreach (var t in data.Card(c).traits) Assert.NotNull(data.Trait(t)); }
             }
-            Assert.AreEqual(50, data.skills.Count); Assert.AreEqual(12, data.traits.Count(TraitSupport.Enabled)); Assert.AreEqual(.15, data.Trait("追击").rate);
+            Assert.AreEqual(55, data.skills.Count); Assert.AreEqual(25, data.traits.Count(TraitSupport.Enabled)); Assert.AreEqual(.5, data.Trait("追击").rate);
         }
         [Test] public void OneMainSkillMismatchOccupiesSlotAndTotalChainUsesAllCards()
         {
@@ -41,13 +41,103 @@ namespace Qiling.Tests
         [Test] public void MainCardsOwnTraitUsesSlotOneAndActualSequenceLength()
         {
             var e = New(); var p = e.Plan(e.Player, Cards(0, 1)); Assert.AreEqual(1, p.chain); Assert.AreEqual(3, p.nativeSegments);
-            Assert.AreEqual(1, p.pursuits[0].count); Assert.AreEqual(.6 * 3 * .15 * .9, p.pursuits[0].coefficient, 1e-9);
+            Assert.AreEqual(1, p.pursuits[0].count); Assert.AreEqual(.5, p.pursuits[0].coefficient, 1e-9);
         }
-        [Test] public void PursuitSlotRetentionSeparateFromCount()
+        [Test] public void PursuitCoefficientIsIndependentOfSlotAndCount()
         {
             var e = New(); var p = e.Plan(e.Player, Cards(0, 2, 3, 4, 6, 1));
-            Assert.AreEqual(5, p.pursuits[0].count); Assert.AreEqual(5, p.pursuits[0].slot); Assert.AreEqual(3.5 * .15 * .5, p.pursuits[0].coefficient, 1e-9);
+            Assert.AreEqual(5, p.pursuits[0].count); Assert.AreEqual(5, p.pursuits[0].slot); Assert.AreEqual(.5, p.pursuits[0].coefficient, 1e-9);
             Assert.AreEqual(.4, p.physicalPen, 1e-9); // 30% native plus 10% slot2.
+        }
+        [Test] public void PursuitIgnoresNativeCoefficientsAndDuplicateGroupsUseConstantCoefficient()
+        {
+            var profile=DebugLoadout.Initial(data,data.weapons[0].id);
+            var cards=Cards(0,2,1,3,4,5); profile.Preset(data,cards,new[]{"锋锐"});
+            profile.SetTrait(data,cards[2],0,"追击"); profile.SetTrait(data,cards[2],1,"追击");
+            var e=new BattleEngine(data,42,profile); e.Start(0,0); var p=e.Plan(e.Player,cards);
+            Assert.AreEqual(2,p.pursuits.Count);
+            foreach(var group in p.pursuits)
+            {
+                Assert.AreEqual(3,group.count); Assert.AreEqual(.5,group.baseCoefficient);
+                Assert.AreEqual(.5,group.CoefficientAt(0),1e-9);
+                Assert.AreEqual(.5,group.CoefficientAt(1),1e-9);
+                Assert.AreEqual(.5,group.CoefficientAt(2),1e-9);
+            }
+            var rapid=e.Plan(e.Player,Cards(0,1,2,3,4,5));
+            Assert.AreEqual(7,rapid.nativeSegments); Assert.AreEqual(.5,rapid.pursuits[0].baseCoefficient,1e-9);
+            var target=e.Units[1]; target.hp=target.panel.hp=10000; p.crit=0;
+            e.Execute(e.Player,p,target.id);
+            var hits=e.Damage.Where(d=>d.label.StartsWith("追击[")).ToArray();
+            CollectionAssert.AreEqual(new[]{.5,.5,.5,.5,.5,.5}.Select(v=>Math.Round(v,6)),hits.Select(d=>Math.Round(d.coefficient,6)));
+        }
+        [Test] public void PursuitConstantBaseIsIndependentOfBlockCriticalDefenseAndShield()
+        {
+            var profile=DebugLoadout.Initial(data,data.weapons[0].id); var cards=Cards(0,2,1,3);
+            foreach(var card in cards) Assert.IsNull(profile.SetTrait(data,card,0,"锋锐")); Assert.IsNull(profile.SetTrait(data,cards[2],0,"追击"));
+            var e=new BattleEngine(data,42,profile); e.Start(0,0); var p=e.Plan(e.Player,cards);
+            p.damageUp=0; p.physicalPen=0; p.crit=1; p.critDamage=2;
+            var target=e.Units[1]; target.hp=target.panel.hp=10000; target.panel.defense=10; target.shield=3;
+            target.states.Add(new BattleState { kind=EffectKind.Block,value=2 });
+            e.Execute(e.Player,p,target.id);
+            var hits=e.Damage.Where(d=>d.label.StartsWith("追击[")).ToArray();
+            Assert.AreEqual(3,hits.Length); Assert.IsTrue(hits[0].blocked);
+            // The blocked native and first pursuit do not affect either later 50% segment.
+            Assert.AreEqual(.5,hits[1].coefficient,1e-9); Assert.AreEqual(.5,hits[2].coefficient,1e-9);
+            Assert.IsTrue(hits[1].critical && hits[2].critical);
+            Assert.AreEqual(8,hits[1].calculated); Assert.AreEqual(3,hits[1].absorbed); Assert.AreEqual(5,hits[1].hpLost);
+            Assert.AreEqual(8,hits[2].calculated); Assert.AreEqual(0,hits[2].absorbed);
+        }
+        [Test] public void PursuitRetargetReadsNewDefenseWithSameCoefficient()
+        {
+            var profile=DebugLoadout.Initial(data,data.weapons[0].id); var cards=Cards(0,2,1,3);
+            foreach(var card in cards) Assert.IsNull(profile.SetTrait(data,card,0,"锋锐")); Assert.IsNull(profile.SetTrait(data,cards[2],0,"追击"));
+            var e=new BattleEngine(data,42,profile); e.Start(0,0); var p=e.Plan(e.Player,cards); p.crit=0; p.damageUp=0; p.physicalPen=0;
+            var front=e.Units[1]; front.panel.defense=0; front.hp=55; // Native 49.5 rounds to 50; first pursuit kills front.
+            e.Execute(e.Player,p,front.id); var hits=e.Damage.Where(d=>d.label.StartsWith("追击[")).ToArray();
+            CollectionAssert.AreEqual(new[]{"enemy0","enemy1","enemy1"},hits.Select(d=>d.target));
+            Assert.AreEqual(.5,hits[1].coefficient,1e-9); Assert.AreEqual(15,hits[1].defense);
+            Assert.AreEqual(3,hits[1].calculated); Assert.AreEqual(3,hits[2].calculated);
+        }
+        [Test] public void FivePursuitsAreFifteenSegmentsAnd750PercentRegardlessOfMainSkill()
+        {
+            var profile=DebugLoadout.Initial(data,data.weapons[0].id); var cards=Cards(0,1,2,3,4,5);
+            Assert.IsNull(profile.Preset(data,cards,new[]{"追击"})); var e=new BattleEngine(data,42,profile); e.Start(0,0);
+            foreach(var order in new[]{cards,Cards(0,2,1,3,4,5)})
+            {
+                var p=e.Plan(e.Player,order); Assert.AreEqual(15,p.pursuits.Sum(g=>g.count));
+                Assert.AreEqual(7.5,p.pursuits.Sum(g=>g.count*g.coefficient),1e-9);
+                CollectionAssert.AreEqual(new[]{1,2,3,4,5},p.pursuits.Select(g=>g.currentChain));
+                for(int i=0;i<5;i++) Assert.AreEqual(.5,p.pursuits[i].coefficient,1e-9);
+                var modified=p.pursuits[2]; modified.currentChain=8; modified.count=8;
+                Assert.AreEqual(3,modified.slot);
+                Assert.AreEqual(.5,modified.CoefficientAt(7),1e-9);
+            }
+        }
+        [Test] public void PursuitReadsMainSkillAttributeIncludingDefenseAndCombinedAttack()
+        {
+            foreach(var attribute in new[]{Attribute.Attack,Attribute.SpecialAttack,Attribute.Defense,Attribute.BothAttack})
+            {
+                var card=data.cards.First(c=>c.match==MatchType.Offense && data.Skill(c.skill).attribute==attribute && data.Skill(c.skill).coefficient.basis>0);
+                int weapon=data.weapons.FindIndex(w=>w.cards.Contains(card.id));
+                var cards=new[]{card.id}.Concat(data.weapons[weapon].cards.Where(id=>id!=card.id).Take(4)).ToList();
+                var profile=DebugLoadout.Initial(data,data.weapons[weapon].id); Assert.IsNull(profile.Preset(data,cards,new[]{"追击"}));
+                var e=new BattleEngine(data,42,profile); e.Start(weapon,0); foreach(var unit in e.Units.Where(u=>!u.player)) unit.hp=unit.panel.hp=100000;
+                var p=e.Plan(e.Player,cards); p.crit=0; e.Execute(e.Player,p,"enemy0");
+                var hit=e.Damage.First(d=>d.label.StartsWith("追击["));
+                Assert.AreEqual(.5,hit.coefficient,1e-9); Assert.AreEqual(e.Player.Stat(attribute),hit.attackAttribute,1e-9);
+                Assert.AreEqual(BattleMath.Quote(data.rules,e.Player,e.Units.First(u=>u.id==hit.target),p,.5,0,0,false).damage,hit.calculated);
+            }
+        }
+        [Test] public void CounterPursuitsUseFixedCoefficientsAndRecordSkillInheritance()
+        {
+            var cards=Cards(1,3,1,2,4,5); var profile=DebugLoadout.Initial(data,data.weapons[1].id);
+            Assert.IsNull(profile.Preset(data,cards,new[]{"追击"})); var e=new BattleEngine(data,42,profile); e.Start(1,0);
+            e.Player.panel.crit=0; e.Units[1].hp=e.Units[1].panel.hp=100000; Turn(e); Assert.IsNull(e.Confirm(cards,"player"));
+            e.Execute(e.Units[1],e.Plan(e.Units[1],Array.Empty<string>(),data.Skill("弹跳撞击")),"player");
+            var hits=e.Damage.Where(d=>d.source=="player" && d.label.StartsWith("反击追击[")).ToArray();
+            Assert.AreEqual(15,hits.Length); Assert.AreEqual(7.5,hits.Sum(d=>d.coefficient),1e-9);
+            Assert.IsTrue(hits.All(d=>d.bonus==0 && d.resource==0));
+            Assert.IsTrue(e.Log.Any(l=>l.Contains("追击继承："))); Assert.IsTrue(e.Log.Any(l=>l.Contains("当前连锁5") && l.Contains("每段固定系数50.00")));
         }
         [Test] public void BonusIsSingleShareAcrossNativeSegmentsAndNotCoefficientPoints()
         {
